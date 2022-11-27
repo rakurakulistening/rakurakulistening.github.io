@@ -249,38 +249,45 @@ p{
 /* ----------------- Main Content----------- */
 
 /* --------------- Site title ---------------- */
-main .site-title{
+main .site-background{
     background: url('../assets/Background-image.png');
     background-size: cover;
-    height: 80vh;
+    /* height: 80vh; */
+    height: 40vw;
     display: flex;
     justify-content: left;
+
+    margin: auto;
+    align-items: center;
+    color: white;
+    /* padding-left: 3.8rem; */
+    padding-left: 4.3vw;
+
+
 }
 
 
 main .site-title{
-    padding-top: 5rem;
-    text-align: left;
-    color: var(--white);
+
 }
 
 main .site-title h1{
     font-weight: bold;
     margin: .3rem;
-    margin-left: 3.8rem;
-    /* font-size: 312%; */
-    font-size: 8.9vh;
+    /* margin-left: 3.8rem; */
+    font-size: 312%;
+    /* font-size: 8.9vh; */
 }
 
 main .site-title h3{
     font-weight: normal;
     margin: .3rem;
-    margin-left: 3.8rem;
+    /* margin-left: 3.8rem; */
     font-size: 1.6vw;
 }
 
 main .site-title .btn{
-    margin-left: 3.8rem;
+    /* margin-left: 3.8rem; */
     margin-top: 2rem;
     background: var(--sky);
 }

@@ -45,4 +45,32 @@ $(document).ready(function () {
     // AOS Instance
     AOS.init();
 
+
+    // AUTOLOAD A QUOTE
+    fetch("https://stoic-quotes.com/api/quote")
+    .then(res => res.json())
+    .then(data => {
+        quote.innerHTML = `"${data.text}"`;
+        author.innerHTML = `- ${data.author}`;
+
+    });
+
+    //LOAD ON CLICK
+    const quote = document.querySelector("#quote");
+    const author = document.querySelector("#author");
+    const btn = document.querySelector("#quote-btn");
+
+    btn.addEventListener("mouseup", getQuote);
+
+    function getQuote() {
+        fetch("https://stoic-quotes.com/api/quote")
+        .then(res => res.json())
+        .then(data => {
+            quote.innerHTML = `"${data.text}"`;
+            author.innerHTML = `- ${data.author}`;
+
+        })
+        
+    }
+
 });

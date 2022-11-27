@@ -76,8 +76,8 @@
 
         <!------------------------ Site Title ---------------------->
 
-        <section class="site-title">
-            <div class="site-background" data-aos="fade-in" data-aos-delay="100">
+        <section class="site-background">
+            <div class="site-title" data-aos="fade-in" data-aos-delay="100">
                 <h1>hey, I'm Binuda - a <br>
                     student from Melbourne 
                 </h1>
@@ -455,32 +455,32 @@
 
 
             <script>
-                // AUTOLOAD A QUOTE
-                fetch("https://stoic-quotes.com/api/quote")
-                    .then(res => res.json())
-                    .then(data => {
-                        quote.innerHTML = `"${data.text}"`;
-                        author.innerHTML = `- ${data.author}`;
+                // // AUTOLOAD A QUOTE
+                // fetch("https://stoic-quotes.com/api/quote")
+                //     .then(res => res.json())
+                //     .then(data => {
+                //         quote.innerHTML = `"${data.text}"`;
+                //         author.innerHTML = `- ${data.author}`;
 
-                    });
+                //     });
 
-                //LOAD ON CLICK
-                const quote = document.querySelector("#quote");
-                const author = document.querySelector("#author");
-                const btn = document.querySelector("#quote-btn");
+                // //LOAD ON CLICK
+                // const quote = document.querySelector("#quote");
+                // const author = document.querySelector("#author");
+                // const btn = document.querySelector("#quote-btn");
                 
-                btn.addEventListener("mouseup", getQuote);
+                // btn.addEventListener("mouseup", getQuote);
 
-                function getQuote() {
-                    fetch("https://stoic-quotes.com/api/quote")
-                    .then(res => res.json())
-                    .then(data => {
-                        quote.innerHTML = `"${data.text}"`;
-                        author.innerHTML = `- ${data.author}`;
+                // function getQuote() {
+                //     fetch("https://stoic-quotes.com/api/quote")
+                //     .then(res => res.json())
+                //     .then(data => {
+                //         quote.innerHTML = `"${data.text}"`;
+                //         author.innerHTML = `- ${data.author}`;
 
-                    })
+                //     })
                     
-                }
+                // }
             </script>
             
         </div>
