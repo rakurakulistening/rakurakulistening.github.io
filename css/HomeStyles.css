@@ -65,6 +65,36 @@ h3{
     /* font-size: 1.3rem; */
 }
 
+
+/* typewriter effect */
+
+#typing {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+    
+	width: 1px;
+	height: 22px;
+
+	background-color: white;
+	/* animation: blink .75s step-end infinite; */
+}
+
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: white; 
+	}
+}
+
+
 button.btn{
     border: none;
     width: fit-content;
@@ -271,12 +301,12 @@ main .site-title{
 }
 
 main .site-title h1{
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: .3rem;
     /* margin-left: 3.8rem; */
     /* font-size: 312%; */
-    /* font-size: 8.9vh; */
-    /* font-size: 4.7rem; */
+    font-size: 8.9vh;
+    /* font-size: 3.7rem; */
     /* display: flex; */
 }
 
