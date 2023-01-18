@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ブロッグ</title>
-    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png">
+    <title>Blog</title>
 
     <!-- Font Awesome Icons -->
-    <!-- <link rel="stylesheet" href="./css/all.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
-    
+    <link rel="stylesheet" href="./css/all.css">
+
+
     <!-- --------- Owl-Carousel ------------------->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
@@ -44,23 +41,24 @@
                 <ul class="nav-items">
                     <li class="nav-link" data-aos="fade-in" data-aos-delay="100" >
                         <button class="nav">
-                            ホーム
+                            home
                             <i class="fab fa-home"></i>  
+                            <!-- <img src="https://site-assets.plasmic.app/f6d689244859045e347b55c90b9ad54a.svg">  -->
                         </button>                     
                         <button class="nav" onclick="location.href='https://www.github.com/binudakal'" type="button">
-                            ギットハブ
+                            github
                             <i class="fab fa-github"></i>
                         </button>
                         <button class="nav" onclick="location.href='https://linkedin.com/in/binuda-kalugalage-577657170'" type="button">
-                            リンクイン
+                            linkedin
                             <i class="fab fa-linkedin"></i>
                         </button>
-                        <button class="nav" onclick="location.href='https://twitter.com/binudakal'" type="button">
-                            ツイッター
+                        <button class="nav" onclick="location.href='https://twitter.com/binudakal'"target="_blank" type="button">
+                            twitter
                             <i class="fab fa-twitter"></i>
                         </button>
                         <button class="blk" onclick="location.href='mailto:work.bjk@gmail.com'" type="button">
-                            メールを送って!
+                            contact me!
                         </button>
                     </li>
                 </ul>
@@ -76,20 +74,19 @@
 
         <!------------------------ Site Title ---------------------->
 
-        <section class="site-background">
-            <div class="site-title" data-aos="fade-in" data-aos-delay="100">
-                <h1 id="aptGreeting"></h1>
-                <h1> メルボルンから高校生です。 </h1>
+        <section class="blog-title">
+            <div class="site-background" data-aos="fade-in" data-aos-delay="100">
+                <h1>hey, I'm Binuda - a <br>
+                    student from Melbourne 
+                </h1>
                 <br>
-                <!-- <h3>I've developed applications in Python, Node.js and C#. <br>
+                <h3>I've developed applications in Python, Node.js and C#. <br>
                     I also have experience with .NET and the Unity game engine.<br>
                     I am currently working with Node.js to program Discord bots, and C# to create <br>
                     mobile applications through Unity.
-                </h3> -->
-                <h3 id="typing"></h3><div id="cursor"></div>
-                <br>
+                </h3>
                 <button class="btn" onclick="location.href='/index.html'" type="button">
-                    ホーム → 
+                    my blog → 
                 </button>
 
             </div>
@@ -106,8 +103,8 @@
 
                         <div class="project-content" data-aos="fade-right" data-aos-delay="200">
                             <div class="project-pane">
-                                <div class="project-heading">
-                                <h2>rTex-node</h2>
+                                <div class="project-title">
+                                    <h2>rTex-node</h2>
                                     <h4>npmjs 🡕</h4>
                                 </div>
                                 <div class="project-image">
@@ -118,65 +115,47 @@
                                     <button class="btn btn-project">View on GitHub 🡕</button>
                                 </div>
                             </div>
+                        
                         </div>
 
-                        <div class="project-content" data-aos="fade-right" data-aos-delay="200">
+                        <div class="project-content" data-aos="fade-in" data-aos-delay="200">
                                <div class="project-pane">
-                                    <div class="project-heading">
-                                        <h2>JavaScript projects</h2>
-                                        <h4>github 🡕</h4>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="/assets/project-images/Unofficial_JavaScript_logo_120h.png" alt="post-1">
-                                    </div>
-                                    <div class="project-desc">
-                                        mostly experimentation with APIs
-                                        <button class="btn btn-project">View on GitHub 🡕</button>
-                                    </div>
-                                </div>      
-                        </div>
-
-                        <div class="project-content" data-aos="fade-right" data-aos-delay="200">
-                            <div class="project-pane">
-                                <div class="project-heading">
-                                    <h2>WinUI projects</h2>
+                                <div class="project-title">
+                                    <h2>JavaScript projects</h2>
                                     <h4>github 🡕</h4>
                                 </div>
                                 <div class="project-image">
-                                    <img src="/assets/project-images/winui_logo_120h.png" alt="post-1">
+                                    <img src="https://site-assets.plasmic.app/6b583c7bb7f9be8661fdf2e0318008dd.svg" alt="post-1">
                                 </div>
                                 <div class="project-desc">
-                                    WinUI ports of VB.Net programs
-                                    <button class="btn btn-project">View on GitHub 🡕</button>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="project-content" data-aos="fade-right" data-aos-delay="200">
-                            <div class="project-pane">
-                                <div class="project-heading">
-                                <h2>rTex-node</h2>
-                                    <h4>npmjs 🡕</h4>
-                                </div>
-                                <div class="project-image">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="rtex">
-                                </div>
-                                <div class="project-desc">
-                                    a Node.js wrapper for DXsmiley's rTeX
+                                    mostly experimentation with APIs
                                     <button class="btn btn-project">View on GitHub 🡕</button>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="project-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./assets/blog-post/post-2.jpg" alt="post-1">
+                            <div class="project-title">
+                                <h3>London Fashion week's continued the evolution</h3>
+                                <button class="btn btn-project">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="project-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/blog-post/post-5.png" alt="post-1">
+                            <div class="project-title">
+                                <h3>London Fashion week's continued the evolution</h3>
+                                <button class="btn btn-project">Fashion</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
                     </div>
-   
                     <div class="owl-navigation">
-                        
                         <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
                         <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
                     </div>
-                    
                 </div>
-                
             </div>
         </section>
 
@@ -421,73 +400,95 @@
 
     <!-- --------------------------- Footer ---------------------------------------- -->
 
-    
-    
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <!-- <div class="nav-brand">
+                <a href="#" class="text-black">binuda kalugalage</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div> -->
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link" data-aos="fade-in" data-aos-delay="100" >
+                        <button class="nav">
+                            blog
+                            <i class="fab fa-book"></i>  
+                            <!-- <img src="https://site-assets.plasmic.app/f6d689244859045e347b55c90b9ad54a.svg">  -->
+                        </button>                     
+                        <button class="nav">
+                            github
+                            <i class="fab fa-github"></i>
+                        </button>
+                        <button class="nav">
+                            linkedin
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                        <button class="nav">
+                            twitter
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button class="blk">
+                            contact me!
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <footer class="footer">
         <div class="container">
-            <div class="follow">
-                <li class="social-link" data-aos="fade-in" data-aos-delay="100" >
-
-                    <button class="social" onclick="location.href='/blog.html'" type="button">
-                        <i class="fa-solid fa-feather"></i>  
-                    </button>                     
-                    <button class="social" onclick="location.href='https://www.github.com/binudakal'" type="button">
+            <!-- <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+                    iure, autem nulla tenetur repellendus.</p>
+            </div> -->
+            <!-- <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="./assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="./assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card6.png" alt="insta4">
+                    <img src="./assets/instagram/thumb-card7.png" alt="insta5">
+                    <img src="./assets/instagram/thumb-card8.png" alt="insta6">
+                </div>
+            </div> -->
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow me</h2>
+                <!-- <p>Let us be Social</p> -->
+                <div>
+                    <button class = "nav" 
+                        onclick="location.href='https://www.github.com/binudakal'" type="button">
+                        github
                         <i class="fab fa-github"></i>
                     </button>
-                    <button class="social" onclick="location.href='https://linkedin.com/in/binuda-kalugalage-577657170'" type="button">
-                        <i class="fab fa-linkedin"></i>
-                    </button>
-                    <button class="social" onclick="location.href='https://twitter.com/binudakal'" type="button">
-                        <i class="fab fa-twitter"></i>
-                    </button>
-                    <button class="social" onclick="location.href='mailto:work.bjk@gmail.com'" type="button">
-                        <i class="fa-solid fa-envelope"></i>
-                    </button>
-
-                </li>
-            </div>
-                <div class="quote-box" data-aos="fade-in" data-aos-delay="100">
-                    <button class="quote" id="quote-btn" data-aos="fade-in">
-                        <p id="quote"> </p>
-                        <small id="author"> </small>
-                    </button>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
-
-
-
-            <script>
-                // // AUTOLOAD A QUOTE
-                // fetch("https://stoic-quotes.com/api/quote")
-                //     .then(res => res.json())
-                //     .then(data => {
-                //         quote.innerHTML = `"${data.text}"`;
-                //         author.innerHTML = `- ${data.author}`;
-
-                //     });
-
-                // //LOAD ON CLICK
-                // const quote = document.querySelector("#quote");
-                // const author = document.querySelector("#author");
-                // const btn = document.querySelector("#quote-btn");
-                
-                // btn.addEventListener("mouseup", getQuote);
-
-                // function getQuote() {
-                //     fetch("https://stoic-quotes.com/api/quote")
-                //     .then(res => res.json())
-                //     .then(data => {
-                //         quote.innerHTML = `"${data.text}"`;
-                //         author.innerHTML = `- ${data.author}`;
-
-                //     })
-                    
-                // }
-            </script>
-            
+            </div>
         </div>
-
+        <!-- <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2019 All rights reserved | made by
+                <a href="www.youtube.com/c/dailytuition" target="_black">Daily Tuition <i class="fab fa-youtube"></i>
+                    Channel</a>
+            </h4>
+        </div> -->
         <div class="move-up">
-            <span><i class="fas fa-arrow-up fa-2x"></i></span>
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
         </div>
     </footer>
 
@@ -502,11 +503,8 @@
     <!-- ------------ AOS js Library  ------------------------- -->
     <script src="./js/aos.js"></script>
 
-    <!-- ------------ NPM Packages js  ------------------------- -->
-    <script src="C:\Users\Binuda Kalugalage\Desktop\DiscordBot\node_modules\node-google-translate-skidz"></script>
-
     <!-- Custom Javascript file -->
-    <script src="./js/blog.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

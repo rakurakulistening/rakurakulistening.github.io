@@ -22,6 +22,7 @@ html, body{
 
     /*      theme font-family   */
     --Inter: 'Inter', cursive;
+    --EBGara: 'EBGara', cursive;
     --Abel: 'Abel', cursive;
     --Anton: 'Anton', cursive;
     --Josefin : 'Josefin', cursive;
@@ -50,7 +51,8 @@ ul{
 
 h1{
     font-family: var(--Inter);
-    font-size: 3.125rem;
+    /* font-size: 3.125rem; */
+    /* font-size: 312%; */
 }
 
 h2{
@@ -60,8 +62,38 @@ h2{
 
 h3{
     font-family: var(--Inter);
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
 }
+
+
+/* typewriter effect */
+
+#typing {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+    
+	width: 1px;
+	height: 22px;
+
+	background-color: white;
+	/* animation: blink .75s step-end infinite; */
+}
+
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: white; 
+	}
+}
+
 
 button.btn{
     border: none;
@@ -108,6 +140,25 @@ button.nav:hover{
 
 }
 
+button.quote{
+    border: none;
+    background-color: black;
+    color:white;
+    width: 40rem;
+    height: auto;
+    text-align: left;
+    font-size: 1.1rem;
+    font-family: var(--GB);
+    padding: 1rem 0rem 1rem 0rem;
+    /* padding: 0rem 0rem 0rem 0rem; */
+    cursor: pointer;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+
+}
+
 span{
     font-family: var(--Inter);
 }
@@ -121,8 +172,12 @@ span{
 }
 
 p{
-    font-family: var(--Inter);
-    color: var(--text-light);
+    transition: fadein;
+
+    font-family: var(--EBGara);
+    color: rgba(255, 255, 255, 0.781);
+    /* color: var(--text-light); */
+    /* margin: 0rem 0rem 0rem 0rem; */
 }
 
 /* ------x------- Global Classes -------x-------*/
@@ -162,6 +217,7 @@ p{
 }
 
 .nav .toggle-collapse .toggle-icons i{
+    cursor: pointer;
     font-size: 1.9rem;
     color: black;
 }
@@ -172,11 +228,14 @@ p{
 
 .nav .nav-items{
     display: flex;
-    margin: 0;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 1rem 0.4rem 0rem 0rem;
 }
 
 .nav .nav-items .nav-link{
-    padding: 1rem 0.4rem;
+    /* background-color: teal; */
+
+    /* padding: 1rem 0.4rem 0rem 0rem; */
     font-size: 1.1rem;
     position: relative;
     font-family: var(--Inter);
@@ -193,8 +252,7 @@ p{
 }
 
 .nav .nav-brand a{
-    font-size: 1.6rem;
-    padding: 1rem 2.4rem;
+    padding: 1.1rem 3.4rem;
     display: block;
     font-family: var(--Inter);
     font-size: 2.3rem;
@@ -219,43 +277,49 @@ p{
 
 /* ----------------- Main Content----------- */
 
-/* --------------- Blog title ---------------- */
-
-main .blog-title{
+/* --------------- Site title ---------------- */
+main .site-background{
     background: url("https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-1.2.1&q=85&fm=jpg");
+    background: brightness(10%);
     background-size: cover;
-    height: 80vh;
+    /* height: 80vh; */
+    height: 40vw;
     display: flex;
     justify-content: left;
+
+    margin: auto;
+    align-items: center;
     color: white;
-    /* padding: 3rem 0rem 0rem 3rem; */
+    /* padding-left: 3.8rem; */
+    padding-left: 4.3vw;
+
+
 }
 
-main .blog-title{
-    padding-top: 5rem;
-    text-align: left;
-    color: var(--white);
-}
-
-main .blog-title h1{
-    font-weight: bold;
+main .site-title h1{
+    /* font-weight: bold; */
     margin: .3rem;
-    margin-left: 3.8rem;
+    /* margin-left: 3.8rem; */
+    /* font-size: 312%; */
+    font-size: 8.9vh;
+    /* font-size: 3.7rem; */
+    /* display: flex; */
 }
 
-main .blog-title h3{
+main .site-title h3{
     font-weight: normal;
     margin: .3rem;
-    margin-left: 3.8rem;
+    /* margin-left: 3.8rem; */
+    font-size: 1.6vw;
 }
 
-main .blog-title .btn{
-    margin-left: 3.8rem;
+main .site-title .btn{
+    /* margin-left: 3.8rem; */
     margin-top: 2rem;
     background: var(--sky);
 }
 
-main .blog-title .btn:hover{
+main .site-title .btn:hover{
     /* background: transparent; */
     /* border: 2px solid var(--white); */
     box-shadow: inset 0px 0px 0px 2px white;
@@ -285,18 +349,23 @@ main .project h1{
 
 main .project h2{
     font-weight: bold;
-    /* margin: .3rem; */
-    margin-top: .3rem;
-    margin-left: 1.2rem;
+    padding: 0.3rem 0rem 0rem 1.2rem;
+    margin: 0.3rem 0rem 0rem 0rem;
     font-size: xx-large;
     text-align: left;
 }
 
 main .project h3{
     font-weight: normal;
-    margin: .3rem;
-    margin-left: 1.2rem;
+    margin: 1.3rem;
     text-align: left;
+}
+
+main .project h4{
+    font-weight: normal;
+    padding: 0rem 0rem 0rem 1.3rem;
+    text-align: left;
+    margin: 0rem 0rem 2rem 0rem;
 }
 
 main .project .project-post{
@@ -309,7 +378,8 @@ main .project-post .project-content{
     text-align: center;
     /* width: 50%; */
     width: fit-content;
-    margin: 0rem 2rem;
+    margin: 0rem 1rem;
+    cursor: grab;
     /* border-radius: 1rem; */
     /* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); */
 }
@@ -321,8 +391,7 @@ main .project-content .project-pane{
     background-color: white;
 }
 
-main .project-content .project-pane .project-title{
-    
+main .project-heading{
     /* box-shadow: inset 0px 0px 0px 4px black;
     box-sizing: border-box;   
     border-top-left-radius: 1rem;
@@ -338,15 +407,14 @@ main .project-content .project-pane .project-title{
 
 main .project-content .project-pane .project-image{
     padding: 0rem 1rem 1rem 1rem;
-
+    /* max-height: 120px; */
+    height: 120px;
+    width: 100px;
+    /* object-fit: scale-down; */
 }
 
 main .project-content .project-pane .project-desc{
-    /* box-shadow: inset 0px 0px 0px 4px black;
-    box-sizing: border-box;   
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;     */
-    padding: 1rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
     background-color: #F2F2F7;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -360,12 +428,16 @@ main .project-content .project-pane .project-desc{
     /* padding: 0.1rem 0; */
 }
 
+/* main .project-content .project-pane h4{
+    padding: 0rem 0rem 0rem 0rem;
+    color: red;
+} */
+
 main .project-content .btn-project{
     padding: .7rem 2rem;
     background: black;
     color: white;
-    margin: .5rem;
-    margin-bottom: 0.8rem;
+    margin: 1rem 0rem 0.8rem 0rem;
     width: 80%;
 }
 
@@ -558,8 +630,8 @@ main .post-content .post-title a{
 /* ----------------- Footer --------------------- */
 
 footer.footer{
-    height: 100%;
-    background: var(--bg-color);
+    height: 10%;
+    background-color: black;
     position: relative;
 }
 
@@ -574,8 +646,38 @@ footer.footer .container > div{
     padding: 3rem .9rem;
 }
 
-footer.footer .container h2{
-    color: var(--white);
+footer.footer .container l2{
+    color: white;
+    font-size: 3rem;
+    padding: 5rem 0rem 0rem 20rem;
+}
+
+button.social{
+    /* color: white;
+    background-color: skyblue;
+    font-size: 3rem;
+    border-radius: 1rem;
+    width: fit-content;
+    height: auto; */
+    border: none;
+    /* width: 50px;
+    height: 50px; */
+    /* padding: 1.4rem 0rem 0rem 0.6rem; */
+    margin: 1rem 1.2rem 0rem 0rem;
+    background-color: transparent;
+    color: white;
+    /* border-radius: .5rem; */
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+footer.footer .quote-box{
+    /* background-color: red; */
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0rem 0rem 0rem 0rem;
 }
 
 /* footer.footer .newsletter .form-element{
@@ -606,9 +708,45 @@ footer.footer .container h2{
     margin: .3rem .4rem;
 } */
 
-footer.footer .follow div i{
+/* footer.footer .follow div i{
     color: var(--white);
     padding: 0 .4rem;
+    width: fit-content;
+} */
+
+footer.footer .follow div i{
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    color: var(--white);
+    padding: 0 .4rem 0rem 0rem;
+    width: fit-content;
+    /* cursor: pointer; */
+}
+
+footer.footer .spacer div i{
+    background-color: red;
+    width: 100px;
+}
+
+footer.footer .social-link{
+    /* background-color: teal;
+
+    font-size: 1.1rem;
+    width:18rem;
+    font-family: var(--Inter);
+
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    padding: 0rem 0.4rem 0rem 0rem; */
+
+    /* color:white; */
+    width: 26rem;
+    height: auto;
+    padding: 2rem 0rem 1rem 0rem;
+    cursor: default;
+
 }
 
 /* footer.footer .rights{
