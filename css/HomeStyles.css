@@ -76,7 +76,7 @@ h3{
 #cursor {
 	display: inline-block;
 	vertical-align: middle;
-    
+    justify-content: left;
 	width: 1px;
 	height: 22px;
 
@@ -93,7 +93,7 @@ h3{
 		background-color: white; 
 	}
 }
-
+  
 
 button.btn{
     border: none;
@@ -255,7 +255,9 @@ p{
     padding: 1.1rem 3.4rem;
     display: block;
     font-family: var(--Inter);
-    font-size: 2.3rem;
+    /* font-size: 6.59vh; */
+    font-size: 3.03vw;
+    /* font-size: 2.3rem; */
     font-weight: bold;
     color: black;
 }
@@ -300,8 +302,8 @@ main .site-title h1{
     margin: .3rem;
     /* margin-left: 3.8rem; */
     /* font-size: 312%; */
-    font-size: 8.9vh;
-    /* font-size: 3.7rem; */
+    font-size: 4.1vw;
+    /* font-size: 3.11rem; */
     /* display: flex; */
 }
 
@@ -337,6 +339,7 @@ main .project{
     height: 100vh;
     width: 100%;
     background-size: 65%;
+    justify-content: space-between;
 }
 
 main .project h1{
@@ -372,6 +375,17 @@ main .project .project-post{
 }
 
 main .project-post .project-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* width: 50%; */
+    width: fit-content;
+    margin: 0rem 1rem;
+    /* cursor: grab; */
+    /* border-radius: 1rem; */
+    /* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); */
+}
+main .project-post .project-content:click{
     display: flex;
     flex-direction: column;
     text-align: center;
