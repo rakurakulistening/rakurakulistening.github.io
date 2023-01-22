@@ -41,8 +41,9 @@ a{
 
 .flex-row{
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;    
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 ul{
@@ -112,6 +113,7 @@ button.blk{
     padding: 0.9rem 1.5rem;
     background-color: black;
     color: white;
+    margin-right: 3px;
     border-radius: .5rem;
     font-size: 1rem;
     font-family: var(--Inter);
@@ -123,10 +125,13 @@ button.nav{
     width: fit-content;
     height: fit-content;
     padding: 1rem 1.5rem;
+    margin-right: 5px;
     border-radius: .5rem;
     font-size: 1rem;
     font-family: var(--Inter);
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 button.nav:hover{
@@ -185,6 +190,8 @@ p{
 /* --------------- navbar ----------------- */
 
 .nav{
+    display: flex;
+    justify-content:space-between;
     background: white;
     padding: 0rem 0.4rem;
     height: 4.988rem;
@@ -194,6 +201,14 @@ p{
 
 .nav .nav-menu{    
     justify-content: space-between;
+}
+
+.nav .nav-text{
+    padding-right: 5px;
+}
+
+.nav .nav-icons{
+    color: black;
 }
 
 /* .nav .h2{
@@ -228,13 +243,15 @@ p{
 
 .nav .nav-items{
     display: flex;
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 1rem 0.4rem 0rem 0rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav .nav-items .nav-link{
     /* background-color: teal; */
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     /* padding: 1rem 0.4rem 0rem 0rem; */
     font-size: 1.1rem;
     position: relative;
@@ -253,6 +270,7 @@ p{
 
 .nav .nav-brand a{
     padding: 1.1rem 3.4rem;
+    width: fit-content;
     display: block;
     font-family: var(--Inter);
     /* font-size: 6.59vh; */
@@ -302,8 +320,9 @@ main .site-title h1{
     margin: .3rem;
     /* margin-left: 3.8rem; */
     /* font-size: 312%; */
-    font-size: 4.1vw;
+    /* font-size: 4.1vw; */
     /* font-size: 3.11rem; */
+    font-size: 49.76px;
     /* display: flex; */
 }
 
@@ -738,7 +757,7 @@ footer.footer .follow div i{
 }
 
 footer.footer .spacer div i{
-    background-color: red;
+    /* background-color: red; */
     width: 100px;
 }
 
@@ -812,14 +831,52 @@ footer.footer .move-up span:hover{
 
 /*              Viewport less then or equal to 750px            */
 
-@media only screen and (max-width: 750px){
-    .nav .nav-menu, .nav .nav-items{
+/* @media only screen and (max-width: 750px){ */
+    @media only screen and (max-width: 810px){
+
+    /* .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
 
     .nav .toggle-collapse{
         display: initial;
+    } */
+
+    .nav-text{
+        display: none;
     }
+    
+    button.nav{
+        border: none;
+        width: fit-content;
+        height: fit-content;
+        margin-right: 5px;
+        border-radius: .5rem;
+        font-size: 25px;
+        font-family: var(--Inter);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    /* .nav-icons{
+        font-size: 25px;
+    } */
+
+    button.nav:hover{
+        border: none;
+        width: fit-content;
+        height: fit-content;
+        margin-right: 5px;
+        border-radius: .5rem;
+        font-size: 25px;
+        font-family: var(--Inter);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        background-color: white;
+    }
+    
 
     main .site-content{
         grid-template-columns: 100%;
@@ -855,9 +912,9 @@ footer.footer .move-up span:hover{
         text-align: center;
     }
 
-    nav .toggle-collapse{
+    /* nav .toggle-collapse{
         width: 80% !important;
-    }
+    } */
 
 }
 
