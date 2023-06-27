@@ -206,7 +206,7 @@ $(document).ready(function () {
             };
 
 
-            const webhookUrl = 'https://discord.com/api/webhooks/1123222454354063440/e_78ggT0dZs7q4uDjJSQCO8o9ZRfF4Gh4zo9I9bgekgSp0uugQRtvfZgDzb7YwzgdL7K';
+            const webhookUrl = 'https://discord.com/api/webhooks/1123290601325084771/4CSLlFUxT9f7-zFa7-yr2pBLFlIYIxsU_2lWTambsZ482fKCQTC8Xtj_t74Eta3DHNwC';
 
             fetch(webhookUrl, {
             method: 'POST',
