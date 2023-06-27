@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     //set discord auth link in buttons
     for(const signIn of document.querySelectorAll("#sign-in")){
-        signIn.setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakuraku.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'")
+        signIn.setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakurakulistening.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'")
     }
 
     //#region navigation
