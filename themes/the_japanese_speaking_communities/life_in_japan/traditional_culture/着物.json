@@ -1,0 +1,31 @@
+{
+    "subtopic": "着物",
+    "description": "Listen to the conversation between Anne and Rie then answer the questions in English.",
+    "audio": "/resources/audio/task73.mp3",
+    "questions": [
+        "Where is Rie going on the 1st January?",
+        "Why can Rie lend Anne a kimono?",
+        "Why is Anne worried about borrowing Rie’s kimono?"
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },
+    "solutions": [
+        "She is going to visit a shrine with her family.", 
+        "Because she has two kimonos", 
+        "Because Anne is taller than Rie. (Rie said that her kimono is too big for herself, so it should fit Anne well.)"
+    ],
+    "transcript":   [
+                "アン：もうすぐお正月ですね。",
+                "りえ：そうですね。アンさんはお正月に何をしますか。",
+                "アン：まだ、分かりません。りえさんは？",
+                "りえ：私は、一日の朝に家族と神社にはつもうでに行くつもりです。アンさんもいっしょに行きませんか。",
+                "アン：え？はつもうで？いいですね。でも、私は着物を持っていません。",
+                "りえ：じゃ、私は二つ着物をも持っているから、かしてあげますよ。",
+                "アン：ほんとう。うれしい。でも、その着物は私にあいますか。",
+                "りえ：だいじょうぶです。私には大きすぎますから、アンさんにあうと思いますよ。",
+                "アン：そうですか。ありがとう。お正月が楽しみです。"
+    ]
+
+}

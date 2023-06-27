@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>らくらく</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/svgs/solid/house.svg">
+
+    <!-- Font Awesome Icons -->
+    <!-- <link rel="stylesheet" href="./css/all.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
+    
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="/css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="/css/HomeStyles.css">
+    <link rel="stylesheet" href="/css/TopicStyles.css">
+
+</head>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+    
+    <nav class="nav">
+            <div class="nav-brand">
+                <a href="#" data-aos="fade-in" data-aos-delay="100" >らくらく</a>
+            </div>
+            
+                <div class="nav-items">
+                    <li class="nav-link" data-aos="fade-in" data-aos-delay="100" >
+                        <button class="nav" type="button">
+                            <img id="avatar" class="pfp" width="25px" height="25px"></img>
+                            <a id="name" class="nav-text"></a>
+                        </button>    
+                        <button class="nav" onclick="location.href='/themes/theme.html'" type="button">
+                            <a class="nav-text">listening</a>
+                            <i class="fa-solid fa-chevron-down"></i>  
+                        </button>                     
+                        <button class="nav" onclick="location.href='/activities/activities.html'" type="button">
+                            <a class="nav-text">activities</a>
+                            <i class="fa-solid fa-chevron-down"></i>  
+                        </button>
+                        <button class="nav" onclick="location.href='/about.html'" type="button">
+                            <a class="nav-text">about</a>
+                        </button>
+                    </li>
+                </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+        <!------------------------ Site Title ---------------------->
+
+        <section class="site-background">
+            <div class="site-tasks" data-aos="fade-in" data-aos-delay="100">
+                <div id="location" class="page-location"></div>
+                <h2 id="topic"></h2>
+                <div id="task-container"> </div>
+                <br>
+            </div>
+        </section>
+    </main>
+
+    
+    
+    <footer class="footer">
+        <div class="container">
+            
+            <div class="quote-box" data-aos="fade-in" data-aos-delay="100">
+                <a class="footer">  © 2004 The Melbourne Centre for Japanese Language Education. All rights reserved. </a>
+            </div>
+
+            
+        </div>
+    </footer>
+
+
+    <!-- Jquery Library file -->
+    <!-- <script src="/js/Jquery3.4.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="/js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="/js/topic.js"></script>
+    <!-- <script src="/js/task.js"></script> -->
+
+</body>
+
+</html>

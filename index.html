@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Binuda Kalugalage</title>
+    <title>らくらく</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/svgs/solid/house.svg">
 
     <!-- Font Awesome Icons -->
@@ -13,10 +13,7 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
-    
-    <!-- --------- Owl-Carousel ------------------->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
 
     <!-- ------------ AOS Library ------------------------- -->
     <link rel="stylesheet" href="./css/aos.css">
@@ -31,45 +28,29 @@
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
     
     <nav class="nav">
-        <div class="nav-menu flex-row">
             <div class="nav-brand">
-                <a href="#" data-aos="fade-in" data-aos-delay="100" >binuda kalugalage</a>
+                <a href="/index.html" data-aos="fade-in" data-aos-delay="100" >らくらく</a>
             </div>
-            <!-- <div class="toggle-collapse">
-                <div class="toggle-icons">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div> -->
-            <!-- <div>ewifvefbwe</div> -->
-            <!-- <div> -->
+            
                 <div class="nav-items">
                     <li class="nav-link" data-aos="fade-in" data-aos-delay="100" >
-                        <button class="nav" onclick="location.href='/blog.html'" type="button">
-                            <a class="nav-text">blog</a>
-                            <i class="fa-solid fa-feather"></i>  
-                            <!-- <img src="https://site-assets.plasmic.app/f6d689244859045e347b55c90b9ad54a.svg">  -->
+                        <button id="sign-in" class="nav" type="button">
+                            <a class="nav-text">sign in</a>
+                            <i class="fa-brands fa-discord"></i>  
+                        </button>      
+                        <button class="nav" onclick="location.href='/themes/theme.html'" type="button">
+                            <a class="nav-text">listening</a>
+                            <i class="fa-solid fa-chevron-down"></i>  
                         </button>                     
-                        <button class="nav" onclick="location.href='https://www.github.com/binudakal'" type="button">
-                            <a class="nav-text">github</a>
-                            <i class="fab fa-github"></i>
+                        <button class="nav" onclick="location.href='/activities/activities.html'" type="button">
+                            <a class="nav-text">activities</a>
+                            <i class="fa-solid fa-chevron-down"></i>  
                         </button>
-                        <button class="nav" onclick="location.href='https://linkedin.com/in/binuda-kalugalage-577657170'" type="button">
-                            <a class="nav-text">linkedin</a>
-                            <a class="nav-icons">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </button>
-                        <button class="nav" onclick="location.href='https://twitter.com/binudakal'" type="button">
-                            <a class="nav-text">twitter</a>
-                            <i class="fab fa-twitter"></i>
-                        </button>
-                        <button class="blk" onclick="location.href='mailto:work.bjk@gmail.com'" type="button">
-                            contact me!
+                        <button class="nav" onclick="location.href='/about.html'" type="button">
+                            <a class="nav-text">about</a>
                         </button>
                     </li>
                 </div>
-            <!-- </div> -->
-        </div>
     </nav>
 
     <!-- ------------x---------------  Navigation --------------------------x------------------- -->
@@ -82,342 +63,29 @@
 
         <section class="site-background">
             <div class="site-title" data-aos="fade-in" data-aos-delay="100">
-                <h1>hey, I'm Binuda - a <br>
-                    student from Melbourne 
-                </h1>
-                <br>
-                <!-- <h3>I've developed applications in Python, Node.js and C#. <br>
-                    I also have experience with .NET and the Unity game engine.<br>
-                    I am currently working with Node.js to program Discord bots, and C# to create <br>
-                    mobile applications through Unity.
-                </h3> -->
-                <h3 id="typing"></h3><div id="cursor"></div>
-                <br>
-                <button class="btn" onclick="location.href='/blog.html'" type="button">
-                    my blog → 
-                </button>
-
+                <div>
+                    <h1 id="typing">listening exercises for <br>
+                        senior school students of Japanese 
+                    </h1>
+                    <h1 id="cursor"></h1>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div>
+                    <button id="sign-in" class="btn" type="button">
+                        始める → 
+                    </button>
+                    <!-- <button class="btn" onclick="location.href='/themes/theme.html'" type="button">
+                        始める → 
+                    </button> -->
+                </div>
+                    
             </div>
+            
         </section>
 
         <!------------x----------- Site Title ----------x----------->
-
-        <!-- --------------------- project Carousel ----------------- -->
-
-        <section>
-            <div class="project">
-                <div class="container">
-                    <div class="owl-carousel owl-theme project-post">
-
-                        <div class="project-content" data-aos="fade-right" data-aos-delay="200">
-                            <div class="project-pane">
-                                <div class="project-heading">
-                                <h2>rTex-node</h2>
-                                    <h4>npmjs 🡕</h4>
-                                </div>
-                                <div class="project-image">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="rtex">
-                                </div>
-                                <div class="project-desc">
-                                    a Node.js wrapper for DXsmiley's rTeX
-                                    <button class="btn btn-project" onclick="location.href='https://www.npmjs.com/package/rtex-node'">View on npmjs 🡕</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="project-content" data-aos="fade-right" data-aos-delay="200">
-                               <div class="project-pane">
-                                    <div class="project-heading">
-                                        <h2>JavaScript projects</h2>
-                                        <h4>github 🡕</h4>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="/assets/project-images/Unofficial_JavaScript_logo_120h.png" alt="post-1">
-                                    </div>
-                                    <div class="project-desc">
-                                        mostly experimentation with APIs
-                                        <button class="btn btn-project">View on GitHub 🡕</button>
-                                    </div>
-                                </div>      
-                        </div>
-
-                        <div class="project-content" data-aos="fade-right" data-aos-delay="200">
-                            <div class="project-pane">
-                                <div class="project-heading">
-                                    <h2>WinUI projects</h2>
-                                    <h4>github 🡕</h4>
-                                </div>
-                                <div class="project-image">
-                                    <img src="/assets/project-images/winui_logo_120h.png" alt="post-1">
-                                </div>
-                                <div class="project-desc">
-                                    WinUI ports of VB.Net programs
-                                    <button class="btn btn-project">View on GitHub 🡕</button>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="project-content" data-aos="fade-right" data-aos-delay="200">
-                            <div class="project-pane">
-                                <div class="project-heading">
-                                <h2>rTex-node</h2>
-                                    <h4>npmjs 🡕</h4>
-                                </div>
-                                <div class="project-image">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="rtex">
-                                </div>
-                                <div class="project-desc">
-                                    a Node.js wrapper for DXsmiley's rTeX
-                                    <button class="btn btn-project">View on GitHub 🡕</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-   
-                    <div class="owl-navigation">
-                        
-                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
-                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
-                    </div>
-                    
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- ----------x---------- project Carousel --------x-------- -->
-
-        <!-- ---------------------- Site Content -------------------------->
-<!-- 
-        <section class="container">
-            <div class="site-content">
-                <div class="posts">
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/blog-post/blog1.png" class="img" alt="project1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14, 2019</span>
-                                <span>2 Commets</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">Why should boys have all the fun? it's the women who are making india an
-                                alcohol-loving contry</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/blog-post/blog2.png" class="img" alt="project1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 16, 2019</span>
-                                <span>7 Commets</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">Why should boys have all the fun? it's the women who are making india an
-                                alcohol-loving contry</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/blog-post/blog3.png" class="img" alt="project1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 19, 2019</span>
-                                <span>5 Commets</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">New data recording system to better analyse road accidents</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/blog-post/blog4.png" class="img" alt="project1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
-                                <span>12 Commets</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">New data recording system to better analyse road accidents</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="pagination flex-row">
-                        <a href="#"><i class="fas fa-chevron-left"></i></a>
-                        <a href="#" class="pages">1</a>
-                        <a href="#" class="pages">2</a>
-                        <a href="#" class="pages">3</a>
-                        <a href="#"><i class="fas fa-chevron-right"></i></a>
-                    </div>
-                </div>
-                <aside class="sidebar">
-                    <div class="category">
-                        <h2>Category</h2>
-                        <ul class="category-list">
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
-                                <a href="#">Software</a>
-                                <span>(05)</span>
-                            </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
-                                <a href="#">Techonlogy</a>
-                                <span>(02)</span>
-                            </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
-                                <a href="#">Lifestyle</a>
-                                <span>(07)</span>
-                            </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
-                                <a href="#">Shopping</a>
-                                <span>(01)</span>
-                            </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="500">
-                                <a href="#">Food</a>
-                                <span>(08)</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="popular-post">
-                        <h2>Popular Post</h2>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-project-1.jpg" class="img" alt="project1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-project-2.jpg" class="img" alt="project1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-project-3.jpg" class="img" alt="project1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-project-4.jpg" class="img" alt="project1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-project-5.jpg" class="img" alt="project1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
-                        <h2>Newsletter</h2>
-                        <div class="form-element">
-                            <input type="text" class="input-element" placeholder="Email">
-                            <button class="btn form-btn">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="popular-tags">
-                        <h2>Popular Tags</h2>
-                        <div class="tags flex-row">
-                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="300">travel</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="400">illustration</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="500">design</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="600">lifestyle</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="700">love</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="800">project</span>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </section> -->
-
-        <!-- -----------x---------- Site Content -------------x------------>
 
     </main>
 
@@ -430,70 +98,25 @@
     
     <footer class="footer">
         <div class="container">
-            <div class="follow">
-                <li class="social-link" data-aos="fade-in" data-aos-delay="100" >
 
-                    <button class="social" onclick="location.href='/blog.html'" type="button">
-                        <i class="fa-solid fa-feather"></i>  
-                    </button>                     
-                    <button class="social" onclick="location.href='https://www.github.com/binudakal'" type="button">
-                        <i class="fab fa-github"></i>
-                    </button>
-                    <button class="social" onclick="location.href='https://linkedin.com/in/binuda-kalugalage-577657170'" type="button">
-                        <i class="fab fa-linkedin"></i>
-                    </button>
-                    <button class="social" onclick="location.href='https://twitter.com/binudakal'" type="button">
-                        <i class="fab fa-twitter"></i>
-                    </button>
-                    <button class="social" onclick="location.href='mailto:work.bjk@gmail.com'" type="button">
-                        <i class="fa-solid fa-envelope"></i>
-                    </button>
+            <!-- <div class="quote-box" data-aos="fade-in" data-aos-delay="100">
+                <button class="quote" id="quote-btn" data-aos="fade-in">
+                    <p id="quote"> </p>
+                    <small id="author"> </small>
+                </button>
+            </div> -->
 
-                </li>
+            <div class="quote-box" data-aos="fade-in" data-aos-delay="100">
+                <a class="footer">  © 2004 The Melbourne Centre for Japanese Language Education. All rights reserved. </a>
             </div>
-                <div class="quote-box" data-aos="fade-in" data-aos-delay="100">
-                    <button class="quote" id="quote-btn" data-aos="fade-in">
-                        <p id="quote"> </p>
-                        <small id="author"> </small>
-                    </button>
-                </div>
 
 
-
-            <script>
-                // // AUTOLOAD A QUOTE
-                // fetch("https://stoic-quotes.com/api/quote")
-                //     .then(res => res.json())
-                //     .then(data => {
-                //         quote.innerHTML = `"${data.text}"`;
-                //         author.innerHTML = `- ${data.author}`;
-
-                //     });
-
-                // //LOAD ON CLICK
-                // const quote = document.querySelector("#quote");
-                // const author = document.querySelector("#author");
-                // const btn = document.querySelector("#quote-btn");
-                
-                // btn.addEventListener("mouseup", getQuote);
-
-                // function getQuote() {
-                //     fetch("https://stoic-quotes.com/api/quote")
-                //     .then(res => res.json())
-                //     .then(data => {
-                //         quote.innerHTML = `"${data.text}"`;
-                //         author.innerHTML = `- ${data.author}`;
-
-                //     })
-                    
-                // }
-            </script>
             
         </div>
 
-        <div class="move-up">
+        <!-- <div class="move-up">
             <span><i class="fas fa-arrow-up fa-2x"></i></span>
-        </div>
+        </div> -->
     </footer>
 
     <!-- -------------x------------- Footer --------------------x------------------- -->
@@ -501,8 +124,7 @@
     <!-- Jquery Library file -->
     <script src="./js/Jquery3.4.1.min.js"></script>
 
-    <!-- --------- Owl-Carousel js ------------------->
-    <script src="./js/owl.carousel.min.js"></script>
+   
 
     <!-- ------------ AOS js Library  ------------------------- -->
     <script src="./js/aos.js"></script>

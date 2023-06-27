@@ -1,0 +1,31 @@
+{
+    "number": "5",
+    "subtopic": "付き合い",
+    "description": "Listen to the conversation between Mr. Yamada and Mr. Tanaka and answer the questions in English.",
+    "audio": "/resources/audio/task5.mp3",
+    "questions": [
+        "What is wrong with Mr. Tanaka?",
+        "What time did Mr. Tanaka arrive home last night?",
+        "Why does he live there?"
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "He is tired because he drank too much alcohol last night.",
+        "He arrived home at two thirty. (He was drinking till 12.30 at the pub near his office and took two hours to get home.)",
+        "Because rent is cheaper if he lives in an area away from the city."
+    ],
+    "transcript" : [
+        "山田：　田中さん、どうしたんですか。",
+        "田中：　あ、山田さん。おはようございます。さくばんちょとおさけを飲みすぎました。",
+        "山田：　また、ぶちょうのつきあいですか。",
+        "田中：　ええ。会社の近くで十二時半まで飲んでいましたから。",
+        "山田：　十二時半？だから、つかれているんですね。",
+        "田中：　ええ。それに、家から会社まで２時間かかります。",
+        "山田：　2時間はちょっと遠すぎますね。",
+        "田中：　ええ。でも、町の近くの家はレントが高いですから。",
+        "山田：　そうですね。町からとおいところに住めば、レントが安いですからね。"
+    ]
+}

@@ -1,0 +1,28 @@
+{ 
+    "theme": "The Changing World",
+    "topic": "World of work",
+    "subtopics": [ 
+        {
+            "name": "Casual work",
+            "tasks": ["セーフウェイ", "今日のアルバイト", "マクドナルド"],
+            "lang": ["英語で", "英語で", "英語で"],
+            "images": [
+                "https://1.bp.blogspot.com/-MSNPmKYMvZA/V7wboszzSuI/AAAAAAAA9Po/EpxifwXKkg0INvNdbRKySFP3vpWGBvYZwCLcB/s800/job_kyuujinshi.png", 
+                "https://2.bp.blogspot.com/-d2B4qMNWJQ4/Ur1HmKS3oiI/AAAAAAAAcjM/yk8Xg3FJh04/s800/shopping_cart_woman.png",
+                "https://1.bp.blogspot.com/-U81eFajL7cA/UnyF7Z_ij7I/AAAAAAAAaXQ/sTMA0U5bp50/s800/tatemono_myhome.png"
+            ]
+        },
+        {
+            "name": "Men and women in the workforce",
+            "tasks" : ["転勤", "付き合い", "労働時間の短縮化", "仕事の変化", "女性の社会進出"],
+            "lang": ["英語で", "英語で", "英語で", "日本語で", "日本語で"],
+            "images" : [
+                "https://2.bp.blogspot.com/-dwIwj_MaGco/Ut0BT0TafPI/AAAAAAAAdWc/Dlht8FF_JBQ/s800/happy_family.png",
+                "https://1.bp.blogspot.com/-CZhDpH9AENw/WTd5T6ADZtI/AAAAAAABEuw/epxCOLW9e0QvxnGxHjquTneZkhotr294gCLcB/s800/travel_bus_train_student.png",
+                "https://3.bp.blogspot.com/-BLiLJIYE2vc/U57C5aPpYFI/AAAAAAAAheY/1BeTXgXYy2k/s800/akachan_bed.png",
+                "https://3.bp.blogspot.com/-BLiLJIYE2vc/U57C5aPpYFI/AAAAAAAAheY/1BeTXgXYy2k/s800/akachan_bed.png",
+                "https://3.bp.blogspot.com/-BLiLJIYE2vc/U57C5aPpYFI/AAAAAAAAheY/1BeTXgXYy2k/s800/akachan_bed.png"
+            ]
+        }
+    ]
+}

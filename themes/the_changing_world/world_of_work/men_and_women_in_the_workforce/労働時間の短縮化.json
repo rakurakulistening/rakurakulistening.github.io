@@ -1,0 +1,44 @@
+{
+    "number": "7",
+    "subtopic": "労働時間の短縮化",
+    "description": "Listen to the conversation between a newscaster and Mr. Tanaka and answer the questions in English.",
+    "audio": "/resources/audio/task7.mp3",
+    "questions": [
+        "What are the Japanese average annual working hours of both years they are talking about?",
+        "What are the two reasons that the working hours are decreasing?",
+        "What is the holiday recently introduced in Japan?",
+        "Which country has the largest number of annual holidays?",
+        "What is the difference in the average hours worked per day between France and Japan?"
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "2121 hours in 1987 and 1904 hours in 1994",
+        "One reason is that the number of the companies where the workers can have two days off a week has increased. The other is that the number of the people who stay at the office to work till late at night has decreased.",
+        "The Marine Day in July has been introduced.",
+        "Germany does.",
+        "Japanese people work an hour more than the French."
+    ],
+    "transcript" : [
+        "ニュース・キャスター：　ええと。では、次に、はたらく時間のへんかについてお知らせします。日本人がはたらく時間はだんだんみじかくなってきています。(Q1)１９８７年のへいきんてきな仕事をしている時間は、１年間で２１２１時間でした。しかし、１９９４年には、１９０４時間と、すくなくなりました。今日は、ゲストに東京大学の田中きょうじゅにいらしていただいています。田中きょうじゅ、こんにちは。",
+        "田中：こんにちは。",
+        "キャスター：えーと、なぜ、日本人のはたらく時間は、１９８７年の２１２１時間から、１９９４年の１９０４時間にへったのでしょうか。",
+        "田中：そうですね、二つりゆうがあると思います。まず、(Q2)だい一に、週に二回休みをとれる会社がふえたことです。",
+        "キャスター：なるほど。むかしは、日曜日だけ休みの会社が多かったですからね。",
+        "田中：ええ。でも、今は、ほとんどの人が土曜日と日曜日に休むことができます。そして、(Q2)だい二のりゆうは、夜おそくまで会社にのこってはたらく人がへったことです。",
+        "キャスター：うーん。会社は、夜おそくまではたらいてくれる人にお金をはらえないからですか。",
+        "田中：そうです。そして、さいきんは、しゅくじつや長い休みがふえていますからね。",
+        "キャスター：ええ、(Q3)七月の海の日が新しくできたし、五月のゴールデンウィークが長くなりましたよね。",
+        "田中：はい。それでも、まだまだ、休みの日はほかの国より少ないようです。",
+        "キャスター：そうなんですか。",
+        "田中：ええ。日本人は一年間で１２４日ぐらい休みます。でも、アメリカでは、１３２日ぐらい、フランスでは１３８日ぐらい１年に休むことができます。(Q4)ドイツが一番多くて、１４５日です。",
+        "キャスター：ドイツ人は１年に１４５日も休みがあるんですか。",
+        "田中：ええ。それに、日本人は１日に８時間ぐらいはたらいています。しかし、フランス人や、ドイツ人は１日に７時間しかはたらきません。",
+        "キャスター：そうですか。(Q5)日本人は、フランスやドイツの人より１日に１時間多くはたらいているんですね。",
+        "田中：ええ。日本人は、もっと休みをとらなければなりませんね。",
+        "キャスター：ええ、ほんとうに。田中きょうじゅ、今日はどうもありがとうございました。",
+        "田中：いいえ。ありがとうございました。"
+    ]
+}

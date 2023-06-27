@@ -1,0 +1,34 @@
+{
+    "number": "2",
+    "subtopic": "今日のアルバイト",
+    "description": "Listen to the conversation between Lisa and Akira and answer the questions in English.",
+    "audio": "/resources/audio/task2.mp3",
+    "questions": [
+        "Why is Lisa tired?",
+        "What is Lisa going to do next Saturday?",
+        "What does Akira want to do with Lisa next Saturday?"
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "Because she has just finished her part-time job and worked for 10 hours.",
+        "She is going to have a day off.",
+        "He wants to go movies."
+    ],
+    "transcript" : [
+        " リサ：  ああ、つかれた。",
+        "あきら：どうしたの。リサさん。",
+        "リサ：  今アルバイトがおわったところなの。今日は10時間もはたらいたのよ。",
+        "あきら：10時間？へええ、それはたいへんだったね。でも、土曜日はいつも5時間じゃないの。",
+        "リサ：  そうなの、でも、今日は二人も休んでいたの。だからいそがしかったの。",
+        "それに、いつもよりおきゃくさんが多くて、たいへんだったわ。",
+        "あきら：ああそう。それはついてなかったね。じゃ、(Q2)こんどの土曜日は休みをもらったら。",
+        "リサ：  それはいいアイディアね。そうするわ。",
+        "あきら：じゃ、かわりに、ぼくとえいがに行かない？",
+        "リサ：  えいが... 私先週行ったばかりなの、それに、すう学のテストが近いし...ごめん。",
+        "あきら：ああそう...じゃ、またこんど行こうね。",
+        "リサ：  そうね。"
+    ]
+}

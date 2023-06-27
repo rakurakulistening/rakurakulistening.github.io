@@ -1,0 +1,31 @@
+{
+    "number": "1",
+    "subtopic": "セーフウェイ",
+    "description": "Listen to the conversation between Anne and Rie then answer the questions in English.",
+    "audio": "/resources/audio/task1.mp3",
+    "questions": [
+        "What is Rie going to do in the summer holidays?",
+        "How much is the hourly pay?",
+        "Which days does Anne want to work? "
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "She is going to work part time at Safeway near her house.",
+        "It is 10 dollars but they pay more on weekends.",
+        "She wants to work only on weekend. (*She actually says that she wants to do this part time job if it is OK for her to work only on weekends.)"
+    ],
+    "transcript": [
+        "アン：もうすぐ夏休みですね。",
+        "りえ：そうですね。アンさんは夏休みに何をしますか。",
+        "アン：まだ、わかりません。りえさんは？",
+        "りえ：私は、近所のセーフウェイでアルバイトをするつもりです。アンさんもいっしょにしませんか。",
+        "アン：え...アルバイトですか。時きゅうはいくらですか。",
+        "りえ：ええと．．．たしか、一時間１０ドルだと思います。わるくないでしょ。",
+        "アン：そうですね。土曜日と日曜日はもっといいんでしょ。週まつだけでもいいのなら、やりたいです。",
+        "りえ：店長に聞いてみますが、だいじょうぶだと思いますよ。明日、いっしょに店長に会いに行きませんか。",
+        "アン：そうですね。行きましょう。"
+    ]
+}

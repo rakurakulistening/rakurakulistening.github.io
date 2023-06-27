@@ -1,0 +1,11 @@
+{
+    "subtopic": "ひな祭り",
+    "description": "Listen to the conversation then answer the questions in English.",
+    "audio": "/resources/audio/task74.mp3",
+    "questions": [
+        "When is Hinamatsuri?",
+        "What do people do to celebrate Hinamatsuri?",
+        "On what date are Aki and Lisa having this conversation?"
+    ],
+    "script":   "アン：もうすぐお正月ですね。"
+}

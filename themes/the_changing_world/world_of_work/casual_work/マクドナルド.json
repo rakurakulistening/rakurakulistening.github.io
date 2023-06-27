@@ -1,0 +1,25 @@
+{
+    "number": "3",
+    "subtopic": "マクドナルド",
+    "description": "Listen to the speech, welcoming new employees and answer the questions in English.",
+    "audio": "/resources/audio/task3.mp3",
+    "questions": [
+        "What is the name of John’s work?",
+        "What time are John’s breaks?",
+        "How many uniforms does he get?",
+        "What does he have to do after he finishes his work?"
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "It is McDonald's. ",
+        "They are from 3:00 to 3:30 and from 5:30 to 6:00.",
+        "He gets two uniforms.",
+        "He has to insert his time card to the machine. (He has to evaluate his time card.)"
+    ],
+    "transcript" : [
+        "ジョン君、ようこそマクドナルドへ。私は店長のボブです。ジョンくんが来てくれるのをたのしみにしていましたよ。じゃ、仕事を始める前に、少しせつめいをしましょう。これが、ジョンくんのタイムカードです。店に来たら、仕事を始める前にあのきかいに入れて下さい。せいふくを着るのは、その後でいいです。これがジョンくんのせいふくです。半そでと長そでが一まいずつあるので、好きなほうを着て下さい。休けい時間は3時から3時半までと5時半から6時までです。うらに、テレビとソファーがある休けい室があるので、使ってください。それから、仕事がおわったら、かならずまたタイムカードを入れてから帰ってください。そうしないと、ジョンくんが何時まではたらいたか分からないので。ハンバーガーの作り方は、後でふく店長のキャサリンがせつめいしてくれます。何かしつもんはありますか。"
+    ]
+}

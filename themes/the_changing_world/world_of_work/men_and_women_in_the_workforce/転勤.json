@@ -1,0 +1,28 @@
+{
+    "number": "4",
+    "subtopic": "転勤",
+    "description": "Listen to the conversation between Seiji and Kerry and answer the questions in English.",
+    "audio": "/resources/audio/task4.mp3",
+    "questions": [
+        "What are they talking about? Travel, shopping, hobby or transfer?",
+        "What does Kerry suggest Seiji do? Why?"
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "Transfer",
+        "She suggests he go to Osaka instead of resigning his job because it is difficult to find a new job and he has just bought a house with a loan."
+    ],
+    "transcript" : [
+        "せいじ：　あ…どうしよう。",
+        "ケリー：　せいじさん、どうしたの？",
+        "せいじ：　あっ、、、ケリーさん。(Q1)ボスに、「来月からおおさかではたらいてくれ」って言われたんだ。",
+        "ケリー：　えっ、来月から？東京からおおさかに行かなきゃならないの？ボスに、「行けません」って言ったら？",
+        "せいじ：　うん、「子どもが小さいからちょっと…」って言ったんだけど、 だめだった。ボスは、おおさかに行けないなら、くびだって。",
+        "ケリー：　「くび」って何ですか。",
+        "せいじ：　仕事をやめなければならないってこと。でも、ローンで家を買ったばかりだし、新しい仕事を見つけるのは大変だからね。",
+        "ケリー：　そうね。(Q2)家のローンをはらったり、ほかの仕事をさがしたりしなきゃならないなら、この仕事をやめないで、おおさかに行った方がいいかもね。"
+    ]
+}

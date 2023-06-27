@@ -1,2 +1,2 @@
-# binudakal.github.io
-My website
+# rakuraku.github.io
+らくらく

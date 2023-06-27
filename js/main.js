@@ -15,6 +15,11 @@ const responsive = {
 
 $(document).ready(function () {
 
+    //set discord auth link in buttons
+    for(const signIn of document.querySelectorAll("#sign-in")){
+        signIn.setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakuraku.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'")
+    }
+
     //#region navigation
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
@@ -23,17 +28,6 @@ $(document).ready(function () {
     $toggleCollapse.click(function () {
         $nav.toggleClass('collapse');
     })
-
-    // owl-crousel for blog
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 3000,
-        dots: false,
-        nav: true,
-        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
-        responsive: responsive
-    });
 
 
     // click to scroll top
@@ -49,7 +43,7 @@ $(document).ready(function () {
 
     //#region typing effect
     // List of sentences
-    var _CONTENT = ["I've developed applications in Python, Node.js and C#.", "I also have experience with .NET and the Unity game engine.", "I am currently working with Node.js to program Discord bots, and C# to create mobile applications through Unity."];
+    var _CONTENT = ["らくらくリスニング", "日本語を勉強している高校生向けの聞き取り練習"];
     // var _CONTENT = ["I've developed applications in Python, Node.js and C#. \n I also have experience with .NET and the Unity game engine. \n I am currently working with Node.js to program Discord bots, and C# to create mobile applications through Unity."];
 
     // Current sentence being processed
