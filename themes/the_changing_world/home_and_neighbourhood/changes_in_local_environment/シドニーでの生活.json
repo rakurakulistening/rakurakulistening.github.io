@@ -1,0 +1,32 @@
+{
+    "number": "30",
+    "subtopic": "シドニーでの生活",
+    "description": "Listen to the conversation between Kate and Hiroshi then complete the task in English.",
+    "audio": "/resources/audio/task30.mp3",
+    "questions": [
+        " Q1 Hiroshi and Kate are talking about changes in Sydney. List three points about the major changes."
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "1. Sydney became prettier because new buildings were built and bus stops were replaced with new ones. 2. The population has got bigger because of the increase in foreigners from different countries. 3. Both bus and train fares and rent has risen (a lot). "
+    ],
+    "transcript": [
+        "ケイト：ひろしくん、ひさしぶり。",
+        "ひろし：あ、ケイトさん、ひさしぶり。",
+        "ケイト：日本の生活はどう？",
+        "ひろし：うん、なかなかいそがしいよ。シドニーはどう？",
+        "ケイト：そうね。オリンピックがあるから、ここ数(すう)年で、かなりかわったと思う。",
+        "ひろし：そうだね。５年前とはかなりちがうようだね。",
+        "ケイト：うん。(Q1)町がきれいになったでしょ。",
+        "ひろし：ほんとうだ。(Q1)新しいビルや店がたってるね。きれいになった。",
+        "ケイト：(Q1)それにどうろもきれいになったし。バスていも新しくなったよ。",
+        "ひろし：へえ。そうなんだ。",
+        "ケイト：(Q2)人も多くなったと思う。いろいろな国の人がふえた。たぶん日本人のかずもふえたと思うよ。街(まち)で時々日本語を聞くから。",
+        "ひろし：じゃあ、シドニーは前よりべんりになったね。",
+        "ケイト：そうだね。でも、(Q3)電車やバスのお金はずいぶん高くなったし、家のレントも上がったよ。",
+        "ひろし：そうか、人が多くなったから、お金がかかるようになったんだね。そういえば、この電車のチケット、高くなったね。まいったなあ。"
+    ]
+}

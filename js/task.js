@@ -180,8 +180,6 @@ $(document).ready(function () {
             //#endregion
 
 
-
-
             //#region submit to discord'
             var answers = '';
 
@@ -205,7 +203,6 @@ $(document).ready(function () {
                 }],
             };
 
-
             const webhookUrl = 'https://discord.com/api/webhooks/1123290601325084771/4CSLlFUxT9f7-zFa7-yr2pBLFlIYIxsU_2lWTambsZ482fKCQTC8Xtj_t74Eta3DHNwC';
 
             fetch(webhookUrl, {
@@ -215,13 +212,6 @@ $(document).ready(function () {
             },
             body: JSON.stringify(webhookBody),
             });
-
-
-
-
-
-
-
 
 
 
