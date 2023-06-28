@@ -4,7 +4,7 @@
     "description": "Listen to the conversation between Kate and Hiroshi then complete the task in English.",
     "audio": "/resources/audio/task30.mp3",
     "questions": [
-        " Q1 Hiroshi and Kate are talking about changes in Sydney. List three points about the major changes."
+        "Hiroshi and Kate are talking about changes in Sydney. List three points about the major changes."
     ],
     "vocab": {
         "jp": [],
