@@ -43,11 +43,9 @@ $(document).ready(function () {
     const responses = document.querySelector("#responses");
     var audio = document.getElementById("task-audio");
     const check = document.querySelector("#check")
-
-    // alert(`path: ${localStorage.getItem("directoryPath")}/${localStorage.getItem("theme").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("topicName").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("subtopic").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("taskName")}.json`)
-
+    
     //#region read JSON file and create task buttons
-    fetch(`${localStorage.getItem("directoryPath")}/${localStorage.getItem("theme").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("topicName").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("subtopic").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("taskName")}.json`)
+    fetch(`${localStorage.getItem("directoryPath")}/${localStorage.getItem("theme").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("topicName").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("subtopic").toLowerCase().replaceAll(' ', '_')}/${/. (.+)/.exec(localStorage.getItem('taskName'))[1]}.json`)
     .then(res => res.json())
     .then(data => {
         //read json
@@ -76,7 +74,11 @@ $(document).ready(function () {
             let q = document.createElement('a');
             q.setAttribute("id", `q${i+1}`)
             q.setAttribute("class", `question`);  
-            q.textContent = `${i+1}. ${data.questions[i]}`;
+            if(!(data.questions.length === 1)){
+                q.textContent = `${i+1}. ${data.questions[i]}`;
+            } else {
+                q.textContent = data.questions[i];
+            }
 
             let type = document.createElement('textarea');
             type.setAttribute("id", `answer${i+1}`);
@@ -185,25 +187,55 @@ $(document).ready(function () {
 
             //add each response to a string
             for(r=0; r<document.getElementsByClassName("answer").length; r++){
-                answers += `${r+1}. ${document.getElementById(`answer${r+1}`).value}\n`;
+                if(!(data.questions.length === 1)){
+                    answers += `${r+1}. ${document.getElementById(`answer${r+1}`).value}\n`;
+                } else {
+                    answers += document.getElementById(`answer${r+1}`).value;
+                }
+            }
+
+            //get user pfp dominant colour
+            const colorThief = new ColorThief();
+            const img = document.querySelector('#user_avatar');
+
+            // Make sure image is finished loading
+            if (img.complete) {
+            colorThief.getColor(img);
+            } else {
+            image.addEventListener('load', function() {
+                colorThief.getColor(img).then(color => {
+                    localStorage.setItem("userColor", color)
+                })
+            });
             }
 
 
             const webhookBody = {
                 username: localStorage.getItem("user_name"),
                 avatar_url: localStorage.getItem("user_avatar"),
-                embeds: [{
-                //   title: `${data.number}. ${data.subtopic}`,
-                title: '`' + data.number + '.` ' + data.subtopic,
-                  fields: [
-                    // { name: 'Username', value:  },
-                    // { name: 'Avatar', value: localStorage.getItem("user_avatar") },
-                    { name: '', value: answers}
+                embeds: [
+                    {
+                      type: "rich",
+                      title: "",
+                      description: `${localStorage.getItem("theme")} > ${localStorage.getItem("topicName")} > ${localStorage.getItem("subtopic")}`,
+                    //   description: "",
+                    //   color: 0x000000,
+                    color: localStorage.getItem("userColor"),
+                      fields: [
+                        {
+                          name: "`" + localStorage.getItem("taskName") + "`",
+                          value: `${answers}`
+                        }
+                      ]
+                    }
                   ],
-                }],
-            };
+            };  
 
-            const webhookUrl = 'https://discord.com/api/webhooks/1123458335312711680/ScFAWrtAA6HqnWNtHL7DZRrOUa-4_DcnS7OcYsfcCx2J63wiyJBZKVaFTHpI00ls3mgU';
+            //test
+            const webhookUrl = 'https://discord.com/api/webhooks/1123222454354063440/e_78ggT0dZs7q4uDjJSQCO8o9ZRfF4Gh4zo9I9bgekgSp0uugQRtvfZgDzb7YwzgdL7K';
+            
+            //actual
+            // const webhookUrl = 'https://discord.com/api/webhooks/1123458335312711680/ScFAWrtAA6HqnWNtHL7DZRrOUa-4_DcnS7OcYsfcCx2J63wiyJBZKVaFTHpI00ls3mgU';
 
             fetch(webhookUrl, {
             method: 'POST',

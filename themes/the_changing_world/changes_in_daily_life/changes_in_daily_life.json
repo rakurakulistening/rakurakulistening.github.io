@@ -4,7 +4,7 @@
     "subtopics": [ 
         {
             "name": "Changes in leisure activities",
-            "tasks": ["旅行のひよう", "休日", "日本のよかのすごし方"],
+            "tasks": ["9. 旅行のひよう", "10. 休日", "11. 日本のよかのすごし方"],
             "lang": ["英語で", "英語で", "日本語で"],
             "images": [
                 "https://1.bp.blogspot.com/-MSNPmKYMvZA/V7wboszzSuI/AAAAAAAA9Po/EpxifwXKkg0INvNdbRKySFP3vpWGBvYZwCLcB/s800/job_kyuujinshi.png", 
@@ -14,7 +14,7 @@
         },
         {
             "name": "Changes in the education system",
-            "tasks" : ["日比谷高校", "ゆかりさんの学校", "いじめ", "入学説明会"],
+            "tasks" : ["12. 日比谷高校", "13. ゆかりさんの学校", "14. いじめ", "15. 入学説明会"],
             "lang": ["英語で", "英語で", "日本語で", "日本語で"],
             "images" : [
                 "https://2.bp.blogspot.com/-dwIwj_MaGco/Ut0BT0TafPI/AAAAAAAAdWc/Dlht8FF_JBQ/s800/happy_family.png",
@@ -25,7 +25,7 @@
         },
         {
             "name": "Gadgets in daily life",
-            "tasks" : ["MDウォークマン", "ファックス", "けいたい電話", "DVD", "パソコン"],
+            "tasks" : ["16. MDウォークマン", "17. ファックス", "18. けいたい電話", "19. DVD", "20. パソコン"],
             "lang": ["英語で", "英語で", "英語で", "日本語で", "日本語で"],
             "images" : [
                 "https://2.bp.blogspot.com/-dwIwj_MaGco/Ut0BT0TafPI/AAAAAAAAdWc/Dlht8FF_JBQ/s800/happy_family.png",
