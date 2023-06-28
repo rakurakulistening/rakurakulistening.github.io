@@ -20,6 +20,7 @@ $(document).ready(function () {
         document.querySelector('#name').textContent = localStorage.getItem("user_name");
         //set the avatar image by constructing a url to access discord's cdn
         document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
+        // document.querySelector("#avatar").src = "https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG";
     //#endregion
 
     //#region navigation
@@ -52,12 +53,13 @@ $(document).ready(function () {
         title.innerHTML = `${data.subtopic}`,
         description.innerHTML = `${data.description}`,
         audio.setAttribute('src', `${data.audio}`);
-        audio.setAttribute('captions', 'ngbioergo')
+        // audio.setAttribute('captions', 'ngbioergo')
 
         // audio.textTracks[0].addEventListener('cuechange', function() {
         //     document.getElementById('my-subtitle-display').innerText = this.activeCues[0].text;
         // });
 
+        document.getElementById("location").textContent = `${localStorage.getItem("theme")} > ${localStorage.getItem("topicName")} > ${localStorage.getItem("subtopic")}`;
 
         responses.setAttribute("data-aos", "fade-in")
         responses.setAttribute("data-aos-delay", "50")
@@ -195,20 +197,32 @@ $(document).ready(function () {
             }
 
             //get user pfp dominant colour
-            const colorThief = new ColorThief();
-            const img = document.querySelector('#user_avatar');
 
-            // Make sure image is finished loading
-            if (img.complete) {
-            colorThief.getColor(img);
-            } else {
-            image.addEventListener('load', function() {
-                colorThief.getColor(img).then(color => {
-                    localStorage.setItem("userColor", color)
-                })
-            });
-            }
-
+            // const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
+            //     const hex = x.toString(16)
+            //     return hex.length === 1 ? '0' + hex : hex
+            // }).join('')
+        
+                // const colorThief = new ColorThief();
+                // const img = document.querySelector('#pfp');
+        
+                // // Make sure image is finished loading
+                // if (img.complete) {
+                //     colorThief.getColor(img).then(color => {
+                //         alert(color)
+                //         localStorage.setItem("userColor", rgbToHex(color[0], color[1], color[2]));
+                //         // alert(color[0]);
+                        
+                //     })        
+                // } else {
+                // img.addEventListener('load', function() {
+                //     colorThief.getColor(img).then(color => {
+                //         localStorage.setItem("userColor", rgbToHex(color[0], color[1], color[2]));
+                //         // alert(color[0]);
+                //     })        
+                // });
+                // }
+            
 
             const webhookBody = {
                 username: localStorage.getItem("user_name"),
@@ -218,12 +232,11 @@ $(document).ready(function () {
                       type: "rich",
                       title: "",
                       description: `${localStorage.getItem("theme")} > ${localStorage.getItem("topicName")} > ${localStorage.getItem("subtopic")}`,
-                    //   description: "",
-                    //   color: 0x000000,
-                    color: localStorage.getItem("userColor"),
+                      color: 0x000000,
+                    // color: localStorage.getItem("userColor"),
                       fields: [
                         {
-                          name: "`" + localStorage.getItem("taskName") + "`",
+                          name: "`" + localStorage.getItem("taskName") + "`\n",
                           value: `${answers}`
                         }
                       ]
@@ -231,11 +244,11 @@ $(document).ready(function () {
                   ],
             };  
 
-            //test
-            const webhookUrl = 'https://discord.com/api/webhooks/1123222454354063440/e_78ggT0dZs7q4uDjJSQCO8o9ZRfF4Gh4zo9I9bgekgSp0uugQRtvfZgDzb7YwzgdL7K';
+            //test channel
+            // const webhookUrl = 'https://discord.com/api/webhooks/1123222454354063440/e_78ggT0dZs7q4uDjJSQCO8o9ZRfF4Gh4zo9I9bgekgSp0uugQRtvfZgDzb7YwzgdL7K';
             
-            //actual
-            // const webhookUrl = 'https://discord.com/api/webhooks/1123458335312711680/ScFAWrtAA6HqnWNtHL7DZRrOUa-4_DcnS7OcYsfcCx2J63wiyJBZKVaFTHpI00ls3mgU';
+            //actual channel
+            const webhookUrl = 'https://discord.com/api/webhooks/1123458335312711680/ScFAWrtAA6HqnWNtHL7DZRrOUa-4_DcnS7OcYsfcCx2J63wiyJBZKVaFTHpI00ls3mgU';
 
             fetch(webhookUrl, {
             method: 'POST',

@@ -67,7 +67,7 @@
 
         <section class="site-background">
             <div class="site-tasks" data-aos="fade-in" data-aos-delay="100">
-                <div id="location" class="page-location"></div>
+                <a id="location" class="page-location"></a>
                 <div class="task-info">
                     <h2 id="title"></h2>
                     <div id="specific" class="specific">
@@ -157,6 +157,31 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     
+    <script>
+        // const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
+        // const hex = x.toString(16)
+        // return hex.length === 1 ? '0' + hex : hex
+        // }).join('')
+
+        // const colorThief = new ColorThief();
+        // const img = document.getElementById('avatar');
+
+        // // Make sure image is finished loading
+        // if (img.complete) {
+        //     colorThief.getColor(img).then(color => {
+        //         localStorage.setItem("userColor", rgbToHex(color[0], color[1], color[2]));
+        //         // alert(color[0]);
+                
+        //     })        
+        // } else {
+        // img.addEventListener('load', function() {
+        //     colorThief.getColor(img).then(color => {
+        //         localStorage.setItem("userColor", rgbToHex(color[0], color[1], color[2]));
+        //         // alert(color[0]);
+        //     })        
+        // });
+        // }
+    </script>
 </body>
 
 </html>
