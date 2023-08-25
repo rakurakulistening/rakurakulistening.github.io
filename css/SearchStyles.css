@@ -215,6 +215,9 @@ button.topic::before{
 
 }
 
+.hide{
+    display: none;
+}
 
 /*              Viewport less then or equal to 1130px            */
 

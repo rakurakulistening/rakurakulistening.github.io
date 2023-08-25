@@ -16,11 +16,24 @@ const responsive = {
 $(document).ready(function () {
 
     //#region user info
-        //set the welcome username string
-        document.querySelector('#name').textContent = localStorage.getItem("user_name");
-        //set the avatar image by constructing a url to access discord's cdn
-        document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
-        // document.querySelector("#avatar").src = "https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG";
+        if(localStorage.getItem("user_name") == null){
+            document.querySelector('#name').textContent = localStorage.getItem("user_name");
+        }
+        else {
+            document.querySelector('#name').textContent = "sign in";
+        }
+
+        if(localStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
+            let avt = document.createElement('i');
+            avt.setAttribute("class", "fa-brands fa-discord")
+            document.querySelector("#discord").appendChild(avt);
+
+            let current = document.querySelector("#avatar");
+            document.querySelector("#discord").removeChild(current);
+        }
+        else {
+            document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
+        }
     //#endregion
 
     //#region navigation
@@ -180,7 +193,6 @@ $(document).ready(function () {
 
                 }
             }
-
             //#endregion
 
 

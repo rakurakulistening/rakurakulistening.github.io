@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
     
-    <!-- --------- Owl-Carousel ------------------->
-    <link rel="stylesheet" href="/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
-
     <!-- ------------ AOS Library ------------------------- -->
     <link rel="stylesheet" href="/css/aos.css">
 
@@ -37,8 +33,9 @@
             </div>
             
                 <div class="nav-items">
+                    <input class="search"></input>
                     <li class="nav-link" data-aos="fade-in" data-aos-delay="100" >
-                        <button class="nav" type="button">
+                        <button id="discord" class="nav" type="button">
                             <img id="avatar" class="pfp" width="25px" height="25px"></img>
                             <a id="name" class="nav-text"></a>
                         </button>    
@@ -67,7 +64,10 @@
 
         <section class="site-background">
             <div class="site-tasks" data-aos="fade-in" data-aos-delay="100">
+                <!-- current page location -->
                 <a id="location" class="page-location"></a>
+
+                <!-- task title and audio -->
                 <div class="task-info">
                     <h2 id="title"></h2>
                     <div id="specific" class="specific">
@@ -86,33 +86,27 @@
                         </audio> -->
                     </div>
                 </div>
-                <div id="dialogue" class="dialogue"> 
 
-                </div>
+                <!-- dialogue to show up when 'script' button is clicked -->
+                <div id="dialogue" class="dialogue"></div>
 
-                
+                <!-- task description/instructions -->
                 <h3 id="description"></h3>
+                
+                <!-- the questions themselves -->
                 <div class="form-section">
-                    <form id="contact-me">
+                    <form id="questions">
                         <div id="responses" data-aos="fade-in" data-aos-delay="100">
                            <!-- <div class="question">
                                 <a id="q1"></a>
                                 <textarea id="message" name="message"></textarea>
-                           </div>
-                           <div class="question">
-                                <a id="q2"></a>
-                                <textarea id="message" name="message"></textarea>
-                           </div>
-                           <div class="question">
-                                <a id="q3"></a>
-                                <textarea id="message" name="message"></textarea>
                            </div> -->
-                           
                         </div>
                         <div class="submit">
                             <button class= "button" id="check" type="button">Check</button>
                         </div>
                     </form>
+                </div>
                 
             
         

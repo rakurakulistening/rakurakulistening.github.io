@@ -15,6 +15,32 @@ const responsive = {
 
 $(document).ready(function () {
 
+    //#region user info
+    if(localStorage.getItem("user_name") == "undefined"){
+        document.querySelector('#name').textContent = "sign in";
+        console.log("a")
+    }
+    else {
+        document.querySelector('#name').textContent = localStorage.getItem("user_name");
+        console.log("b")
+    }
+
+    if(localStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
+        let avt = document.createElement('i');
+        avt.setAttribute("class", "fa-brands fa-discord")
+        document.querySelector("#discord").appendChild(avt);
+
+        let current = document.querySelector("#avatar");
+        document.querySelector("#discord").removeChild(current);
+        
+        document.querySelector("#discord").setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakurakulistening.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'");
+
+    }
+    else {
+        document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
+    }
+    //#endregion
+
     //#region navigation
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
@@ -34,9 +60,9 @@ $(document).ready(function () {
 
     //#region user info
         //set the welcome username string
-        document.querySelector('#name').textContent = localStorage.getItem("user_name");
-        //set the avatar image by constructing a url to access discord's cdn
-        document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
+        // document.querySelector('#name').textContent = localStorage.getItem("user_name");
+        // //set the avatar image by constructing a url to access discord's cdn
+        // document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
     //#endregion
 
     //values read from task page 

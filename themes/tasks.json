@@ -1,0 +1,263 @@
+
+        [
+            {
+                "number": "1",
+                "subtopic": "セーフウェイ",
+                "description": "Listen to the conversation between Anne and Rie then answer the questions in English.",
+                "audio": "/resources/audio/task1.mp3",
+                "questions": [
+                    "What is Rie going to do in the summer holidays?",
+                    "How much is the hourly pay?",
+                    "Which days does Anne want to work? "
+                ],
+                "vocab": {
+                    "jp": [],
+                    "en": []
+                },  
+                "solutions": [
+                    "She is going to work part time at Safeway near her house.",
+                    "It is 10 dollars but they pay more on weekends.",
+                    "She wants to work only on weekend. (*She actually says that she wants to do this part time job if it is OK for her to work only on weekends.)"
+                ],
+                "transcript": [
+                    "アン：もうすぐ夏休みですね。",
+                    "りえ：そうですね。アンさんは夏休みに何をしますか。",
+                    "アン：まだ、わかりません。りえさんは？",
+                    "りえ：私は、近所のセーフウェイでアルバイトをするつもりです。アンさんもいっしょにしませんか。",
+                    "アン：え...アルバイトですか。時きゅうはいくらですか。",
+                    "りえ：ええと．．．たしか、一時間１０ドルだと思います。わるくないでしょ。",
+                    "アン：そうですね。土曜日と日曜日はもっといいんでしょ。週まつだけでもいいのなら、やりたいです。",
+                    "りえ：店長に聞いてみますが、だいじょうぶだと思いますよ。明日、いっしょに店長に会いに行きませんか。",
+                    "アン：そうですね。行きましょう。"
+                ]
+            },
+            {
+                "number": "2",
+                "subtopic": "今日のアルバイト",
+                "description": "Listen to the conversation between Lisa and Akira and answer the questions in English.",
+                "audio": "/resources/audio/task2.mp3",
+                "questions": [
+                    "Why is Lisa tired?",
+                    "What is Lisa going to do next Saturday?",
+                    "What does Akira want to do with Lisa next Saturday?"
+                ],
+                "vocab": {
+                    "jp": [],
+                    "en": []
+                },  
+                "solutions": [
+                    "Because she has just finished her part-time job and worked for 10 hours.",
+                    "She is going to have a day off.",
+                    "He wants to go movies."
+                ],
+                "transcript" : [
+                    " リサ：  ああ、つかれた。",
+                    "あきら：どうしたの。リサさん。",
+                    "リサ：  今アルバイトがおわったところなの。今日は10時間もはたらいたのよ。",
+                    "あきら：10時間？へええ、それはたいへんだったね。でも、土曜日はいつも5時間じゃないの。",
+                    "リサ：  そうなの、でも、今日は二人も休んでいたの。だからいそがしかったの。",
+                    "それに、いつもよりおきゃくさんが多くて、たいへんだったわ。",
+                    "あきら：ああそう。それはついてなかったね。じゃ、(Q2)こんどの土曜日は休みをもらったら。",
+                    "リサ：  それはいいアイディアね。そうするわ。",
+                    "あきら：じゃ、かわりに、ぼくとえいがに行かない？",
+                    "リサ：  えいが... 私先週行ったばかりなの、それに、すう学のテストが近いし...ごめん。",
+                    "あきら：ああそう...じゃ、またこんど行こうね。",
+                    "リサ：  そうね。"
+                ]
+            },
+            {
+                "number": "3",
+                "subtopic": "マクドナルド",
+                "description": "Listen to the speech, welcoming new employees and answer the questions in English.",
+                "audio": "/resources/audio/task3.mp3",
+                "questions": [
+                    "What is the name of John’s work?",
+                    "What time are John’s breaks?",
+                    "How many uniforms does he get?",
+                    "What does he have to do after he finishes his work?"
+                ],
+                "vocab": {
+                    "jp": [],
+                    "en": []
+                },  
+                "solutions": [
+                    "It is McDonald's. ",
+                    "They are from 3:00 to 3:30 and from 5:30 to 6:00.",
+                    "He gets two uniforms.",
+                    "He has to insert his time card to the machine. (He has to evaluate his time card.)"
+                ],
+                "transcript" : [
+                    "ジョン君、ようこそマクドナルドへ。私は店長のボブです。ジョンくんが来てくれるのをたのしみにしていましたよ。じゃ、仕事を始める前に、少しせつめいをしましょう。これが、ジョンくんのタイムカードです。店に来たら、仕事を始める前にあのきかいに入れて下さい。せいふくを着るのは、その後でいいです。これがジョンくんのせいふくです。半そでと長そでが一まいずつあるので、好きなほうを着て下さい。休けい時間は3時から3時半までと5時半から6時までです。うらに、テレビとソファーがある休けい室があるので、使ってください。それから、仕事がおわったら、かならずまたタイムカードを入れてから帰ってください。そうしないと、ジョンくんが何時まではたらいたか分からないので。ハンバーガーの作り方は、後でふく店長のキャサリンがせつめいしてくれます。何かしつもんはありますか。"
+                ]
+            },
+            {
+                "number": "4",
+                "subtopic": "転勤",
+                "description": "Listen to the conversation between Seiji and Kerry and answer the questions in English.",
+                "audio": "/resources/audio/task4.mp3",
+                "questions": [
+                    "What are they talking about? Travel, shopping, hobby or transfer?",
+                    "What does Kerry suggest Seiji do? Why?"
+                ],
+                "vocab": {
+                    "jp": [],
+                    "en": []
+                },  
+                "solutions": [
+                    "Transfer",
+                    "She suggests he go to Osaka instead of resigning his job because it is difficult to find a new job and he has just bought a house with a loan."
+                ],
+                "transcript" : [
+                    "せいじ：　あ…どうしよう。",
+                    "ケリー：　せいじさん、どうしたの？",
+                    "せいじ：　あっ、、、ケリーさん。(Q1)ボスに、「来月からおおさかではたらいてくれ」って言われたんだ。",
+                    "ケリー：　えっ、来月から？東京からおおさかに行かなきゃならないの？ボスに、「行けません」って言ったら？",
+                    "せいじ：　うん、「子どもが小さいからちょっと…」って言ったんだけど、 だめだった。ボスは、おおさかに行けないなら、くびだって。",
+                    "ケリー：　「くび」って何ですか。",
+                    "せいじ：　仕事をやめなければならないってこと。でも、ローンで家を買ったばかりだし、新しい仕事を見つけるのは大変だからね。",
+                    "ケリー：　そうね。(Q2)家のローンをはらったり、ほかの仕事をさがしたりしなきゃならないなら、この仕事をやめないで、おおさかに行った方がいいかもね。"
+                ]
+            },
+            {
+                "number": "5",
+                "subtopic": "付き合い",
+                "description": "Listen to the conversation between Mr. Yamada and Mr. Tanaka and answer the questions in English.",
+                "audio": "/resources/audio/task5.mp3",
+                "questions": [
+                    "What is wrong with Mr. Tanaka?",
+                    "What time did Mr. Tanaka arrive home last night?",
+                    "Why does he live there?"
+                ],
+                "vocab": {
+                    "jp": [],
+                    "en": []
+                },  
+                "solutions": [
+                    "He is tired because he drank too much alcohol last night.",
+                    "He arrived home at two thirty. (He was drinking till 12.30 at the pub near his office and took two hours to get home.)",
+                    "Because rent is cheaper if he lives in an area away from the city."
+                ],
+                "transcript" : [
+                    "山田：　田中さん、どうしたんですか。",
+                    "田中：　あ、山田さん。おはようございます。さくばんちょとおさけを飲みすぎました。",
+                    "山田：　また、ぶちょうのつきあいですか。",
+                    "田中：　ええ。会社の近くで十二時半まで飲んでいましたから。",
+                    "山田：　十二時半？だから、つかれているんですね。",
+                    "田中：　ええ。それに、家から会社まで２時間かかります。",
+                    "山田：　2時間はちょっと遠すぎますね。",
+                    "田中：　ええ。でも、町の近くの家はレントが高いですから。",
+                    "山田：　そうですね。町からとおいところに住めば、レントが安いですからね。"
+                ]
+            },
+            {
+                "number": "6",
+                "subtopic": "労働時間の短縮化",
+                "description": "Listen to the conversation between a newscaster and Mr. Tanaka and answer the questions in English.",
+                "audio": "/resources/audio/task6.mp3",
+                "questions": [
+                    "What are the Japanese average annual working hours of both years they are talking about?",
+                    "What are the two reasons that the working hours are decreasing?",
+                    "What is the holiday recently introduced in Japan?",
+                    "Which country has the largest number of annual holidays?",
+                    "What is the difference in the average hours worked per day between France and Japan?"
+                ],
+                "vocab": {
+                    "jp": [],
+                    "en": []
+                },  
+                "solutions": [
+                    "2121 hours in 1987 and 1904 hours in 1994",
+                    "One reason is that the number of the companies where the workers can have two days off a week has increased. The other is that the number of the people who stay at the office to work till late at night has decreased.",
+                    "The Marine Day in July has been introduced.",
+                    "Germany does.",
+                    "Japanese people work an hour more than the French."
+                ],
+                "transcript" : [
+                    "ニュース・キャスター：　ええと。では、次に、はたらく時間のへんかについてお知らせします。日本人がはたらく時間はだんだんみじかくなってきています。(Q1)１９８７年のへいきんてきな仕事をしている時間は、１年間で２１２１時間でした。しかし、１９９４年には、１９０４時間と、すくなくなりました。今日は、ゲストに東京大学の田中きょうじゅにいらしていただいています。田中きょうじゅ、こんにちは。",
+                    "田中：こんにちは。",
+                    "キャスター：えーと、なぜ、日本人のはたらく時間は、１９８７年の２１２１時間から、１９９４年の１９０４時間にへったのでしょうか。",
+                    "田中：そうですね、二つりゆうがあると思います。まず、(Q2)だい一に、週に二回休みをとれる会社がふえたことです。",
+                    "キャスター：なるほど。むかしは、日曜日だけ休みの会社が多かったですからね。",
+                    "田中：ええ。でも、今は、ほとんどの人が土曜日と日曜日に休むことができます。そして、(Q2)だい二のりゆうは、夜おそくまで会社にのこってはたらく人がへったことです。",
+                    "キャスター：うーん。会社は、夜おそくまではたらいてくれる人にお金をはらえないからですか。",
+                    "田中：そうです。そして、さいきんは、しゅくじつや長い休みがふえていますからね。",
+                    "キャスター：ええ、(Q3)七月の海の日が新しくできたし、五月のゴールデンウィークが長くなりましたよね。",
+                    "田中：はい。それでも、まだまだ、休みの日はほかの国より少ないようです。",
+                    "キャスター：そうなんですか。",
+                    "田中：ええ。日本人は一年間で１２４日ぐらい休みます。でも、アメリカでは、１３２日ぐらい、フランスでは１３８日ぐらい１年に休むことができます。(Q4)ドイツが一番多くて、１４５日です。",
+                    "キャスター：ドイツ人は１年に１４５日も休みがあるんですか。",
+                    "田中：ええ。それに、日本人は１日に８時間ぐらいはたらいています。しかし、フランス人や、ドイツ人は１日に７時間しかはたらきません。",
+                    "キャスター：そうですか。(Q5)日本人は、フランスやドイツの人より１日に１時間多くはたらいているんですね。",
+                    "田中：ええ。日本人は、もっと休みをとらなければなりませんね。",
+                    "キャスター：ええ、ほんとうに。田中きょうじゅ、今日はどうもありがとうございました。",
+                    "田中：いいえ。ありがとうございました。"
+                ]
+            },
+            {
+                "number": "7",
+                "subtopic": "仕事の変化",
+                "description": "Listen to the speech and complete the task below in Japanese.",
+                "audio": "/resources/audio/task7.mp3",
+                "questions": [
+                    "あなたは、日本の大学にりゅう学しています。今日友だちが病気で休んでいるので、その友だちのためにしゅくだいをつたえたいと思っています。じゅぎょうのないようは、仕事のへんかについてです。たいせつなポイントをメモし分かりやすくまとめなさい。"
+                ],
+                "vocab": {
+                    "jp": [],
+                    "en": []
+                },  
+                "solutions": [
+                    " 仕事についてかわってきたことをつぎの六つ中から二つえらんで、りゆうをＡ４のレポートようしに書いて土曜日に出す。なぜ、むかしより今の方がはたらく時間がみじかくなったのか。なぜ、(はたらく人のかずがへったのか、仕事のかずがふえたのか、はたらく時間がみじかくなったのか、きゅうりょうがへったのか、はたらく女性がふえたのか)"
+                ],
+                "transcript" : [
+                    "ええと、みなさんのお父さんは何時から何時まではたらいていらっしゃいますか。朝早くから夜おそくまではたらかなければならない人もたくさんいらっしゃるでしょう。「かろうし」ということばを聞いたことがありますか。「かろうし」とは、はたらきすぎで、しんでしまうことです。バブルの時の大きなもんだいでした。でも、さいきんは、少しずつかわってきたようです。そこで、今日のしゅくだいを言いますから、メモしてください。仕事についてかわってきたことを６つ言います。そこから２つえらんでください。そのりゆうをかんがえて来てください。いいですか。２つだけで、いいですからね。まず一つ目は、あるアンケートによると、はたらく時間がみじかくなってきたと思う人は、５０パーセントいじょうもいます。なぜ、むかしより今の方がはたらく時間がみじかくなったと思いますか？しゅくだいとしてりゆうをかんがえて来てください。ここすう年でかわったことは、だい二に、社いんが少なくなった。どうしてはたらく人のかずがへったのでしょうか。だい三に、仕事のかずがふえた。どうして前よりたくさんはたらかなければならないのでしょうか。四つ目に、きめられた時間より長くはたらく日が少なくなった。どうして、はたらく時間がみじかくなったのでしょうか。五つ目に、きゅうりょうが少なくなった。なぜ、サラリーが少なくなったのでしょうか。六つ目に、はたらく女性がふえた。なぜ、むかしよりたくさんの女性が仕事をするようになったのでしょうか。いいですか、２つ選んで、りゆうをA4のレポートようしに書いて下さい。つぎのじゅぎょうは、土曜日です。ですから、土曜日に出してください。今日はこれでおわります。"
+                ]
+            },
+            {
+                "number": "8",
+                "subtopic": "女性の社会進出",
+                "description": "Listen to the conversation and complete the task below in Japanese.",
+                "audio": "/resources/audio/task8.mp3",
+                "questions": [
+                    "あなたは、地方新聞にのせるきじを書くようにたのまれました。そのために、女性の社会しんしゅつとそのもんだいについてのアンケートをしたテープをわたされました。女性の会話を聞いて、アンケートようしのポイントフォームをさんこうにしながら、日本語でそのないようをかんたんなきじにまとめなさい。"
+                ],
+                "vocab": {
+                    "jp": [],
+                    "en": []
+                },  
+                "solutions": [
+                    "会社でひしょをしている女性にインタビューをしました。女性が仕事をもらうチャンスは男性より少ないです。なぜなら、女性は２～３年はたらいて、けっこんするために仕事をやめてしまうと思われているからです。また、女性は男性よりきゅうりょうが少ないし、大きな仕事をもらうことがむずかしいので、仕事がしにくいです。女性が男性と同じようにはたらくためには、ふうふのきょうりょくが大切です。"
+                ],
+                "transcript" : [
+                    "インタビュア：すみません、今、はたらく女性にインタビューをおねがいしているんですが、ちょっといいですか。",
+                    "ともこ：はい。",
+                    "インタビュア：あのう、じゃあ、まず、仕事をお聞きしてもいいですか。",
+                    "ともこ：会社でひしょをしています。",
+                    "インタビュア：そうですか。ひしょの仕事は、何年ぐらいしていますか。",
+                    "ともこ：今年が二年目です。",
+                    "インタビュア：仕事をさがすのはたいへんでしたか。",
+                    "ともこ：はい。とても。私は、３０このインタビューをうけました。",
+                    "インタビュア：３０こも？",
+                    "ともこ：ええ、でも、きまったのはこの会社だけです。会社はふけいきで、お金があまりありませんから、女性が仕事を見つけるのはとてもたいへんです。",
+                    "インタビュア：どうして、男性より女性の方が仕事を見つけるチャンスが少ないのでしょうか。",
+                    "ともこ：色々なりゆうがあると思います。一番大きなりゆうは、会社は、「大学をそつぎょうした女性は２～３年はたらいて、けっこんするためにやめてしまう」と思っているからです。",
+                    "インタビュア：でも、じっさいは、けっこんしてもはたらきつづける女の人がふえていますよね。",
+                    "ともこ：ええ。国のルールでは、女性と男性が同じ仕事のチャンスをもっているんです。でも、はたらきにくいと思うことがよくあります。",
+                    "インタビュア：たとえば？",
+                    "ともこ：そうですね。日本は、女性がはたらきやすい国の中で１９いだそです。１位（い）がスウェーデン、２位がノルウェー、３位がフィンランドです。これらの国々とくらべると、女性は男性よりおきゅうりょうが少なくて、大事な仕事をもらうことがむずかしいんです。",
+                    "インタビュア：うーん。たしかに、女性のマネージャーは少ないですよね。",
+                    "ともこ：ええ。日本では、マネージャーが１００人いたら、９１人は男性で、女性は９人だけです。スウェーデンは６４人、アメリカは６７人と女性のマネージャーの方が多いそうです。日本はとてもおくれていると思います。",
+                    "インタビュア：マネージャになれなければ、サラリーがひくいですよね。",
+                    "ともこ：ええ。日本の女性は、男性の５０％ぐらいしかサラリーをもらっていません。",
+                    "インタビュア：あなたの会社には、女性のマネージャーがいますか。",
+                    "ともこ：はい。とても仕事ができる人です。",
+                    "インタビュア：その人はけっこんしていますか。",
+                    "ともこ：はい。小さい子どもがいるようです。チャイルドケアに子どもをあずけるのは、お金がかかると言っていました。",
+                    "インタビュア：そこは、何時から何時までですか。",
+                    "ともこ：朝８時から午後６時までです。でも、夜はごしゅじんが子どもをむかえに行くそうです。",
+                    "インタビュア：そうですか。女性が男性と同じようにはたらくためには、ふうふのきょうりょくがたいせつですよね。",
+                    "ともこ：ええ、ほんとうに。",
+                    "インタビュア：どうもありがとうございました。",
+                    "ともこ：どういたしまして。"
+                ]
+            }
+        ]

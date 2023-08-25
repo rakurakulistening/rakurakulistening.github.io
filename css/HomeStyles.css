@@ -175,6 +175,27 @@ button.quote{
 
 }
 
+input {
+    background: #0D1117;
+    color: #EDEEEE;
+    
+    resize: none;
+    width: 27.5%;
+    height:30px;
+
+    outline: none;
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+
+    padding: 5px 5px 5px 9px;
+    margin: 5px;
+
+    font-size: 16px;
+    font-family: var(--Inter);
+    overflow: hidden;
+    text-align: left;
+}
+
 
 
 span{
@@ -182,7 +203,8 @@ span{
 }
 
 .container{
-    margin: 0 5vw;
+    /* margin: 0 5vw; */
+    height: 10%;
 }
 
 .text-gray{
@@ -661,6 +683,7 @@ footer.footer{
 footer.footer .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding-left: 3.4rem;
 }
 
 footer.footer .container > div{
@@ -672,7 +695,7 @@ footer.footer .container > div{
 footer.footer .container l2{
     color: white;
     font-size: 3rem;
-    padding: 5rem 0rem 0rem 20rem;
+    padding: 5rem 0rem 0rem 0rem;
 }
 
 button.social{
@@ -704,7 +727,7 @@ footer.footer .quote-box{
 }
 
 footer.footer .a{
-    inline-size: 750px;
+    /* inline-size: 750px; */
 }
 /* footer.footer .newsletter .form-element{
     background: black;

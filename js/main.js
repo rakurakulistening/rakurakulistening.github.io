@@ -44,7 +44,6 @@ $(document).ready(function () {
     //#region typing effect
     // List of sentences
     var _CONTENT = ["らくらくリスニング", "日本語を勉強している高校生向けの聞き取り練習"];
-    // var _CONTENT = ["I've developed applications in Python, Node.js and C#. \n I also have experience with .NET and the Unity game engine. \n I am currently working with Node.js to program Discord bots, and C# to create mobile applications through Unity."];
 
     // Current sentence being processed
     var _PART = 0;

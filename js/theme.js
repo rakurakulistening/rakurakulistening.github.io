@@ -15,6 +15,32 @@ const responsive = {
 
 $(document).ready(function () {
 
+    //#region user info
+    // if(localStorage.getItem("user_name") == "undefined"){
+    //     // console.log(localStorage.getItem("user_name"))
+
+    //     localStorage.setItem("user_name", "sign in");
+    //     // document.querySelector('#name').textContent = "sign in";
+    // }
+    // else {
+    //     document.querySelector('#name').textContent = localStorage.getItem("user_name");
+
+    //     console.log("b")
+    // }
+
+    // if(localStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
+    //     let avt = document.createElement('i');
+    //     avt.setAttribute("class", "fa-brands fa-discord")
+    //     document.querySelector("#discord").appendChild(avt);
+
+    //     let current = document.querySelector("#avatar");
+    //     document.querySelector("#discord").removeChild(current);
+    // }
+    // else {
+    //     document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
+    // }
+    //#endregion
+
     //#region navigation
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
@@ -53,6 +79,7 @@ $(document).ready(function () {
     //     return 
     // }
 
+
     fetch('https://discord.com/api/users/@me', {
     headers: {
         authorization: `${tokenType} ${accessToken}`,
@@ -65,12 +92,27 @@ $(document).ready(function () {
         //set the welcome username string
         document.querySelector('#name').textContent = ` ${username}`;
         //set the avatar image by constructing a url to access discord's cdn
-        document.querySelector("#avatar").src = `https://cdn.discordapp.com/avatars/${id}/${avatar}.jpg`;
+        // if(document.querySelector("#avatar")){
+            document.querySelector("#avatar").src = `https://cdn.discordapp.com/avatars/${id}/${avatar}.jpg`;
+        // }
 
         localStorage.setItem("user_name", username);
         localStorage.setItem("user_avatar", `https://cdn.discordapp.com/avatars/${id}/${avatar}.jpg`);
     })
-    .catch(console.error);
+    .catch(console.error).then(() =>{
+        console.log("nvm")
+        document.querySelector('#name').textContent = "sign in";
+
+        let avt = document.createElement('i');
+        avt.setAttribute("class", "fa-brands fa-discord")
+        document.querySelector("#discord").appendChild(avt);
+
+        let current = document.querySelector("#avatar");
+        document.querySelector("#discord").removeChild(current);
+
+        document.querySelector("#discord").setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakurakulistening.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'");
+
+    })
         
     //#endregion
 
