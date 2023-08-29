@@ -16,14 +16,14 @@ const responsive = {
 $(document).ready(function () {
 
     //#region user info
-        if(localStorage.getItem("user_name") == null){
-            document.querySelector('#name').textContent = localStorage.getItem("user_name");
+        if(sessionStorage.getItem("user_name") == null){
+            document.querySelector('#name').textContent = sessionStorage.getItem("user_name");
         }
         else {
             document.querySelector('#name').textContent = "sign in";
         }
 
-        if(localStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
+        if(sessionStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
             let avt = document.createElement('i');
             avt.setAttribute("class", "fa-brands fa-discord")
             document.querySelector("#discord").appendChild(avt);
@@ -32,7 +32,7 @@ $(document).ready(function () {
             document.querySelector("#discord").removeChild(current);
         }
         else {
-            document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
+            document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
         }
     //#endregion
 
@@ -237,8 +237,8 @@ $(document).ready(function () {
             
 
             const webhookBody = {
-                username: localStorage.getItem("user_name"),
-                avatar_url: localStorage.getItem("user_avatar"),
+                username: sessionStorage.getItem("user_name"),
+                avatar_url: sessionStorage.getItem("user_avatar"),
                 embeds: [
                     {
                       type: "rich",

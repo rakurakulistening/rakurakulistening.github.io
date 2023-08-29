@@ -16,16 +16,16 @@ const responsive = {
 $(document).ready(function () {
 
     //#region user info
-    if(localStorage.getItem("user_name") == "undefined"){
+    if(sessionStorage.getItem("user_name") == "undefined"){
         document.querySelector('#name').textContent = "sign in";
         console.log("a")
     }
     else {
-        document.querySelector('#name').textContent = localStorage.getItem("user_name");
+        document.querySelector('#name').textContent = sessionStorage.getItem("user_name");
         console.log("b")
     }
 
-    if(localStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
+    if(sessionStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
         let avt = document.createElement('i');
         avt.setAttribute("class", "fa-brands fa-discord")
         document.querySelector("#discord").appendChild(avt);
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     }
     else {
-        document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
+        document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
     }
     //#endregion
 
@@ -60,9 +60,9 @@ $(document).ready(function () {
 
     //#region user info
         //set the welcome username string
-        // document.querySelector('#name').textContent = localStorage.getItem("user_name");
+        // document.querySelector('#name').textContent = sessionStorage.getItem("user_name");
         // //set the avatar image by constructing a url to access discord's cdn
-        // document.querySelector("#avatar").src = localStorage.getItem("user_avatar");
+        // document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
     //#endregion
 
     //values read from task page 
