@@ -1,6 +1,7 @@
 {
     "number": "3",
     "subtopic": "マクドナルド",
+    "language": "English",
     "description": "Listen to the speech, welcoming new employees and answer the questions in English.",
     "audio": "/resources/audio/task3.mp3",
     "questions": [

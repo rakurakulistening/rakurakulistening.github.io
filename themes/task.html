@@ -11,8 +11,8 @@
     <!-- Font Awesome Icons -->
     <!-- <link rel="stylesheet" href="./css/all.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css">
     
     <!-- ------------ AOS Library ------------------------- -->
     <link rel="stylesheet" href="/css/aos.css">
@@ -20,6 +20,14 @@
     <!-- Custom Style   -->
     <link rel="stylesheet" href="/css/HomeStyles.css">
     <link rel="stylesheet" href="/css/TaskStyles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 
 </head>
 
@@ -66,14 +74,16 @@
             <div class="site-tasks" data-aos="fade-in" data-aos-delay="100">
                 <!-- current page location -->
                 <a id="location" class="page-location"></a>
-
+                
                 <!-- task title and audio -->
                 <div class="task-info">
                     <h2 id="title"></h2>
                     <div id="specific" class="specific">
-                        <!-- <button class= "icon-button" id="script">
-                            <i class="fa-solid fa-scroll"></i>  
-                        </button> -->
+                        <!-- PDF/Printable version -->
+                        <button class= "icon-button" id="pdf">
+                            <i class="fa-regular fa-file-pdf"></i>  
+                            <!-- <i class="fa-solid fa-file-pdf"></i> -->
+                        </button>               
                         <audio id="task-audio" controls>
                             <track label="English" kind="subtitles" srclang="en" src="/resources/audio/task1.vtt" default>
                             <source type="audio/mpeg">
@@ -126,14 +136,12 @@
     
     
     <footer class="footer">
-        <div class="container">
-
-            <div class="quote-box" data-aos="fade-in" data-aos-delay="100">
-                <a class="footer">  © 2004 The Melbourne Centre for Japanese Language Education. All rights reserved. </a>
+        <div class="items">
+            <!-- <div class="acknowledge" data-aos="fade-in" data-aos-delay="100"> -->
+            <div class="acknowledge">
+                <a>  © 2004 The Melbourne Centre for Japanese Language Education. All rights reserved. </a>
             </div>
-            
         </div>
-
     </footer>
 
     <!-- -------------x------------- Footer --------------------x------------------- -->
@@ -148,8 +156,6 @@
     <!-- Custom Javascript file -->
     <!-- <script src="/js/topic.js"></script> -->
     <script src="/js/task.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     
     <script>
         // const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {

@@ -117,7 +117,7 @@ main .site-tasks .dialogue .transcript {
 main .site-tasks .dialogue a{
     font-size: large;
     color: white;
-    font-family: var(--Inter);    
+    font-family: 'VT323', monospace;    
 }
 
 main .site-tasks h1{
@@ -135,7 +135,8 @@ main .site-tasks h1{
 main .site-tasks h2{
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
+    font-family: 'DotGothic16', sans-serif;
     font-size: 2.5625rem;
 }
 
@@ -147,6 +148,8 @@ main .site-tasks h3{
     /* margin: .3rem; */
     /* margin-left: 3.8rem; */
     font-size: 20.48px;
+    font-family: 'VT323', monospace;
+    ;
 }
 
 button.button{
@@ -156,7 +159,7 @@ button.button{
     /* margin: 0rem 0.7rem; */
     border-radius: .5rem;
     font-size: 1rem;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     cursor: pointer;
 }
 
@@ -262,7 +265,7 @@ form textarea{
     outline: none;
     background: #0D1117;
     font-size: 16px;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
 }
 
 form .solution {
@@ -352,13 +355,13 @@ button.task{
     width: 225px;
     height: 225px;
     position: relative;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     /* padding-right: 10px; */
 }
 
 button.task a{
     color: white;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     font-weight: 600;
     font-size: large;
     padding-bottom: 100px;
@@ -444,7 +447,7 @@ form .submit{
         margin-right: 5px;
         border-radius: .5rem;
         font-size: 25px;
-        font-family: var(--Inter);
+        font-family: 'VT323', monospace;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -461,7 +464,7 @@ form .submit{
         margin-right: 5px;
         border-radius: .5rem;
         font-size: 25px;
-        font-family: var(--Inter);
+        font-family: 'VT323', monospace;
         cursor: pointer;
         display: flex;
         align-items: center;

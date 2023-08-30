@@ -1,6 +1,7 @@
 {
     "number": "5",
     "subtopic": "付き合い",
+    "language": "English",
     "description": "Listen to the conversation between Mr. Yamada and Mr. Tanaka and answer the questions in English.",
     "audio": "/resources/audio/task5.mp3",
     "questions": [

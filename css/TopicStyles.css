@@ -35,7 +35,7 @@ html, body{
 
 a{
     text-decoration: none;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     color: var(--text-gray);
 }
 
@@ -51,18 +51,18 @@ ul{
 }
 
 h1{
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     /* font-size: 3.125rem; */
     /* font-size: 312%; */
 }
 
 h2{
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     font-size: 2.5625rem;
 }
 
 h3{
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     /* font-size: 1.3rem; */
 }
 
@@ -102,7 +102,7 @@ button.btn{
     padding: 0.9rem 1.5rem;
     border-radius: .5rem;
     font-size: 1rem;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     cursor: pointer;
 }
 
@@ -116,7 +116,7 @@ button.blk{
     margin-right: 3px;
     border-radius: .5rem;
     font-size: 1rem;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     cursor: pointer;
 }
 
@@ -129,7 +129,7 @@ button.nav{
     margin-right: 5px;
     border-radius: .5rem;
     font-size: 1rem;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -141,7 +141,7 @@ button.nav:hover{
     border: none;
     border-radius: .5rem;
     font-size: 1rem;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     cursor: pointer;
     transition: height 1s ease-in-out;
 
@@ -167,7 +167,7 @@ button.quote{
 }
 
 span{
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
 }
 
 .container{
@@ -258,7 +258,7 @@ p{
     /* padding: 1rem 0.4rem 0rem 0rem; */
     font-size: 1.1rem;
     position: relative;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
 }
 
 .nav .nav-items .nav-link:hover{
@@ -272,10 +272,10 @@ p{
 }
 
 .nav .nav-brand a{
-    padding: 1.1rem 3.4rem;
+    padding: 0.7rem 3.4rem;
     width: fit-content;
     display: block;
-    font-family: var(--Inter);
+    font-family: 'DotGothic16', sans-serif;    
     /* font-size: 6.59vh; */
     /* font-size: 3.03vw; */
     font-size: 2.3rem;
@@ -339,7 +339,7 @@ main .site-tasks h2{
     margin-top: 0px;
     margin-bottom: 20px;
     padding-top:40px;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     font-size: 2.5625rem;
 }
 
@@ -568,7 +568,7 @@ main .site-content .post-content > .post-image .post-info span{
 }
 
 main .post-content .post-title a{
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     font-size: 1.5rem;
 }
 
@@ -588,7 +588,7 @@ main .post-content .post-title a{
     padding: .6rem .9rem;
     border-radius: 2rem;
     margin: 0 .3rem;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
 }
 
 .site-content .pagination .pages{
@@ -602,7 +602,7 @@ main .post-content .post-title a{
 /* --------------- Sidebar ----------------------- */
 
 .site-content > .sidebar .category-list{
-    font-family: var(--Inter);   
+    font-family: 'VT323', monospace;   
 }
 
 .site-content > .sidebar .category-list .list-items{
@@ -651,7 +651,7 @@ main .post-content .post-title a{
     width: 80%;
     height: 1.9rem;
     padding: .3rem .5rem;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     font-size: 1rem;
 }
 
@@ -747,7 +747,7 @@ button.task{
     width: 225px;
     height: 225px;
     position: relative;
-    font-family: var(--Inter);
+    /* font-family: 'DotGothic16', sans-serif; */
     /* padding-right: 10px; */
 }
 
@@ -755,6 +755,7 @@ button.task a{
     color: white;
     font-weight: 600;
     font-size: large;
+    font-family: 'DotGothic16', sans-serif;
 }
 
 button.task b{
@@ -762,6 +763,7 @@ button.task b{
     padding-top: 30px;
     font-weight: 480;
     font-size: medium;
+    font-family: 'DotGothic16', sans-serif;
 }
 
 button.task img{
@@ -793,7 +795,7 @@ button.task::before{
 }
 
 
-footer.footer .quote-box{
+footer.footer .acknowledge{
     /* background-color: red; */
     width: 40rem;
     display: flex;
@@ -812,7 +814,7 @@ footer.footer .quote-box{
     border: none;
     background: transparent;
     color: white;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     font-size: 1rem;
     width: 74%;
 } */
@@ -856,7 +858,7 @@ footer.footer .social-link{
 
     font-size: 1.1rem;
     width:18rem;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
 
     position: absolute;
     left: 6%;
@@ -873,7 +875,7 @@ footer.footer .social-link{
 
 /* footer.footer .rights{
     justify-content: center;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
 } */
 
 footer.footer .rights h4 a{
@@ -945,7 +947,7 @@ footer.footer .move-up span:hover{
         margin-right: 5px;
         border-radius: .5rem;
         font-size: 25px;
-        font-family: var(--Inter);
+        font-family: 'VT323', monospace;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -962,7 +964,7 @@ footer.footer .move-up span:hover{
         margin-right: 5px;
         border-radius: .5rem;
         font-size: 25px;
-        font-family: var(--Inter);
+        font-family: 'VT323', monospace;
         cursor: pointer;
         display: flex;
         align-items: center;

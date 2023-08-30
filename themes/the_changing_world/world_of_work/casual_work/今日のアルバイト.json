@@ -1,6 +1,7 @@
 {
     "number": "2",
     "subtopic": "今日のアルバイト",
+    "language": "English",
     "description": "Listen to the conversation between Lisa and Akira and answer the questions in English.",
     "audio": "/resources/audio/task2.mp3",
     "questions": [

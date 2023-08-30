@@ -68,12 +68,23 @@ $(document).ready(function () {
         audio.setAttribute('src', `${data.audio}`);
         // audio.setAttribute('captions', 'ngbioergo')
 
-        // audio.textTracks[0].addEventListener('cuechange', function() {
-        //     document.getElementById('my-subtitle-display').innerText = this.activeCues[0].text;
-        // });
+        //configure pdf headings
+        if(data.language == "English"){
+            var part = 'A';
+            var textnum = "1";
+            var lang_instructions = "– Answer the following questions in";
+            var langPos = 93;
+        } else if (data.language == "Japanese") {
+            var part = 'B';
+            var textnum = "2";
+            var lang_instructions = "– Answer the following questions in complete sentences in";
+            var langPos = 128;
+        }
 
+        //breadcrumb
         document.getElementById("location").textContent = `${localStorage.getItem("theme")} > ${localStorage.getItem("topicName")} > ${localStorage.getItem("subtopic")}`;
 
+        //animations
         responses.setAttribute("data-aos", "fade-in")
         responses.setAttribute("data-aos-delay", "50")
 
@@ -274,7 +285,87 @@ $(document).ready(function () {
             //#endregion
         }
 
-        
+        //pdf generation
+        document.getElementById("pdf").onclick = function(){
+            // Default export is a4 paper, portrait, using millimeters for units
+            window.jsPDF = window.jspdf.jsPDF;
+            const doc = new jsPDF();
+
+            //shapes
+            doc.setLineWidth(0.3); 
+            doc.rect(20, 36, 169.6, 39, 'S')
+
+            // line(x1, y1, x2, y2, style)
+            doc.line(152, 81, 152, 280, 'S');
+
+
+            //#region bolded heading text
+            doc.setFont("times", "bold");
+            doc.setFontSize(12.96);
+            doc.text("SECTION 1", 20, 24);
+            doc.text(`Part ${part} – Listening and responding in ${data.language}`, 20, 33);
+            doc.text(`Instructions for Section 1 – Part ${part}`, 71, 42);
+            doc.text(`Text ${textnum}, Question ${textnum}`, 23, 49)
+            //#endregion
+
+            //#region body text
+            doc.setFont("times", "regular");
+            doc.text("(10 Marks)", 60, 49)
+
+            doc.setFontSize(11.04)
+
+            //regular
+            doc.text("You will hear one text. The text will be played twice. There will be a short break between the first and", 23, 55.5)
+            doc.text("second playings of the text. You may make notes at any time.", 23, 60)
+            doc.text("Listen carefully to the text and then answer the questions in", 23, 66)
+            doc.text("All responses", 23, 71.5)
+            doc.text("be based on the text.", 54, 71.5)
+
+            //bold
+            doc.setFont("times", "bold");
+            doc.text(`${data.language.toUpperCase()}.`, 117, 66)
+            doc.text("must", 45, 71.5)
+
+            //#endregion
+
+            //#region description
+
+            //regular
+            doc.setFont("times", "regular");
+            doc.text(`${lang_instructions}`, 35, 85)
+            doc.text("Responses in the wrong language will not receive credit.", 38, 90)
+
+            //bold
+            doc.setFont("times", "bold");
+            doc.text(`TEXT ${textnum}`, 20, 85)
+            // doc.text(data.language.toUpperCase(), 93, 85)
+            doc.text(`${data.language.toUpperCase()}.`, langPos, 85)
+
+            //#endregion
+            
+            //#region listeningspace
+            doc.setFont("times", "regular");
+
+            doc.text("You may make notes", 155, 85)
+            doc.text("in this space.", 162, 90)
+            //#endregion
+
+            //#region q1
+            doc.setFont("times", "bold");
+            doc.text(`Question ${textnum}`, 20, 99)
+
+            //#endregion
+
+            //#region headers+footers
+
+            //#endregion
+
+
+
+            doc.save(`${data.subtopic}.pdf`);
+            console.log(doc.getFontList());
+        }
+ 
     })
 
 

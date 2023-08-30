@@ -1,6 +1,7 @@
 {
     "number": "7",
     "subtopic": "仕事の変化",
+    "language": "Japanese",
     "description": "Listen to the speech and complete the task below in Japanese.",
     "audio": "/resources/audio/task7.mp3",
     "questions": [

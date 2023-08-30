@@ -86,7 +86,7 @@ main .site-topics h2{
     margin-top: 0px;
     margin-bottom: 20px;
     padding-top:40px;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     font-size: 2.5625rem;
 }
 
@@ -170,7 +170,7 @@ button.topic{
     width: 225px;
     height: 225px;
     position: relative;
-    font-family: var(--Inter);
+    font-family: 'VT323', monospace;
     /* padding-right: 10px; */
 }
 
@@ -264,7 +264,7 @@ button.topic::before{
         margin-right: 5px;
         border-radius: .5rem;
         font-size: 25px;
-        font-family: var(--Inter);
+        font-family: 'VT323', monospace;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -281,7 +281,7 @@ button.topic::before{
         margin-right: 5px;
         border-radius: .5rem;
         font-size: 25px;
-        font-family: var(--Inter);
+        font-family: 'VT323', monospace;
         cursor: pointer;
         display: flex;
         align-items: center;
