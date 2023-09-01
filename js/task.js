@@ -296,7 +296,6 @@ $(document).ready(function () {
             doc.rect(20, 36, 169.6, 39, 'S')
 
             // line(x1, y1, x2, y2, style)
-            doc.line(152, 81, 152, 280, 'S');
 
 
             //#region bolded heading text
@@ -344,26 +343,121 @@ $(document).ready(function () {
             //#endregion
             
             //#region listeningspace
+            doc.line(152, 81, 152, 280, 'S');
             doc.setFont("times", "regular");
-
             doc.text("You may make notes", 155, 85)
             doc.text("in this space.", 162, 90)
             //#endregion
 
-            //#region q1
+            //#region "Question X"
             doc.setFont("times", "bold");
             doc.text(`Question ${textnum}`, 20, 99)
 
             //#endregion
+
+            var subQs = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
+            //#region create questions
+            var posY = 104;
+            var linePos = 114;
+            var inc;
+            var qNo;
+            doc.setLineWidth(0.1); 
+            for(let s = 0; s <= data.questions.length - 1; s++) {
+            if(posY < 284){
+                //"{a,b,c,d,etc...}."
+                doc.setFont("times", "bold");
+                doc.text(`${subQs[s]}.`, 20, posY)
+
+                //Question itself
+                doc.setFont("times", "regular");
+                var splitQuestion = doc.splitTextToSize(data.questions[s], 105); //wrapping so question doesnt go through dividing line
+                doc.text(splitQuestion, 28, posY);
+
+                //Generate 3 lines below question
+
+                //determine width between first line and question depending on whether q has been wrapped or not
+                if(doc.getTextWidth(data.questions[s])<135){ //not wrapped
+                    inc = 10;
+                } else if(doc.getTextWidth(data.questions[s])>135){ //wrapped
+                    inc = 14;
+                }
+
+                linePos = posY + inc;
+
+                //generate the three lines with a width of linePos+l between them
+                for(var l=0; l<30; l= l+10){
+                    doc.line(26, linePos+l, 138, linePos+l, 'S');
+                }
+    
+                // width between last writing line and top of next question
+                posY += 45;
+                qNo = s;
+            }
+                //#region new page operations
+                else {
+                    var posY = 20;
+                    var linePos = 30;
+                    var inc;
+
+                    for(let s = qNo+1; s <= data.questions.length - 1; s++) {
+
+                        doc.addPage();
+                        doc.setPage(2);                    
+
+                        //#region listeningspace
+                        doc.line(152, 15, 152, 280, 'S');
+                        doc.setFont("times", "regular");
+                        doc.text("You may make notes", 155, 20)
+                        doc.text("in this space.", 162, 25)
+                        //#endregion
+
+                        //"{a,b,c,d,etc...}."
+                        doc.setFont("times", "bold");
+                        doc.text(`${subQs[s]}.`, 20, posY)
+
+                        //Question itself
+                        doc.setFont("times", "regular");
+                        var splitQuestion = doc.splitTextToSize(data.questions[s], 105); //wrapping so question doesnt go through dividing line
+                        doc.text(splitQuestion, 28, posY);
+
+                        //#region Generate 3 lines below question
+    
+                        //determine width between first line and question depending on whether q has been wrapped or not
+                        if(doc.getTextWidth(data.questions[s])<135){ //not wrapped
+                            inc = 10;
+                        } else if(doc.getTextWidth(data.questions[s])>135){ //wrapped
+                            inc = 14;
+                        }
+    
+                        linePos = posY + inc;
+    
+                        //generate the three lines with a width of linePos+l between them
+                        for(var l=0; l<30; l= l+10){
+                            doc.line(26, linePos+l, 138, linePos+l, 'S');
+                        }
+        
+                        // width between last writing line and top of next question
+                        posY += 45;
+                        // console.log(posY);\
+    
+                        //#endregion
+                    }
+                }
+                //#endregion
+
+
+            }            
+            //#endregion
+
 
             //#region headers+footers
 
             //#endregion
 
 
-
             doc.save(`${data.subtopic}.pdf`);
-            console.log(doc.getFontList());
+            // console.log(doc.getFontList());
         }
  
     })

@@ -189,147 +189,23 @@ p{
 
 /* ------x------- Global Classes -------x-------*/
 
-/* --------------- navbar ----------------- */
-
-.nav{
-    display: flex;
-    justify-content:space-between;
-    background-color: #161B22;
-    padding: 0rem 0.4rem;
-    height: 4.988rem;
-    overflow: hidden;
-    transition: height 1s ease-in-out;
-}
-
-.nav .nav-menu{    
-    justify-content: space-between;
-}
-
-.nav .nav-text{
-    color: white;
-    padding-right: 5px;
-}
-
-.nav .nav-icons{
-    color: black;
-}
-
-/* .nav .h2{
-    font-weight: normal;
-    margin: .3rem;
-    margin-left: 3.8rem;
-} */
-
-.nav .toggle-collapse{
-    position: absolute;
-    top: 0%;
-    width: 90%;
-    cursor: pointer;
-    display: none;
-}
-
-.nav .toggle-collapse .toggle-icons{
-    display: flex;
-    justify-content: flex-end;
-    padding: 1.7rem 0rem;
-}
-
-.nav .toggle-collapse .toggle-icons i{
-    cursor: pointer;
-    font-size: 1.9rem;
-    color: black;
-}
-
-.collapse{
-    height: 30rem;
-}
-
-.nav .nav-items{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
-.nav .nav-items .nav-link{
-    /* background-color: teal; */
-    display: flex;
-    align-items: center;
-    justify-content:right;
-    /* padding: 1rem 0.4rem 0rem 0rem; */
-    font-size: 1.1rem;
-    position: relative;
-    font-family: 'VT323', monospace;
-}
-
-.nav .nav-items .nav-link:hover{
-    /* background-color: teal; */
-    border-radius: 10px;
-    
-}
-
-.nav .nav-items .nav-link:hover a{
-    color: var(--black);
-}
-
-.nav .nav-brand a{
-    padding: 0.7rem 3.4rem;
-    width: fit-content;
-    display: block;
-    font-family: 'DotGothic16', sans-serif;    
-    /* font-size: 6.59vh; */
-    /* font-size: 3.03vw; */
-    font-size: 2.3rem;
-    font-weight: bold;
-    color: white;
-}
-
-.nav .social{
-    padding: 1.4rem 0
-}
-
-.nav .social i{
-    padding: 0 .2rem;
-}
-
-.nav .social i:hover{
-    color: #a1c4cf;
-}
-
-/* -------x------- navbar ---------x------- */
-
-
 /* ----------------- Main Content----------- */
 
 /* --------------- Site title ---------------- */
-main .site-background{
-    padding-top: 20px;
+main .site-topics{
+    padding: 20px 0px 40px 2.3rem;
     background-color: #0D1117;
-    /* background: url('../assets/Background-image.png'); */
     background-size: cover;
-    /* height: 80vh; */
-
-    /* height: 40vw; */
     height: fit-content;
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: left;
-
-    
     color: white;
-    /* padding-left: 3.8rem; */
-    padding-left: 4.3vw;
-
-
 }
 
 main .site-tasks h1{
-    /* font-weight: bold; */
     margin: .3rem;
-    /* margin-left: 3.8rem; */
-    /* font-size: 312%; */
-    /* font-size: 4.1vw; */
-    /* font-size: 3.11rem; */
     font-size: 49.76px;
     display: flex;
     overflow: hidden;
@@ -348,23 +224,17 @@ main .site-tasks h3{
     font-weight: 500;
     padding-top: 30px;
     padding-bottom: 10px;
-    /* margin: .3rem; */
-    /* margin-left: 3.8rem; */
     font-size: 20.48px;
 }
 
 main .site-tasks .btn{
-    /* margin-left: 3.8rem; */
     margin-top: 2rem;
     background: var(--sky);
 }
 
 main .site-tasks .btn:hover{
-    /* background: transparent; */
-    /* border: 2px solid var(--white); */
     box-shadow: inset 0px 0px 0px 2px white;
     box-sizing: border-box;    
-    /* color: var(--white); */
 }
 
 /* --------x------ Site title --------x------- */
@@ -794,15 +664,6 @@ button.task::before{
 
 }
 
-
-footer.footer .acknowledge{
-    /* background-color: red; */
-    width: 40rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:0rem 0rem 0rem 0rem;
-}
 
 /* footer.footer .newsletter .form-element{
     background: black;

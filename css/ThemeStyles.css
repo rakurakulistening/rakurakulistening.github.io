@@ -48,35 +48,20 @@ html, body{
 
 /* --------------- Site title ---------------- */
 
-main .site-background{
-    padding-top: 20px;
+main .site-themes{
+    padding: 20px 0px 40px 2.3rem;
     background-color: #0D1117;
-    /* background: url('../assets/Background-image.png'); */
     background-size: cover;
-    /* height: 80vh; */
-
-    /* height: 40vw; */
     height: fit-content;
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: left;
-
-    
     color: white;
-    /* padding-left: 3.8rem; */
-    padding-left: 4.3vw;
-
-
 }
 
 main .site-topics h1{
-    /* font-weight: bold; */
     margin: .3rem;
-    /* margin-left: 3.8rem; */
-    /* font-size: 312%; */
-    /* font-size: 4.1vw; */
-    /* font-size: 3.11rem; */
     font-size: 49.76px;
     display: flex;
     overflow: hidden;
@@ -93,22 +78,18 @@ main .site-topics h2{
 main .site-topics h3{
     font-weight: normal;
     margin: .3rem;
-    /* margin-left: 3.8rem; */
     font-size: 1.6vw;
 }
 
 main .site-topics .btn{
-    /* margin-left: 3.8rem; */
     margin-top: 2rem;
     background: var(--sky);
 }
 
 main .site-topics .btn:hover{
-    /* background: transparent; */
-    /* border: 2px solid var(--white); */
+
     box-shadow: inset 0px 0px 0px 2px white;
     box-sizing: border-box;    
-    /* color: var(--white); */
 }
 
 

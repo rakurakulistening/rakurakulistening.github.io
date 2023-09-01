@@ -235,8 +235,7 @@ p{
     display: flex;
     justify-content:space-between;
     background-color: #161B22;
-    padding: 0rem 0.4rem;
-    height: 4.988rem;
+    height: 5rem;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -314,7 +313,7 @@ p{
 }
 
 .nav .nav-brand a{
-    padding: 0.7rem 3.4rem;
+    padding: 0.7rem 1.98rem;
     width: fit-content;
     display: block;
     font-family: 'DotGothic16', sans-serif;
@@ -358,14 +357,14 @@ main .site-background{
     align-items: center;
     color: white;
     /* padding-left: 3.8rem; */
-    /* padding-left: 4.3vw; */
+    /* padding-left: 1.98rem; */
 
 
 }
 
 main .site-title {
-    /* padding-left: 4.3vw; */
-    padding-left: 3.6rem;
+    padding-left: 1.9rem;
+    /* padding-left: 2ch; */
 }
 
 
@@ -703,7 +702,7 @@ footer.footer{
 }
 
 footer.footer .items{
-    padding-left: 4.1rem;
+    padding-left: 2.5rem;
     display: flex;
     align-items: center;
 }
