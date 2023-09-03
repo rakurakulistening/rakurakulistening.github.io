@@ -61,7 +61,7 @@ $(document).ready(function () {
         localStorage.setItem("directoryPath", location.substring(0, location.lastIndexOf("/")));
         localStorage.setItem("theme", topic.parentElement.id);
         localStorage.setItem("topicName", topic.id);
-        window.location.href='/themes/topic.html';
+        window.location.href='/content/topics';
         }
     }
 

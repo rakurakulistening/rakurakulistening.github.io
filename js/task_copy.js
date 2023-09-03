@@ -85,7 +85,7 @@ $(document).ready(function () {
                 let taskButton = document.createElement('button');
                 taskButton.setAttribute("id", data.subtopics[i].tasks[j]);  
                 taskButton.className = "task";
-                taskButton.setAttribute("onclick", "location.href='/themes/task.html'");
+                taskButton.setAttribute("onclick", "location.href='/content/task'");
 
 
                 let taskName = document.createElement('a');

@@ -93,7 +93,7 @@ $(document).ready(function () {
                 let taskButton = document.createElement('button');
                 taskButton.setAttribute("id", data.subtopics[i].tasks[j]);  
                 taskButton.className = "task";
-                // taskButton.setAttribute("onclick", "location.href='/themes/task.html'");
+                // taskButton.setAttribute("onclick", "location.href='/content/task'");
 
 
                 let taskName = document.createElement('a');
@@ -145,7 +145,7 @@ $(document).ready(function () {
             task.onclick = function(){
                 localStorage.setItem("subtopic", task.parentElement.id);
                 localStorage.setItem("taskName", task.id);
-                window.location.href='/themes/task.html';
+                window.location.href='/content/task';
             }
         }
         //#endregion
