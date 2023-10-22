@@ -15,6 +15,22 @@ const responsive = {
 
 $(document).ready(function () {
 
+    //#region theme switching
+    var themeBtn = document.getElementById("theme-switch");
+    var themeIcn = document.getElementById('theme');
+
+    themeBtn.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+
+        if(document.body.classList.contains("dark-mode")){
+            // document.body.classList.toggle("light-mode");
+            themeIcn.setAttribute("class", "fa-solid fa-moon");
+        } else {
+            themeIcn.setAttribute("class", "fa-solid fa-sun");
+        }
+    }
+    //#endregion
+
     //#region user info
         if(sessionStorage.getItem("user_name") == null){
             document.querySelector('#name').textContent = sessionStorage.getItem("user_name");
@@ -59,6 +75,8 @@ $(document).ready(function () {
     const check = document.querySelector("#check")
     
     //#region read JSON file and create task buttons
+    // console.log(`${localStorage.getItem("directoryPath")}/${localStorage.getItem("theme").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("topicName").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("subtopic").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem('taskName')}.json`)
+
     fetch(`${localStorage.getItem("directoryPath")}/${localStorage.getItem("theme").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("topicName").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("subtopic").toLowerCase().replaceAll(' ', '_')}/${/. (.+)/.exec(localStorage.getItem('taskName'))[1]}.json`)
     .then(res => res.json())
     .then(data => {
@@ -290,6 +308,7 @@ $(document).ready(function () {
             // Default export is a4 paper, portrait, using millimeters for units
             window.jsPDF = window.jspdf.jsPDF;
             const doc = new jsPDF();
+            doc.addFont("../fonts/Sawarabi_Mincho/SawarabiMincho-Regular.ttf", "Sawarabi Mincho", "Regular");
 
             //shapes
             doc.setLineWidth(0.3); 
@@ -370,7 +389,12 @@ $(document).ready(function () {
                 doc.text(`${subQs[s]}.`, 20, posY)
 
                 //Question itself
-                doc.setFont("times", "regular");
+                if(data.language == ("Japanese")){
+                    doc.setFont("Sawarabi Mincho", "Regular");
+
+                } else {
+                    doc.setFont("times", "regular");
+                } 
                 var splitQuestion = doc.splitTextToSize(data.questions[s], 105); //wrapping so question doesnt go through dividing line
                 doc.text(splitQuestion, 28, posY);
 
@@ -399,6 +423,7 @@ $(document).ready(function () {
                     var posY = 20;
                     var linePos = 30;
                     var inc;
+                    doc.setLineWidth(0.3); 
 
                     for(let s = qNo+1; s <= data.questions.length - 1; s++) {
 
@@ -418,6 +443,7 @@ $(document).ready(function () {
 
                         //Question itself
                         doc.setFont("times", "regular");
+                        // if(data.questions.lang)
                         var splitQuestion = doc.splitTextToSize(data.questions[s], 105); //wrapping so question doesnt go through dividing line
                         doc.text(splitQuestion, 28, posY);
 
