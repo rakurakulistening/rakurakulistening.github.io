@@ -1,5 +1,7 @@
 {
+    "number": "74",
     "subtopic": "ひな祭り",
+    "language": "English",
     "description": "Listen to the conversation then answer the questions in English.",
     "audio": "/resources/audio/task74.mp3",
     "questions": [
@@ -7,5 +9,26 @@
         "What do people do to celebrate Hinamatsuri?",
         "On what date are Aki and Lisa having this conversation?"
     ],
-    "script":   "アン：もうすぐお正月ですね。"
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "It is on March 3rd.",
+        "They decorate Hina Dolls and eat delicious confectionaries.",
+        "They are having this conversation on March 2nd."
+    ],
+    "transcript": [
+        "リサ：うわあ、きれいなにんぎょうですね。",
+        "あき：ありがとう。これは、ひなにんぎょうです。",
+        "リサ：ひなにんぎょう？",
+        "あき：そうです。(Q2)ひなまつりにかざるにんぎょうです。",
+        "リサ：「ひなまつり」って何ですか。",
+        "あき：ひなまつりは一年に一回、女の子をいわうおまつりです。",
+        "リサ：へえ。そのひなまつりはいつですか。",
+        "あき：(Q1)三月三日です。",
+        "リサ：(Q3)三月三日。えっ、じゃ、明日ですね。",
+        "あき：そうです。(Q2)とてもおいしいおかしも食べられますよ。",
+        "リサ：わあ、楽しみ。"
+    ]
 }

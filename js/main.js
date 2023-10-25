@@ -15,6 +15,24 @@ const responsive = {
 
 $(document).ready(function () {
 
+    //#region theme switching
+    var themeBtn = document.getElementById("theme-switch");
+    var themeIcn = document.getElementById('theme');
+
+    themeBtn.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+
+        if(document.body.classList.contains("dark-mode")){
+            document.body.classList.toggle("light-mode");
+            themeIcn.setAttribute("class", "fa-solid fa-moon");
+        } else {
+            themeIcn.setAttribute("class", "fa-solid fa-sun");
+        }
+    }
+    //#endregion
+
+    
+
     //set discord auth link in buttons
     for(const signIn of document.querySelectorAll("#sign-in")){
         signIn.setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakurakulistening.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'");

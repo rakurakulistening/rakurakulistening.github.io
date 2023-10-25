@@ -1,0 +1,37 @@
+{
+    "number": "80",
+    "subtopic": "カラオケ",
+    "language": "English",
+    "description": "Listen to the conversation between Naoko and Tom then answer the questions in English.",
+    "audio": "/resources/audio/task80.mp3",
+    "questions": [
+        "What is the plan for tomorrow?",
+        "What is the cost?",
+        "Detail the meeting place and time."
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "Going to karaoke.",
+        "About 500 yen per person per hour.",
+        " In front of the station at 5:00pm tomorrow evening."
+    ],
+    "transcript" : [
+        " なおこ：もしもしトムくん。なおこです。",
+        "トム：  あ、なおこさん。どうしたんですか。",
+        "なおこ：明日、ジョンくんとたかしくんといっしょにカラオケに行くんだけど、いっしょに行きませんか。",
+        "トム：  カラオケですか。ううん、ぼく、うたがあんまり上手じゃないから．．．",
+        "なおこ：だいじょうぶですよ。私もあんまりとくいじゃないし。でも、楽しいですよ。",
+        "トム：  そうですか。いくらぐらいかかりますか。",
+        "なおこ：ええと、一時間で一人５００円ぐらいです。",
+        "トム：  ５００円かあ。そんなに高くないですね。じゃあ行きましょう。",
+        "なおこ：そうしたら、明日朝の１０時に駅の前に来てください。",
+        "トム：  朝ですか。朝はアルバイトがあるからいそがしいです。",
+        "なおこ：そうですか。じゃあ夕方にしましょう。５時はどうですか。",
+        "トム：  ５時ならだいじょうぶです。駅の前ですね。",
+        "なおこ：はい。じゃあ、また明日。",
+        "トム：  バイバイ。"
+    ]
+}

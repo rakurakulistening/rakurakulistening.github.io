@@ -1,0 +1,24 @@
+{
+    "number": "79",
+    "subtopic": "ビデオゲーム",
+    "language": "English",
+    "description": "Listen to the speech about a new video game then answer the questions in English.",
+    "audio": "/resources/audio/task79.mp3",
+    "questions": [
+        "What is the name of the new video game from Sony?",
+        "Why is it more interesting than Nintendo or Sega?",
+        "What other feature does this game have?"
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "It is Sony Playstation 2.",
+        "Because it has more variety of soft ware compared to Nintendo and Sega.",
+        "It has a DVD function as well. "
+    ],
+    "transcript" : [
+        " それでは次のニュースです。さいきん、新しいゲームがたくさん作られていますが、ソニーが一番新しいゲームを売りはじめました。(Q1)名前はソニープレイステーション２です。(Q2)ソニーによると、ニンテンドウやセガのゲームよりもたくさんソフトがあるからおもしろいそうです。(Q3)それから、このプレイステーション２でDVDも見ることができます。今はレンタルビデオ屋でDVDをかりることができるので、とてもべんりですね。"
+    ]
+}

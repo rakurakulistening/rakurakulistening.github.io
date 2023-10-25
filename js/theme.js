@@ -15,6 +15,22 @@ const responsive = {
 
 $(document).ready(function () {
 
+    //#region theme switching
+    var themeBtn = document.getElementById("theme-switch");
+    var themeIcn = document.getElementById('theme');
+
+    themeBtn.onclick = function(){
+        document.body.classList.toggle("dark-mode");
+
+        if(document.body.classList.contains("dark-mode")){
+            // document.body.classList.toggle("light-mode");
+            themeIcn.setAttribute("class", "fa-solid fa-moon");
+        } else {
+            themeIcn.setAttribute("class", "fa-solid fa-sun");
+        }
+    }
+    //#endregion
+
     //#region user info
     // if(sessionStorage.getItem("user_name") == "undefined"){
     //     // console.log(sessionStorage.getItem("user_name"))

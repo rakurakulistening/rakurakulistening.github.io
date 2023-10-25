@@ -39,3 +39,10 @@
     font-family: Livvic;
     src: url('../fonts/Livvic/Livvic-Regular.ttf');
 }
+
+/*  font-family: Noto_Serif_Regular  */
+@font-face {
+    font-family: Noto_Serif_Regular;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+    
+}

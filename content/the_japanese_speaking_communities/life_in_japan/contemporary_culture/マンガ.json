@@ -1,0 +1,29 @@
+{
+    "number": "78",
+    "subtopic": "マンガ",
+    "language": "English",
+    "description": "Listen to the conversation between Mark and Akemi then answer the questions in English.",
+    "audio": "/resources/audio/task78.mp3",
+    "questions": [
+        "What did Mark notice on the train?",
+        "Why do Japanese adults read manga? Give one of two reasons.",
+        "Does Akemi likes manga?"
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },  
+    "solutions": [
+        "He noticed that adults often read comics on the train.",
+        "Because there are many comics that interest Japanese adults. \n (OR : Because Japanese adults used to read many comics when they were children.)",
+        "Yes, she likes manga very much."
+    ],
+    "transcript" : [
+        "マーク：あけみさん。ちょっと聞きたいことがあるんですけど。",
+        "あけみ： マーク君、何ですか。",
+        "マーク：(Q1)学校に電車で来る時に、よく大人がまんがを読んでるんですけど、どうしてですか。",
+        "あけみ：そうですね。たぶん、(Q2)大人の人にもおもしろいまんががたくさんあるからでしょう。それから、子どもの時にたくさんまんがを読んでいたから、今でも読む人がいるんだと思います。",
+        "マーク：ふうん。あけみさんもまんがをよく読みますか。",
+        "あけみ：(Q3)はい。まんがはとても好きですよ。"
+    ]
+}

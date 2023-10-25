@@ -1,0 +1,29 @@
+{
+    "number": "75",
+    "subtopic": "遠足",
+    "language": "English",
+    "description": "Listen to the conversation between Anne and Rie then answer the questions in English.",
+    "audio": "/resources/audio/task75.mp3",
+    "questions": [
+        "When is the excursion?",
+        "Where are they going for the excursion?",
+        "What aren’t they allowed to bring on the excursion?",
+        "How much is the bus fare?",
+        "By what date must they pay the bus fare?"
+    ],
+    "vocab": {
+        "jp": [],
+        "en": []
+    },
+    "solutions": [
+        "It is next Friday.", 
+        "They are going to go to Ueno Park.", 
+        "They are not allowed to bring alcohol.",
+        "It is 500 yen.",
+        "They must pay by next Wednesday."
+    ],
+    "transcript":   [
+                "みなさん、おはようございます。今からえんそくについて話しますので、よく聞いてください。(Q1)えんそくは来週の金曜日です。いいですか、(Q2)金曜日にうえのこうえんに行きます。うえのこうえんのさくらはとてもきれいだそうですから、うえのこうえんで花見をしましょう。花見をしながらカラオケもできるかもしれません。飲み物と食べ物を持ってきてもいいですが、(Q3)おさけはぜったいに持ってこないでください。いいですか、おさけはだめです。学校からうえのこうえんまでバスで行きます。(Q4)バスだいは五百円です。(Q5)その五百円を来週の水曜日までに持ってきてください。水曜日までですよ。わすれないように。何かしつもんがありますか。"
+    ]
+
+}
