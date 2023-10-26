@@ -309,7 +309,7 @@ p{
     display: flex;
     align-items: center;
     justify-content:right;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     position: relative;
     font-family: 'VT323', monospace;
 }
@@ -872,7 +872,8 @@ footer.footer .move-up span:hover{
         height: fit-content;
         margin-right: 5px;
         border-radius: .5rem;
-        font-size: 25px;
+        /* font-size: 25px; */
+        font-size: 90%;
         font-family: 'VT323', monospace;
         cursor: pointer;
         display: flex;

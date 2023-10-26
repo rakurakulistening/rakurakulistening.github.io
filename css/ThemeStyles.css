@@ -3,9 +3,12 @@
 
 
 html, body{
+    height: 100%;
     margin: 0%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     overflow-x: hidden;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 :root{
@@ -48,11 +51,15 @@ html, body{
 
 /* --------------- Site title ---------------- */
 
+main {
+    height: 170%;
+}
+
 main .site-themes{
     padding: 20px 0px 40px 2.3rem;
     background-color: #0D1117;
     background-size: cover;
-    height: fit-content;
+    /* height: 100%; */
     display: flex;
     margin: auto;
     align-items: center;
