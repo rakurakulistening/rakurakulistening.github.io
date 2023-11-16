@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>らくらく</title>
+    <title>安々</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/svgs/solid/house.svg">
 
     <!-- Font Awesome Icons -->
@@ -22,6 +22,7 @@
     <!-- Custom Style   -->
     <link rel="stylesheet" href="/css/HomeStyles.css">
     <link rel="stylesheet" href="/css/TopicStyles.css">
+    <link rel="stylesheet" href="/css/NavStyles.css">
 
 <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,15 +37,15 @@
     
     <nav class="nav">
             <div class="nav-brand">
-                <a href="/home" data-aos="fade-in" data-aos-delay="100" >らくらく</a>
+                <a href="/home" data-aos="fade-in" data-aos-delay="100" >安々</a>
             </div>
-            
                 <div class="nav-items">
                     <li class="nav-link" data-aos="fade-in" data-aos-delay="100" >
-                        <button id="discord" class="nav" type="button">
+                        <input class="search"></input>
+                        <!-- <button id="discord" class="nav" type="button">
                             <img id="avatar" class="pfp" width="25px" height="25px"></img>
                             <a id="name" class="nav-text"></a>
-                        </button>    
+                        </button>     -->
                         <button class="nav" onclick="location.href='/content/themes'" type="button">
                             <a class="nav-text">listening</a>
                             <i class="fa-solid"></i>  
@@ -68,9 +69,7 @@
     <!----------------------------- Main Site Section ------------------------------>
 
     <main>
-
         <!------------------------ Site Title ---------------------->
-
         <section class="site-topics">
             <div class="site-tasks" data-aos="fade-in" data-aos-delay="100">
                 <div id="location" class="page-location"></div>
@@ -79,22 +78,26 @@
                 <br>
             </div>
         </section>
+
+        <!-- --------------------------- Footer ---------------------------------------- -->
+
+        <footer class="footer">
+            <div class="brand">
+                <a>安々</a>
+                <a>　・　</a>
+                <!-- <a>  © 2004 The Melbourne Centre for Japanese Language Education. All rights reserved. </a> -->
+            </div>
+            <div class="pages">
+                <a>　ホーム</a>
+            </div>
+        </footer>
+
+        <!-- -------------x------------- Footer --------------------x------------------- -->
     </main>
 
     
     
-     <!-- --------------------------- Footer ---------------------------------------- -->
-    
-     <footer class="footer">
-        <div class="items">
-            <!-- <div class="acknowledge" data-aos="fade-in" data-aos-delay="100"> -->
-            <div class="acknowledge">
-                <a>  © 2004 The Melbourne Centre for Japanese Language Education. All rights reserved. </a>
-            </div>
-        </div>
-    </footer>
 
-    <!-- -------------x------------- Footer --------------------x------------------- -->
 
 
     <!-- Jquery Library file -->
@@ -105,7 +108,7 @@
     <script src="/js/aos.js"></script>
 
     <!-- Custom Javascript file -->
-    <script src="/js/topic.js"></script>
+    <script src="/js/topics.js"></script>
     <!-- <script src="/js/task.js"></script> -->
 
 </body>

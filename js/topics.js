@@ -30,31 +30,31 @@ $(document).ready(function () {
     }
     //#endregion
 
-    //#region user info
-    if(sessionStorage.getItem("user_name") == "undefined"){
-        document.querySelector('#name').textContent = "sign in";
-        console.log("a")
-    }
-    else {
-        document.querySelector('#name').textContent = sessionStorage.getItem("user_name");
-        console.log("b")
-    }
+    // //#region user info
+    // if(sessionStorage.getItem("user_name") == "undefined"){
+    //     document.querySelector('#name').textContent = "sign in";
+    //     console.log("a")
+    // }
+    // else {
+    //     document.querySelector('#name').textContent = sessionStorage.getItem("user_name");
+    //     console.log("b")
+    // }
 
-    if(sessionStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
-        let avt = document.createElement('i');
-        avt.setAttribute("class", "fa-brands fa-discord")
-        document.querySelector("#discord").appendChild(avt);
+    // if(sessionStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
+    //     let avt = document.createElement('i');
+    //     avt.setAttribute("class", "fa-brands fa-discord")
+    //     document.querySelector("#discord").appendChild(avt);
 
-        let current = document.querySelector("#avatar");
-        document.querySelector("#discord").removeChild(current);
+    //     let current = document.querySelector("#avatar");
+    //     document.querySelector("#discord").removeChild(current);
         
-        document.querySelector("#discord").setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakurakulistening.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'");
+    //     document.querySelector("#discord").setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakurakulistening.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'");
 
-    }
-    else {
-        document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
-    }
-    //#endregion
+    // }
+    // else {
+    //     document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
+    // }
+    // //#endregion
 
     //#region navigation
     $nav = $('.nav');

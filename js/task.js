@@ -23,7 +23,6 @@ $(document).ready(function () {
         document.body.classList.toggle("dark-mode");
 
         if(document.body.classList.contains("dark-mode")){
-            // document.body.classList.toggle("light-mode");
             themeIcn.setAttribute("class", "fa-solid fa-moon");
         } else {
             themeIcn.setAttribute("class", "fa-solid fa-sun");
@@ -31,26 +30,26 @@ $(document).ready(function () {
     }
     //#endregion
 
-    //#region user info
-        if(sessionStorage.getItem("user_name") == null){
-            document.querySelector('#name').textContent = sessionStorage.getItem("user_name");
-        }
-        else {
-            document.querySelector('#name').textContent = "sign in";
-        }
+    // //#region user info
+    //     if(sessionStorage.getItem("user_name") == null){
+    //         document.querySelector('#name').textContent = sessionStorage.getItem("user_name");
+    //     }
+    //     else {
+    //         document.querySelector('#name').textContent = "sign in";
+    //     }
 
-        if(sessionStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
-            let avt = document.createElement('i');
-            avt.setAttribute("class", "fa-brands fa-discord")
-            document.querySelector("#discord").appendChild(avt);
+    //     if(sessionStorage.getItem("user_avatar") == "https://cdn.discordapp.com/avatars/undefined/undefined.jpg"){
+    //         let avt = document.createElement('i');
+    //         avt.setAttribute("class", "fa-brands fa-discord")
+    //         document.querySelector("#discord").appendChild(avt);
 
-            let current = document.querySelector("#avatar");
-            document.querySelector("#discord").removeChild(current);
-        }
-        else {
-            document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
-        }
-    //#endregion
+    //         let current = document.querySelector("#avatar");
+    //         document.querySelector("#discord").removeChild(current);
+    //     }
+    //     else {
+    //         document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
+    //     }
+    // //#endregion
 
     //#region navigation
     $nav = $('.nav');
@@ -133,8 +132,6 @@ $(document).ready(function () {
             question.appendChild(type);
 
             responses.appendChild(question);
-
-
         }
 
         document.getElementById("check").onclick = function(){
@@ -152,9 +149,12 @@ $(document).ready(function () {
                 suggested.setAttribute("class", `suggested`)
                 suggested.text = `Suggested Answer: \n ${data.solutions[a]}`;
 
-                //animations:
-                solution.setAttribute("data-aos", "fade-right")
-                solution.setAttribute("data-aos-delay", "50")
+                // //animations:
+                // solution.setAttribute("data-aos", "fade-right")
+                // solution.setAttribute("data-aos-delay", "50")
+
+                // suggested.setAttribute("data-aos", "fade-right")
+                // suggested.setAttribute("data-aos-delay", "50")
 
                 //structure
                 solution.appendChild(suggested);
@@ -200,8 +200,8 @@ $(document).ready(function () {
                     transcript.hidden = false;
                     transcript.setAttribute("id", "transcript");
                     transcript.setAttribute("class", "transcript");
-                    transcript.setAttribute("data-aos", "fade-down")
-                    transcript.setAttribute("data-aos-delay", "50")
+                    // transcript.setAttribute("transition", "ease-in-out")
+                    // transcript.setAttribute("--transition-delay", "1")
                     // data-aos="fade-in" data-aos-delay="100"
 
                     for(l=0;l<data.transcript.length;l++){
@@ -303,7 +303,7 @@ $(document).ready(function () {
             //#endregion
         }
 
-        //pdf generation
+        //#region pdf generation
         document.getElementById("pdf").onclick = function(){
             // Default export is a4 paper, portrait, using millimeters for units
             window.jsPDF = window.jspdf.jsPDF;
@@ -485,6 +485,8 @@ $(document).ready(function () {
             doc.save(`${data.subtopic}.pdf`);
             // console.log(doc.getFontList());
         }
+
+        //#endregion
  
     })
 

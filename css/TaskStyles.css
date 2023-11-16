@@ -8,6 +8,29 @@ html, body{
     overflow-x: hidden;
 }
 
+body {
+    --text: #1b0f09;
+    --background: #ffffff;
+    --primary: #65a9cd;
+    --secondary: #d1d5f0;
+    --accent: #3cb9a6;
+    --main-bg: #0D1117;
+    --border: rgba(0,0,0);
+    --hover: rgba(226, 226, 226, 0.186);
+}
+
+
+body.dark-mode{
+    --text: #f6eae4;
+    --background: #000000;
+    --primary: #32769a;
+    --secondary: #0f132e;
+    --accent: #46c3b0;
+    --main-bg: #0D1117;
+    --border: rgba(255, 255, 255, 0.1);
+    --hover: rgba(255, 255, 255, 0.06);
+}
+
 :root{
 
     /*      Theme colors        */
@@ -49,7 +72,7 @@ html, body{
 /* --------------- Site title ---------------- */
 main .site-tasks{
     /* padding-top: 20px; */
-    background-color: #0D1117;
+    background-color: var(--background);
     background-size: cover;
     height: fit-content;
     display: flex;
@@ -58,7 +81,7 @@ main .site-tasks{
     justify-content: left;
 
     
-    color: white;
+    color: var(--text);
     /* padding-left: 3.8rem;
     padding-right: 3.8rem; */
 
@@ -80,6 +103,7 @@ main .site-questions .page-location{
     justify-content: space-between;
     align-items:flex-end;
 }
+
 
 main .site-questions .task-info{
     margin-top: 0px;
@@ -106,15 +130,15 @@ main .site-questions .dialogue {
 main .site-questions .dialogue .transcript {
     margin-bottom: 40px;
     width: fit-content;
-    /* enable below for rounded border */
-    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    /* border: 1.5px solid rgba(255, 255, 255, 0.1); */
+    border: 1.5px solid var(--border);
     border-radius: 0.5rem;
     padding: 0.5% 0.5% 0.5% 0.5%;
 }
 
 main .site-questions .dialogue a{
     font-size: large;
-    color: white;
+    color: var(--text);
     font-family: 'VT323', monospace;    
 }
 
@@ -155,7 +179,7 @@ button.button{
 button.icon-button{
     border: none;
     font-size: 150%;
-    color: white;
+    color: var(--text);
     margin: 0rem 0.7rem;
     cursor: pointer;
 }
@@ -186,7 +210,7 @@ main .form-section{
 
 form{
     /* background: #F2F2F7; */
-    color: black;
+    color: var(--text);
     display: flex;
     flex-direction: column;
     /* padding: 0vw 4vw; */
@@ -201,12 +225,14 @@ form .answer{
     display: flex;
     flex-direction: column;
     /* padding-top: 60px; */
+    color: var(--text);
+    background-color: var(--background);
 }
 
 form h3{
-    color: black;
+    color: var(--text);
     margin-bottom: 20px;
-    font-size:x-large;
+    font-size: x-large;
     /* margin-left: 200px; */
 }
 
@@ -229,7 +255,8 @@ form .group{
 }
 
 form .question{
-    color: white;
+    background-color: var(--background);
+    color: var(--text);
     margin: 0px;
     font-weight: 400;
     /* margin-bottom: 40px; */
@@ -241,23 +268,24 @@ form .question{
 }
 
 form textarea{
-    color: #EDEEEE;
+    color: var(--text);
     /* resize: none; */
     /* width: 241px;  */
     width: 97.5%;
     height:18px;
-    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    border: 1.5px solid var(--border);
     border-radius: 6px;
     margin: 10px 0;
     padding: 20px;
     outline: none;
-    background: #0D1117;
+    background: var(--background);
     font-size: 16px;
     font-family: 'VT323', monospace;
 }
 
 form .solution {
     margin-top: 20px;
+    color: var(--text);
 }
 
 form .solution .suggested{
@@ -267,7 +295,7 @@ form .solution .suggested{
     /* padding: 0.5% 0.5% 0.5% 0.5%; */
     background-color: transparent;
     /* color: grey; */
-    color: silver;
+    color: var(--text);
 
     /* font-weight: 600; */
     font-size: 20.48px;
@@ -275,7 +303,7 @@ form .solution .suggested{
 
 form button{
     background: var(--sky);
-    color: black;
+    color: var(--background);
     font-size: 18px;
     border: 0;
     outline: none;
@@ -321,11 +349,8 @@ button.social{
     cursor: pointer;
 }
 
-
-
 .task_buttons{
     /* display: inline; */
-    color: red;
     display: flex;
     justify-content: space-between;
 }
@@ -335,7 +360,7 @@ button.task{
     vertical-align: middle;
     align-items: center;
     padding: 10px 10px 10px 10px;
-    color: white;
+    color: var(--text);
     background-color: rgba(255, 255, 255, 0.02);
     border: 1.5px solid rgba(255, 255, 255, 0.1);
     border-radius: .5rem;
@@ -427,38 +452,10 @@ form .submit{
         /* display: none; */
         
     }
-    
-    button.nav{
-        border: none;
-        width: fit-content;
-        height: fit-content;
-        margin-right: 5px;
-        border-radius: .5rem;
-        font-size: 25px;
-        font-family: 'VT323', monospace;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-    }
 
     /* .nav-icons{
         font-size: 25px;
     } */
-
-    button.nav:hover{
-        border: none;
-        width: fit-content;
-        height: fit-content;
-        margin-right: 5px;
-        border-radius: .5rem;
-        font-size: 25px;
-        font-family: 'VT323', monospace;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        background-color: white;
-    }
-    
 
     main .site-content{
         grid-template-columns: 100%;

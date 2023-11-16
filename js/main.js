@@ -14,29 +14,35 @@ const responsive = {
 }
 
 $(document).ready(function () {
-
+    
     //#region theme switching
     var themeBtn = document.getElementById("theme-switch");
     var themeIcn = document.getElementById('theme');
 
-    themeBtn.onclick = function(){
+    function toggleDark(){
         document.body.classList.toggle("dark-mode");
 
         if(document.body.classList.contains("dark-mode")){
-            document.body.classList.toggle("light-mode");
+            sessionStorage.setItem("dark", true)
             themeIcn.setAttribute("class", "fa-solid fa-moon");
         } else {
+            sessionStorage.setItem("dark", false)
             themeIcn.setAttribute("class", "fa-solid fa-sun");
         }
     }
+
+    themeBtn.onclick = function(){
+        toggleDark();
+    }
+    
     //#endregion
 
     
 
-    //set discord auth link in buttons
-    for(const signIn of document.querySelectorAll("#sign-in")){
-        signIn.setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakurakulistening.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'");
-    }
+    // //set discord auth link in buttons
+    // for(const signIn of document.querySelectorAll("#sign-in")){
+    //     signIn.setAttribute("onclick", "location.href='https://discord.com/api/oauth2/authorize?client_id=1123185304958939226&redirect_uri=https%3A%2F%2Frakurakulistening.github.io%2Fthemes%2Ftheme.html&response_type=token&scope=identify'");
+    // }
 
     //#region navigation
     $nav = $('.nav');
@@ -61,7 +67,7 @@ $(document).ready(function () {
 
     //#region typing effect
     // List of sentences
-    var _CONTENT = ["らくらくリスニング", "日本語を勉強している高校生向けの聞き取り練習"];
+    var _CONTENT = ["安々リスニング", "日本語を勉強している高校生向けの聞き取り練習"];
 
     // Current sentence being processed
     var _PART = 0;

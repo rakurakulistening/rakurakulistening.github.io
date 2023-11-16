@@ -1,2 +1,2 @@
 # rakuraku.github.io
-らくらく
+安々

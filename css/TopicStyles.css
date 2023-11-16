@@ -8,6 +8,29 @@ html, body{
     overflow-x: hidden;
 }
 
+body {
+    --text: #1b0f09;
+    --background: #ffffff;
+    --primary: #65a9cd;
+    --secondary: #d1d5f0;
+    --accent: #3cb9a6;
+    --main-bg: #0D1117;
+    --border: rgba(0,0,0);
+    --hover: rgba(226, 226, 226, 0.142);
+}
+
+
+body.dark-mode{
+    --text: #f6eae4;
+    --background: #000000;
+    --primary: #32769a;
+    --secondary: #0f132e;
+    --accent: #46c3b0;
+    --main-bg: #0D1117;
+    --border: rgba(255, 255, 255, 0.1);
+    --hover: rgba(255, 255, 255, 0.06);
+}
+
 :root{
 
     /*      Theme colors        */
@@ -36,7 +59,7 @@ html, body{
 a{
     text-decoration: none;
     font-family: 'VT323', monospace;
-    color: var(--text-gray);
+    color: var(--text);
 }
 
 .flex-row{
@@ -120,33 +143,6 @@ button.blk{
     cursor: pointer;
 }
 
-button.nav{
-    color: white;
-    border: none;
-    width: fit-content;
-    height: fit-content;
-    padding: 1rem 1.5rem;
-    margin-right: 5px;
-    border-radius: .5rem;
-    font-size: 1rem;
-    font-family: 'VT323', monospace;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-button.nav:hover{
-    color: #B1B3B5;
-    /* background-color: #E9E9E6; */
-    border: none;
-    border-radius: .5rem;
-    font-size: 1rem;
-    font-family: 'VT323', monospace;
-    cursor: pointer;
-    transition: height 1s ease-in-out;
-
-}
-
 button.quote{
     border: none;
     background-color: black;
@@ -182,7 +178,7 @@ p{
     transition: fadein;
 
     font-family: var(--EBGara);
-    color: rgba(255, 255, 255, 0.781);
+    color: var(--text);
     /* color: var(--text-light); */
     /* margin: 0rem 0rem 0rem 0rem; */
 }
@@ -192,16 +188,21 @@ p{
 /* ----------------- Main Content----------- */
 
 /* --------------- Site title ---------------- */
+
+main {
+    height: 100vh;
+}
+
 main .site-topics{
     padding: 20px 0px 40px 2.3rem;
-    background-color: #0D1117;
+    background-color: var(--background);
     background-size: cover;
-    height: fit-content;
+    /* height: fit-content; */
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: left;
-    color: white;
+    color: var(--text);
 }
 
 main .site-tasks h1{
@@ -587,7 +588,7 @@ button.social{
     /* padding: 1.4rem 0rem 0rem 0.6rem; */
     margin: 1rem 1.2rem 0rem 0rem;
     background-color: transparent;
-    color: white;
+    color: var(--text);
     /* border-radius: .5rem; */
     font-size: 3rem;
     cursor: pointer;
@@ -600,36 +601,33 @@ button.social{
     flex-wrap: wrap;
 }
 
-
 button.task{
     margin-right: 20px;
     margin-bottom: 20px;
-    /* display:flexbox; */
-    flex-direction: column;
+
     vertical-align: middle;
     align-items: center;
     padding: 10px 10px 10px 10px;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    color: var(--text);
+    background-color: var(--background);
+    border: 1.5px solid var(--border);
     border-radius: .5rem;
     cursor: pointer;
     width: 225px;
     height: 225px;
     position: relative;
-    /* font-family: 'DotGothic16', sans-serif; */
-    /* padding-right: 10px; */
+    font-family: 'VT323', monospace;
 }
 
 button.task a{
-    color: white;
+    color: var(--text);
     font-weight: 600;
     font-size: large;
     font-family: 'DotGothic16', sans-serif;
 }
 
 button.task b{
-    color: white;
+    color: var(--text);
     padding-top: 30px;
     font-weight: 480;
     font-size: medium;
@@ -649,7 +647,7 @@ button.task:hover::before{
 button.task::before{
     background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y), 
-        rgba(255, 255, 255, 0.06),
+        var(--hover),
         transparent 40%
     );
     border-radius: inherit;

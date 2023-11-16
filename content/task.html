@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>らくらく</title>
+    <title>安々</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/svgs/solid/house.svg">
 
     <!-- Font Awesome Icons -->
@@ -18,6 +18,7 @@
     <!-- Custom Style   -->
     <link rel="stylesheet" href="/css/HomeStyles.css">
     <link rel="stylesheet" href="/css/TaskStyles.css">
+    <link rel="stylesheet" href="/css/NavStyles.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,16 +37,16 @@
     
     <nav class="nav">
             <div class="nav-brand">
-                <a href="/home" data-aos="fade-in" data-aos-delay="100" >らくらく</a>
+                <a href="/home" data-aos="fade-in" data-aos-delay="100" >安々</a>
             </div>
             
                 <div class="nav-items">
-                    <input class="search"></input>
                     <li class="nav-link" data-aos="fade-in" data-aos-delay="100" >
-                        <button id="discord" class="nav" type="button">
+                        <input class="search"></input>
+                        <!-- <button id="discord" class="nav" type="button">
                             <img id="avatar" class="pfp" width="25px" height="25px"></img>
                             <a id="name" class="nav-text"></a>
-                        </button>    
+                        </button>     -->
                         <button class="nav" onclick="location.href='/content/themes'" type="button">
                             <a class="nav-text">listening</a>
                             <i class="fa-solid"></i>  
@@ -83,14 +84,12 @@
                     <div id="specific" class="specific">
                         <!-- PDF/Printable version -->
                         <button class= "icon-button" id="pdf">
-                            <i class="fa-regular fa-file-pdf"></i>  
+                            <i id="pdf" class="fa-regular fa-file-pdf"></i>  
                             <!-- <i class="fa-solid fa-file-pdf"></i> -->
                         </button>               
                         <audio id="task-audio" controls>
                             <track label="English" kind="subtitles" srclang="en" src="/resources/audio/task1.vtt" default>
-                            <source type="audio/mpeg">
-                          Your browser does not support the audio element.
-                        </audio>
+                            <source type="audio/mpeg"> Your browser does not support the audio element. </audio>
 
                         <!-- <audio controls width="500" height="100">
                             <source type="audio/mp3" src="/resources/audio/task1.mp3">
@@ -126,27 +125,28 @@
 
         <!------------x----------- Site Title ----------x----------->
 
+        
+        <!-- --------------------------- Footer ---------------------------------------- -->
+
+        <footer class="footer">
+            <div class="brand">
+                <a>安々</a>
+                <a>　・　</a>
+                <!-- <a>  © 2004 The Melbourne Centre for Japanese Language Education. All rights reserved. </a> -->
+            </div>
+            <div class="pages">
+                <a>　ホーム</a>
+            </div>
+        </footer>
+
+        <!-- -------------x------------- Footer --------------------x------------------- -->
+
     </main>
 
     
 
     <!---------------x------------- Main Site Section ---------------x-------------->
 
-
-    <!-- --------------------------- Footer ---------------------------------------- -->
-
-    
-    
-    <footer class="footer">
-        <div class="items">
-            <!-- <div class="acknowledge" data-aos="fade-in" data-aos-delay="100"> -->
-            <div class="acknowledge">
-                <a>  © 2004 The Melbourne Centre for Japanese Language Education. All rights reserved. </a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- -------------x------------- Footer --------------------x------------------- -->
 
     <!-- Jquery Library file -->
     <!-- <script src="/js/Jquery3.4.1.min.js"></script> -->

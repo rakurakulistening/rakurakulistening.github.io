@@ -8,6 +8,29 @@ html, body{
     overflow-x: hidden;
 }
 
+body {
+    --text: #1b0f09;
+    --background: #ffffff;
+    --primary: #65a9cd;
+    --secondary: #d1d5f0;
+    --accent: #3cb9a6;
+    --main-bg: #0D1117;
+    --border: rgba(0,0,0);
+    --hover: rgba(226, 226, 226, 0.142);
+}
+
+
+body.dark-mode{
+    --text: #f6eae4;
+    --background: #000000;
+    --primary: #32769a;
+    --secondary: #0f132e;
+    --accent: #46c3b0;
+    --main-bg: #0D1117;
+    --border: rgba(255, 255, 255, 0.1);
+    --hover: rgba(255, 255, 255, 0.06);
+}
+
 :root{
 
     /*      Theme colors        */
@@ -50,7 +73,7 @@ html, body{
 
 main .site-background{
     padding-top: 20px;
-    background-color: #0D1117;
+    background-color: var(--background);
     /* background: url('../assets/Background-image.png'); */
     background-size: cover;
     /* height: 80vh; */
@@ -63,7 +86,7 @@ main .site-background{
     justify-content: left;
 
     
-    color: white;
+    color: var(--text);
     /* padding-left: 3.8rem; */
     padding-left: 1.98rem;
 
@@ -145,7 +168,7 @@ button.social{
     /* padding: 1.4rem 0rem 0rem 0.6rem; */
     margin: 1rem 1.2rem 0rem 0rem;
     background-color: transparent;
-    color: white;
+    color: var(--text);
     /* border-radius: .5rem; */
     font-size: 3rem;
     cursor: pointer;
@@ -162,9 +185,9 @@ button.topic{
     vertical-align: middle;
     align-items: center;
     padding: 10px 10px 10px 10px;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    color: var(--text);
+    background-color: var(--background);
+    border: 1.5px solid var(--border);
     border-radius: .5rem;
     cursor: pointer;
     width: 225px;
@@ -175,13 +198,13 @@ button.topic{
 }
 
 button.topic a{
-    color: white;
+    color: var(--text);
     font-weight: 600;
     font-size: large;
 }
 
 button.topic b{
-    color: white;
+    color: var(--text);
     padding-top: 30px;
     font-weight: 480;
     font-size: medium;
@@ -200,7 +223,7 @@ button.topic:hover::before{
 button.topic::before{
     background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y), 
-        rgba(255, 255, 255, 0.06),
+        var(--hover),
         transparent 40%
     );
     border-radius: inherit;
