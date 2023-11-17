@@ -15,24 +15,33 @@ const responsive = {
 
 $(document).ready(function () {
 
-    if(sessionStorage.getItem("dark") == true){
-        console.log('eroibg[erub');
-    }
-
     //#region theme switching
     var themeBtn = document.getElementById("theme-switch");
     var themeIcn = document.getElementById('theme');
 
-    themeBtn.onclick = function(){
+    function toggleDark(){
         document.body.classList.toggle("dark-mode");
 
         if(document.body.classList.contains("dark-mode")){
-            // document.body.classList.toggle("light-mode");
+            sessionStorage.setItem("dark", true)
             themeIcn.setAttribute("class", "fa-solid fa-moon");
+            themeIcn.setAttribute("style", "padding-left: 4px");            
         } else {
+            sessionStorage.setItem("dark", false)
             themeIcn.setAttribute("class", "fa-solid fa-sun");
+            themeIcn.removeAttribute("style");
         }
     }
+
+    if(sessionStorage.getItem('dark')==="true"){
+        // document.body.classList.toggle("dark-mode");
+        toggleDark();
+    }
+
+    themeBtn.onclick = function(){
+        toggleDark();
+    }
+    
     //#endregion
 
     //#region user info

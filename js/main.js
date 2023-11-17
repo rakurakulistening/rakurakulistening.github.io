@@ -25,10 +25,19 @@ $(document).ready(function () {
         if(document.body.classList.contains("dark-mode")){
             sessionStorage.setItem("dark", true)
             themeIcn.setAttribute("class", "fa-solid fa-moon");
+            themeIcn.setAttribute("style", "padding-left: 4px");            
         } else {
             sessionStorage.setItem("dark", false)
             themeIcn.setAttribute("class", "fa-solid fa-sun");
+            themeIcn.removeAttribute("style");
         }
+    }
+
+    console.log(sessionStorage.getItem('dark'));
+
+    if(sessionStorage.getItem('dark')==="true"){
+        // document.body.classList.toggle("dark-mode");
+        toggleDark();
     }
 
     themeBtn.onclick = function(){
@@ -67,7 +76,7 @@ $(document).ready(function () {
 
     //#region typing effect
     // List of sentences
-    var _CONTENT = ["安々リスニング", "日本語を勉強している高校生向けの聞き取り練習"];
+    var _CONTENT = ["易々リスニング", "日本語を勉強している高校生向けの聞き取り練習"];
 
     // Current sentence being processed
     var _PART = 0;

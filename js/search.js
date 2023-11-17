@@ -15,6 +15,11 @@ const responsive = {
 
 $(document).ready(function () {
 
+    // console.
+
+    // const myKeysValues = window.location.search;
+    // const urlParams = new URLSearchParams
+
     //#region theme switching
     var themeBtn = document.getElementById("theme-switch");
     var themeIcn = document.getElementById('theme');
@@ -27,6 +32,7 @@ $(document).ready(function () {
             themeIcn.setAttribute("class", "fa-solid fa-moon");
         } else {
             themeIcn.setAttribute("class", "fa-solid fa-sun");
+            themeIcn.removeAttribute("style");
         }
     }
     //#endregion

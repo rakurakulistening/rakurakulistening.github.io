@@ -1,2 +1,2 @@
 # rakuraku.github.io
-安々
+易々

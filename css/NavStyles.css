@@ -3,6 +3,7 @@
 
 button.nav{
     color: var(--text);
+    background-color:rgba(255, 255, 255, 0);
     border: none;
     width: fit-content;
     height: fit-content;
@@ -18,7 +19,7 @@ button.nav{
 button.nav:hover{
     color: #A9A19C;
     cursor: pointer;
-    transition: height 1s ease-in-out;
+    /* transition: height 1s ease-in-out; */
 }
 
 button.nav .pfp{
@@ -33,8 +34,8 @@ button.nav .pfp{
     display: flex;
     justify-content:space-between;
     background-color: var(--background);
-    /* height: 3.6rem; */
-    height: 10.3%;
+    height: 3.6rem;
+    /* height: 10.3%; */
     /* overflow: hidden; */
     transition: height 1s ease-in-out;
     border-bottom: var(--border) 1px solid;
@@ -142,7 +143,7 @@ input {
     height:30px;
 
     outline: none;
-    border: 1.4px solid var(--border);
+    border: 1.4px solid var(--search-border);
     border-radius: 6px;
 
     padding: 5px 5px 5px 9px;
@@ -155,3 +156,69 @@ input {
 }
 /* -------x------- navbar ---------x------- */
 
+
+
+/*              Viewport less then or equal to 750px            */
+
+/* @media only screen and (max-width: 750px){ */
+    @media only screen and (max-width: 810px){
+
+    /* .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    } */
+
+    .nav-text{
+        flex-wrap: nowrap;
+        /* display: none; */
+        
+    }
+    
+    button.nav{
+        border: none;
+        width: fit-content;
+        height: fit-content;
+        margin-right: 5px;
+        border-radius: .5rem;
+        font-size: 25px;
+        font-family: 'VT323', monospace;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    /* .nav-icons{
+        font-size: 25px;
+    } */
+
+    button.nav:hover{
+        color: grey;
+        border: none;
+        width: fit-content;
+        height: fit-content;
+        margin-right: 5px;
+        border-radius: .5rem;
+        font-size: 25px;
+        font-family: 'VT323', monospace;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px){
+    
+
+}
+
+/*        x      Viewport less then or equal to 520px       x     */

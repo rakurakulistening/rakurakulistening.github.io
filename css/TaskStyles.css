@@ -16,6 +16,7 @@ body {
     --accent: #3cb9a6;
     --main-bg: #0D1117;
     --border: rgba(0,0,0);
+    --search-border: rgba(0,0,0);
     --hover: rgba(226, 226, 226, 0.186);
 }
 
@@ -28,6 +29,7 @@ body.dark-mode{
     --accent: #46c3b0;
     --main-bg: #0D1117;
     --border: rgba(255, 255, 255, 0.1);
+    --search-border: #ffffff;
     --hover: rgba(255, 255, 255, 0.06);
 }
 

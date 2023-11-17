@@ -31,6 +31,7 @@ body.dark-mode{
     --accent: #46c3b0;
     --main-bg: #0D1117;
     --border: rgba(255, 255, 255, 0.1);
+    --search-border: #ffffff;
     --hover: rgba(255, 255, 255, 0.06);
 }
 
@@ -249,53 +250,7 @@ button.topic::before{
 
 /* @media only screen and (max-width: 750px){ */
     @media only screen and (max-width: 810px){
-
-    /* .nav .nav-menu, .nav .nav-items{
-        flex-direction: column;
-    }
-
-    .nav .toggle-collapse{
-        display: initial;
-    } */
-
-    .nav-text{
-        flex-wrap: nowrap;
-        /* display: none; */
-        
-    }
     
-    button.nav{
-        border: none;
-        width: fit-content;
-        height: fit-content;
-        margin-right: 5px;
-        border-radius: .5rem;
-        font-size: 25px;
-        font-family: 'VT323', monospace;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-    }
-
-    /* .nav-icons{
-        font-size: 25px;
-    } */
-
-    button.nav:hover{
-        border: none;
-        width: fit-content;
-        height: fit-content;
-        margin-right: 5px;
-        border-radius: .5rem;
-        font-size: 25px;
-        font-family: 'VT323', monospace;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        background-color: white;
-    }
-    
-
     main .site-content{
         grid-template-columns: 100%;
     }

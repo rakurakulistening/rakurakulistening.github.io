@@ -14,23 +14,72 @@ const responsive = {
 }
 
 $(document).ready(function () {
+
+    // let historyCount = history.length;
+
+    // window.onpopstate = function(event) {
+    //     if(history.length > historyCount) {
+    //         historyCount++;
+    //         window.location.href = `${window.location.hostname}/task`;
+    //     } else {
+    //         historyCount--;
+    //         window.location.href = `${window.location.hostname}/themes`;
+    //     }
+    // };
+
+    // window.addEventListener('hashchange', function() {
+    //     if (location.hash.length > 0){
+    //         // Navigate to the hash
+    //         document.getElementById(location.hash.substr(1)).scrollIntoView();
+    //     } else {
+    //         // Go the beginning
+    //         document.getElementById('COMMENT1').scrollIntoView();
+    //         document.body.scrollIntoView();
+    //     }
+    // }, false);
+
+    // window.addEventListener('popstate', function(e) {
+    //     if (window.history.length > historyLength) {
+    //         alert("Forward button clicked");
+    //     } else if (window.history.length < historyLength) {
+    //         alert("Back button clicked");
+    //     }
+    
+    //     // Update the history length
+    //     historyLength = window.history.length;
+    // });
+
+
     //#region theme switching
     var themeBtn = document.getElementById("theme-switch");
     var themeIcn = document.getElementById('theme');
 
-    themeBtn.onclick = function(){
+    function toggleDark(){
         document.body.classList.toggle("dark-mode");
 
         if(document.body.classList.contains("dark-mode")){
-            // document.body.classList.toggle("light-mode");
+            sessionStorage.setItem("dark", true)
             themeIcn.setAttribute("class", "fa-solid fa-moon");
+            themeIcn.setAttribute("style", "padding-left: 4px");            
         } else {
+            sessionStorage.setItem("dark", false)
             themeIcn.setAttribute("class", "fa-solid fa-sun");
+            themeIcn.removeAttribute("style");
         }
     }
+
+    if(sessionStorage.getItem('dark')==="true"){
+        // document.body.classList.toggle("dark-mode");
+        toggleDark();
+    }
+
+    themeBtn.onclick = function(){
+        toggleDark();
+    }
+    
     //#endregion
 
-    // //#region user info
+    //#region user info
     // if(sessionStorage.getItem("user_name") == "undefined"){
     //     document.querySelector('#name').textContent = "sign in";
     //     console.log("a")
@@ -54,7 +103,7 @@ $(document).ready(function () {
     // else {
     //     document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
     // }
-    // //#endregion
+    //#endregion
 
     //#region navigation
     $nav = $('.nav');
@@ -80,6 +129,12 @@ $(document).ready(function () {
         // document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
     //#endregion
 
+    // const myKeyValues = window.location.search;
+
+
+    // if(my){
+
+    // }
     //values read from task page 
     const topic = document.querySelector("#topic");
     const taskContainer = document.querySelector("#task-container");
@@ -89,8 +144,29 @@ $(document).ready(function () {
     fetch(`${localStorage.getItem("directoryPath")}/${localStorage.getItem("theme").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("topicName").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("topicName").toLowerCase().replaceAll(' ', '_')}.json`)
     .then(res => res.json())
     .then(data => {
-        topic.innerHTML = `${data.topic}`;
+        localStorage.setItem('topicName', data.topic);
 
+        
+
+        //#region urlParams
+        // window.history.replaceState(null, null, `/content/?topic=${localStorage.getItem('topicName').toLowerCase().replaceAll(' ', '-')}`);
+
+        // const myKeyValues = (window.location.href).replace('/content', '');
+        // const urlParams = new URLSearchParams(myKeyValues);
+    
+        // //if the user types a theme name into the url like-this
+        // // if(urlParams.has('topic')){
+        // //     localStorage.setItem('topicName', urlParams.get('topic').replace('-', '_'))
+        // // }
+        // // if(urlParams.has('topic') && urlParams.has('task')){
+        // //     localStorage.setItem('taskName', urlParams.get('task').replace('-', '_'))
+        // //     window.location.href = (window.location.href).replace('\/.*$', '')
+        // // }
+
+        // console.log(urlParams)
+        //#endregion
+
+        topic.innerHTML = `${data.topic}`;
         //generate the task buttons
         for(let i=0;i<data.subtopics.length;i++){
             let subtopicDiv = document.createElement('div');
@@ -160,6 +236,9 @@ $(document).ready(function () {
             task.onclick = function(){
                 localStorage.setItem("subtopic", task.parentElement.id);
                 localStorage.setItem("taskName", task.id);
+
+                // window.history.replaceState(null, null, `/content/topics`);
+
                 window.location.href='/content/task';
             }
         }

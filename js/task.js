@@ -15,22 +15,47 @@ const responsive = {
 
 $(document).ready(function () {
 
+    // let historyCount = history.length;
+
+    // window.onpopstate = function() {
+    //     if(history.length > historyCount) {
+    //         historyCount++;
+    //     } else {
+    //         historyCount--;
+    //         window.location.href = `${window.location.hostname}/topics`;
+    //     }
+    // };
+
     //#region theme switching
     var themeBtn = document.getElementById("theme-switch");
     var themeIcn = document.getElementById('theme');
 
-    themeBtn.onclick = function(){
+    function toggleDark(){
         document.body.classList.toggle("dark-mode");
 
         if(document.body.classList.contains("dark-mode")){
+            sessionStorage.setItem("dark", true)
             themeIcn.setAttribute("class", "fa-solid fa-moon");
+            themeIcn.setAttribute("style", "padding-left: 4px");
         } else {
+            sessionStorage.setItem("dark", false)
             themeIcn.setAttribute("class", "fa-solid fa-sun");
+            themeIcn.removeAttribute("style");
         }
     }
+
+    if(sessionStorage.getItem('dark')==="true"){
+        // document.body.classList.toggle("dark-mode");
+        toggleDark();
+    }
+
+    themeBtn.onclick = function(){
+        toggleDark();
+    }
+    
     //#endregion
 
-    // //#region user info
+    //#region user info
     //     if(sessionStorage.getItem("user_name") == null){
     //         document.querySelector('#name').textContent = sessionStorage.getItem("user_name");
     //     }
@@ -49,7 +74,7 @@ $(document).ready(function () {
     //     else {
     //         document.querySelector("#avatar").src = sessionStorage.getItem("user_avatar");
     //     }
-    // //#endregion
+    //#endregion
 
     //#region navigation
     $nav = $('.nav');
@@ -76,9 +101,31 @@ $(document).ready(function () {
     //#region read JSON file and create task buttons
     // console.log(`${localStorage.getItem("directoryPath")}/${localStorage.getItem("theme").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("topicName").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("subtopic").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem('taskName')}.json`)
 
+
+    
     fetch(`${localStorage.getItem("directoryPath")}/${localStorage.getItem("theme").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("topicName").toLowerCase().replaceAll(' ', '_')}/${localStorage.getItem("subtopic").toLowerCase().replaceAll(' ', '_')}/${/. (.+)/.exec(localStorage.getItem('taskName'))[1]}.json`)
     .then(res => res.json())
     .then(data => {
+
+        //#region urlParams
+        // window.history.replaceState(null, null, `/content/?topic=${localStorage.getItem('topicName').toLowerCase().replaceAll(' ', '-')}&task=${data.subtopic}`);
+
+        // const myKeyValues = (window.location.href).replace('/content', '');
+        // const urlParams = new URLSearchParams(myKeyValues);
+    
+        // //if the user types a task name into the url like-this
+        // if(urlParams.has('topic')){
+        //     localStorage.setItem('topicName', urlParams.get('topic').replace('-', '_'))
+        // }
+        // if(urlParams.has('task')){
+        //     localStorage.setItem('taskName', urlParams.get('task').replace('-', '_'))
+        // }
+
+        // console.log(urlParams)
+        //#endregion
+
+
+        document.title = `${data.subtopic}`;
         //read json
         title.innerHTML = `${data.subtopic}`,
         description.innerHTML = `${data.description}`,
