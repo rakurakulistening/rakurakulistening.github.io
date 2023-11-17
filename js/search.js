@@ -14,27 +14,34 @@ const responsive = {
 }
 
 $(document).ready(function () {
-
-    // console.
-
-    // const myKeysValues = window.location.search;
-    // const urlParams = new URLSearchParams
-
+    
     //#region theme switching
     var themeBtn = document.getElementById("theme-switch");
     var themeIcn = document.getElementById('theme');
 
-    themeBtn.onclick = function(){
+    function toggleDark(){
         document.body.classList.toggle("dark-mode");
 
         if(document.body.classList.contains("dark-mode")){
-            // document.body.classList.toggle("light-mode");
+            sessionStorage.setItem("dark", true)
             themeIcn.setAttribute("class", "fa-solid fa-moon");
+            themeIcn.setAttribute("style", "padding-left: 4px");            
         } else {
+            sessionStorage.setItem("dark", false)
             themeIcn.setAttribute("class", "fa-solid fa-sun");
             themeIcn.removeAttribute("style");
         }
     }
+
+    if(sessionStorage.getItem('dark')==="true"){
+        // document.body.classList.toggle("dark-mode");
+        toggleDark();
+    }
+
+    themeBtn.onclick = function(){
+        toggleDark();
+    }
+    
     //#endregion
 
     //#region navigation
@@ -63,25 +70,16 @@ $(document).ready(function () {
         target.style.setProperty("--mouse-y", `${y}px`)
     }
 
-    for(const topic of document.querySelectorAll("button.topic")){
-        topic.onmousemove = e => handleOnMouseMove(e);
+    for(const task of document.getElementsByClassName("task")){
+        task.onmousemove = e => handleOnMouseMove(e);
     }
     //#endregion
 
     const taskButtonTemplate = document.querySelector("[data-task-template]");
     const taskButtonContainer = document.querySelector("[data-task-button-container]");
-    const searchInput = document.querySelector("[data-search]");
+    const searchInput = document.querySelector("[data-search-bar]");
 
-    let tasks = []
-
-    searchInput.addEventListener("input", e => {
-        const value = e.target.value.toLowerCase();
-        tasks.forEach(task => {
-            const isVisible = task.name.toLowerCase().includes(value);
-            // const isVisible = tasks.name.includes(value) || tasks.lang.includes(value)
-        task.element.classList.toggle("hide", !isVisible)
-        })
-    } )
+    let tasks = [];
 
     fetch("./tasks.json")
     .then(res => res.json())
@@ -90,23 +88,61 @@ $(document).ready(function () {
             const button = taskButtonTemplate.content.cloneNode(true).children[0];
 
             const name = button.querySelector("[data-name]")
-            name.textContent = task.subtopic;
+            name.textContent = task.name;
 
+            button.dataset.name = `${task.number}. ${task.name}`; //add task name from json
+            button.dataset.topic = task.topic;
+            button.dataset.subtopic = task.subtopic;
+            
             // const image = button.querySelector("[data-image]")
-            // const lang = button.querySelector("[data-language]")
+            // image.
 
+            const lang = button.querySelector("[data-language]");
+            lang.textContent = `${task.language}で`;
 
             taskButtonContainer.append(button);
             // console.log(button);
             // return {name: task.name, lang: task.lang}
-            return {name: task.subtopic, element: button}
+            return {name: task.name, element: button}
         })
+
+        var taskButtons = document.getElementsByClassName("task");
+
+        for (let i = 0; i < taskButtons.length; i++) {
+            taskButtons[i].onclick = function() {
+                localStorage.setItem('topicName', this.dataset.topic);
+                localStorage.setItem('subtopic', this.dataset.subtopic);
+                localStorage.setItem('taskName', this.dataset.name);
+                window.location.href = `${(window.location.href).replace('/results', '').replace('.html', '')}/task`;
+            }
+        }
+
+        searchInput.addEventListener("input", e => {
+            document.getElementById("title").textContent = `results for "${searchInput.value}"`;
+            const value = e.target.value.toLowerCase();
+            tasks.forEach(task => {
+                const isVisible = task.name.toLowerCase().includes(value);
+                // const isVisible = tasks.name.includes(value) || tasks.lang.includes(value)
+                task.element.classList.toggle("hide", !isVisible)
+            })
+        } )
+    
+        if (localStorage.getItem('searchTerm')) {
+            searchInput.value = localStorage.getItem('searchTerm');
+            var event = new Event('input', {
+                bubbles: true,
+                cancelable: true,
+            });
+            searchInput.dispatchEvent(event);
+        }   
     })
+
+    
   
 });
 
 
-//save the search term to the website's memory when enter is pressed on any page with the search bar
+//save the search-bar term to the website's memory when enter is pressed on any page with the search-bar bar
 //on enter, redirect to the results page
-//sort like in video with the input being the search term that was saved to memory (all tasks already on the results page but are instantly hidden when the page is loaded/indexes for that term)
+//sort like in video with the input being the search-bar term that was saved to memory (all tasks already on the results page but are instantly hidden when the page is loaded/indexes for that term)
 

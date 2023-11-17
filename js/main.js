@@ -14,13 +14,17 @@ const responsive = {
 }
 
 $(document).ready(function () {
-    
+
     //#region theme switching
-    var themeBtn = document.getElementById("theme-switch");
+    var themeBtn = document.querySelector("#theme-switch");
     var themeIcn = document.getElementById('theme');
 
     function toggleDark(){
         document.body.classList.toggle("dark-mode");
+        // document.body.classList.add('data-aos="fade-in" data-aos-delay="100"');
+        // window.setTimeout(() => {
+        //     document.body.classList.remove('data-aos="fade-in" data-aos-delay="100"')
+        // }, 1000)
 
         if(document.body.classList.contains("dark-mode")){
             sessionStorage.setItem("dark", true)
@@ -32,8 +36,6 @@ $(document).ready(function () {
             themeIcn.removeAttribute("style");
         }
     }
-
-    console.log(sessionStorage.getItem('dark'));
 
     if(sessionStorage.getItem('dark')==="true"){
         // document.body.classList.toggle("dark-mode");

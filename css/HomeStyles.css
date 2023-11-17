@@ -11,7 +11,9 @@ html, body{
     opacity: 1;
 }
 
+
 body {
+    --transition-delay: 1s;
     --text: #1b0f09;
     --background: #ffffff;
     --primary: #65a9cd;
@@ -19,18 +21,23 @@ body {
     --accent: #3cb9a6;
     --main-bg: #0D1117;
     --border: rgba(0,0,0);
-    --search-border: rgba(0,0,0);    --hover: rgba(226, 226, 226, 0.186);
+    --search-bar-border: rgba(0,0,0);    
+    --hover: rgba(226, 226, 226, 0);
+    transition: var(--transition-delay);
 }
 
 body.dark-mode{
+    --transition-delay: 1s;
+    transition: var(--transition-delay);
     --text: #f6eae4;
     --background: #000000;
     --primary: #32769a;
     --secondary: #0f132e;
     --accent: #46c3b0;
     --main-bg: #0D1117;
-    --border: rgba(255, 255, 255, 0.1);
-    --search-border: #ffffff;
+    /* --border: rgba(255, 255, 255, 0.1); */
+    --border: #ffffff28;
+    --search-bar-border: #ffffff;
     --hover: rgba(255, 255, 255, 0.06);
 }
 

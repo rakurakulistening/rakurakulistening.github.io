@@ -44,6 +44,20 @@ $(document).ready(function () {
     
     //#endregion
 
+    //#region search-bar
+    var searchBar = document.getElementById("search");
+    searchBar.addEventListener("keyup", (event) => {
+        if (event.key === "Enter") {
+          console.log(event.target.value);
+          console.log(window.location.hostname);
+          localStorage.setItem('searchTerm', (event.target.value).toLowerCase())
+        //   console.log(`${(window.location.href).replace('/themes', '')}/results`)
+          window.location= `${(window.location.href).replace('/themes', '').replace('.html', '')}/results`;
+          
+        }
+      });
+    //#endregion
+
     //#region user info
     // if(sessionStorage.getItem("user_name") == "undefined"){
     //     // console.log(sessionStorage.getItem("user_name"))

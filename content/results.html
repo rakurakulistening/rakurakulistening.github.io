@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body data-aos="fade-in" data-aos-delay="100">
 
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
     
@@ -37,7 +37,7 @@
             </div>
                 <div class="nav-items">
                     <li class="nav-link" data-aos="fade-in" data-aos-delay="100" >
-                        <input class="search" data-search></input>
+                        <input class="search-bar" data-search-bar></input>
                         <!-- <button id="discord" class="nav" type="button">
                             <img id="avatar" class="pfp" width="25px" height="25px"></img>
                             <a id="name" class="nav-text"></a>
@@ -70,15 +70,15 @@
 
         <section class="site-background">
             <div class="site-tasks" data-aos="fade-in" data-aos-delay="100" data-task-button-container>
-                <h2>Search results</h2>
-                <div id="Search Results" class="child_buttons">
+                <h2 id="title">results for </h2>
+                <div id="search results" class="child_buttons">
                     <template data-task-template>
-                        <button id="World of work" class="topic" onclick="location.href='/content/topics'">
+                        <button class="task" data-name data-topic data-subtopic>
                             <a data-name></a>
                             <br>
                             <img data-image src="https://1.bp.blogspot.com/-MSNPmKYMvZA/V7wboszzSuI/AAAAAAAA9Po/EpxifwXKkg0INvNdbRKySFP3vpWGBvYZwCLcB/s800/job_kyuujinshi.png" width="100px" height="100px"></img>
                             <br>
-                            <a data-lang>英語で</a>
+                            <a data-language>英語で</a>
                         </button>
                     </template>
                     <!-- <button id="World of work" class="topic" onclick="location.href='/content/topics'">

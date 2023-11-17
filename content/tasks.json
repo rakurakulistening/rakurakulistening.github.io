@@ -2,7 +2,10 @@
         [
             {
                 "number": "1",
-                "subtopic": "セーフウェイ",
+                "topic": "World of work",
+                "subtopic": "Casual work",
+                "name": "セーフウェイ",
+                "language": "英語",
                 "description": "Listen to the conversation between Anne and Rie then answer the questions in English.",
                 "audio": "/resources/audio/task1.mp3",
                 "questions": [
@@ -33,7 +36,10 @@
             },
             {
                 "number": "2",
-                "subtopic": "今日のアルバイト",
+                "topic": "World of work",
+                "subtopic": "Casual work",
+                "name": "今日のアルバイト",
+                "language": "英語",
                 "description": "Listen to the conversation between Lisa and Akira and answer the questions in English.",
                 "audio": "/resources/audio/task2.mp3",
                 "questions": [
@@ -67,7 +73,10 @@
             },
             {
                 "number": "3",
-                "subtopic": "マクドナルド",
+                "topic": "World of work",
+                "subtopic": "Casual work",
+                "name": "マクドナルド",
+                "language": "英語",
                 "description": "Listen to the speech, welcoming new employees and answer the questions in English.",
                 "audio": "/resources/audio/task3.mp3",
                 "questions": [
@@ -92,7 +101,10 @@
             },
             {
                 "number": "4",
-                "subtopic": "転勤",
+                "topic": "World of work",
+                "subtopic": "Men and women in the workforce",
+                "name": "転勤",
+                "language": "英語",
                 "description": "Listen to the conversation between Seiji and Kerry and answer the questions in English.",
                 "audio": "/resources/audio/task4.mp3",
                 "questions": [
@@ -120,7 +132,10 @@
             },
             {
                 "number": "5",
-                "subtopic": "付き合い",
+                "topic": "World of work",
+                "subtopic": "Men and women in the workforce",
+                "name": "付き合い",
+                "language": "英語",
                 "description": "Listen to the conversation between Mr. Yamada and Mr. Tanaka and answer the questions in English.",
                 "audio": "/resources/audio/task5.mp3",
                 "questions": [
@@ -151,7 +166,10 @@
             },
             {
                 "number": "6",
-                "subtopic": "労働時間の短縮化",
+                "topic": "World of work",
+                "subtopic": "Men and women in the workforce",
+                "name": "労働時間の短縮化",
+                "language": "英語",
                 "description": "Listen to the conversation between a newscaster and Mr. Tanaka and answer the questions in English.",
                 "audio": "/resources/audio/task6.mp3",
                 "questions": [
@@ -195,8 +213,11 @@
             },
             {
                 "number": "7",
-                "subtopic": "仕事の変化",
-                "description": "Listen to the speech and complete the task below in Japanese.",
+                "topic": "World of work",
+                "subtopic": "Men and women in the workforce",
+                "name": "仕事の変化",
+                "language": "日本語",
+                "description": "Listen to the speech and complete the name below in Japanese.",
                 "audio": "/resources/audio/task7.mp3",
                 "questions": [
                     "あなたは、日本の大学にりゅう学しています。今日友だちが病気で休んでいるので、その友だちのためにしゅくだいをつたえたいと思っています。じゅぎょうのないようは、仕事のへんかについてです。たいせつなポイントをメモし分かりやすくまとめなさい。"
@@ -214,8 +235,11 @@
             },
             {
                 "number": "8",
-                "subtopic": "女性の社会進出",
-                "description": "Listen to the conversation and complete the task below in Japanese.",
+                "topic": "World of work",
+                "subtopic": "Men and women in the workforce",
+                "name": "女性の社会進出",
+                "language": "日本語",
+                "description": "Listen to the conversation and complete the name below in Japanese.",
                 "audio": "/resources/audio/task8.mp3",
                 "questions": [
                     "あなたは、地方新聞にのせるきじを書くようにたのまれました。そのために、女性の社会しんしゅつとそのもんだいについてのアンケートをしたテープをわたされました。女性の会話を聞いて、アンケートようしのポイントフォームをさんこうにしながら、日本語でそのないようをかんたんなきじにまとめなさい。"

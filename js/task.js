@@ -15,17 +15,6 @@ const responsive = {
 
 $(document).ready(function () {
 
-    // let historyCount = history.length;
-
-    // window.onpopstate = function() {
-    //     if(history.length > historyCount) {
-    //         historyCount++;
-    //     } else {
-    //         historyCount--;
-    //         window.location.href = `${window.location.hostname}/topics`;
-    //     }
-    // };
-
     //#region theme switching
     var themeBtn = document.getElementById("theme-switch");
     var themeIcn = document.getElementById('theme');
@@ -53,6 +42,19 @@ $(document).ready(function () {
         toggleDark();
     }
     
+    //#endregion
+
+    //#region search-bar
+    var searchBar = document.getElementById("search");
+    searchBar.addEventListener("keyup", (event) => {
+        if (event.key === "Enter") {
+            console.log(event.target.value);
+            console.log(window.location.hostname);
+            localStorage.setItem('searchTerm', (event.target.value).toLowerCase())
+            window.location= `${(window.location.href).replace('/themes', '').replace('/topic', '').replace('/task', '').replace('.html', '')}/results`;
+            
+        }
+        });
     //#endregion
 
     //#region user info

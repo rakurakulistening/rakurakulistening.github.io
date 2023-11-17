@@ -3240,19 +3240,19 @@ readers do not read off random characters that represent icons */
 .fa-sd-card:before {
   content: "\f7c2"; }
 
-.fa-search:before {
+.fa-search-bar:before {
   content: "\f002"; }
 
-.fa-search-dollar:before {
+.fa-search-bar-dollar:before {
   content: "\f688"; }
 
-.fa-search-location:before {
+.fa-search-bar-location:before {
   content: "\f689"; }
 
-.fa-search-minus:before {
+.fa-search-bar-minus:before {
   content: "\f010"; }
 
-.fa-search-plus:before {
+.fa-search-bar-plus:before {
   content: "\f00e"; }
 
 .fa-searchengin:before {

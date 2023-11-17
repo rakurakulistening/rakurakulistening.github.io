@@ -16,8 +16,7 @@ body {
     --accent: #3cb9a6;
     --main-bg: #0D1117;
     --border: rgba(0,0,0);
-    --search-border: rgba(0,0,0);
-    --hover: rgba(226, 226, 226, 0.142);
+    --search-border: rgba(0,0,0);--hover: rgba(226, 226, 226, 0.142);
 }
 
 
@@ -180,7 +179,7 @@ button.social{
     justify-content: space-between;
 }
 
-button.topic{
+button.task{
     /* display: flex; */
     vertical-align: middle;
     align-items: center;
@@ -197,30 +196,30 @@ button.topic{
     /* padding-right: 10px; */
 }
 
-button.topic a{
+button.task a{
     color: var(--text);
     font-weight: 600;
     font-size: large;
 }
 
-button.topic b{
+button.task b{
     color: var(--text);
     padding-top: 30px;
     font-weight: 480;
     font-size: medium;
 }
 
-button.topic img{
+button.task img{
     padding-top: 15px;
     padding-bottom: 10px;
     /* vertical-align: bottom; */
 }
 
-button.topic:hover::before{
+button.task:hover::before{
     opacity: 1;
 }
 
-button.topic::before{
+button.task::before{
     background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y), 
         var(--hover),

@@ -30,8 +30,8 @@ body.dark-mode{
     --secondary: #0f132e;
     --accent: #46c3b0;
     --main-bg: #0D1117;
-    --border: rgba(255, 255, 255, 0.1);
-    --search-border: #ffffff;
+    --border: #ffffff28;
+    --search-bar-border: #ffffff;
     --hover: rgba(255, 255, 255, 0.06);
 }
 
