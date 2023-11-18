@@ -244,6 +244,7 @@ button.task::before{
 /*              Viewport less then or equal to 1130px            */
 
 @media only screen and (max-width: 1130px){
+
     .site-content .post-content > .post-image .post-info{
         left: 2rem !important;
         bottom: 1.2rem !important;
@@ -266,8 +267,7 @@ button.task::before{
 /*              Viewport less then or equal to 750px            */
 
 /* @media only screen and (max-width: 750px){ */
-    @media only screen and (max-width: 810px){
-
+    @media all and (max-width: 810px){
     /* .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }

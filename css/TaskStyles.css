@@ -224,11 +224,29 @@ form{
 }
 
 form .answer{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     /* padding-top: 60px; */
-    color: var(--text);
+    /* color: var(--text);
     background-color: var(--background);
+    height: 20px; */
+
+    color: var(--text);
+    background: var(--background);
+    overflow: hidden;
+    width: 97.5%;
+    height: 18px;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    margin: 10px 0;
+    /* padding: 20px; */
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    font-family: 'VT323', monospace;
 }
 
 form h3{
@@ -270,11 +288,11 @@ form .question{
 }
 
 form textarea{
-    color: var(--text);
     /* resize: none; */
     /* width: 241px;  */
+    color: var(--text);
     width: 97.5%;
-    height:18px;
+    height: 18px;
     border: 1.5px solid var(--border);
     border-radius: 6px;
     margin: 10px 0;
@@ -439,21 +457,7 @@ form .submit{
 /*              Viewport less then or equal to 750px            */
 
 /* @media only screen and (max-width: 750px){ */
-    @media only screen and (max-width: 810px){
-
-    /* .nav .nav-menu, .nav .nav-items{
-        flex-direction: column;
-    }
-
-    .nav .toggle-collapse{
-        display: initial;
-    } */
-
-    .nav-text{
-        flex-wrap: nowrap;
-        /* display: none; */
-        
-    }
+    @media only screen and (max-width: 809px){
 
     /* .nav-icons{
         font-size: 25px;

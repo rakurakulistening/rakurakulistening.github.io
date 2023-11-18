@@ -161,7 +161,17 @@ input {
 /*              Viewport less then or equal to 750px            */
 
 /* @media only screen and (max-width: 750px){ */
-    @media only screen and (max-width: 810px){
+    @media all and (max-width: 809px){
+        .nav{
+            display: flex;
+            justify-content:space-between;
+            background-color: red;
+            height: 3.6rem;
+            /* height: 10.3%; */
+            /* overflow: hidden; */
+            transition: height 1s ease-in-out;
+            border-bottom: var(--border) 1px solid;
+        }
 
     /* .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
@@ -216,9 +226,17 @@ input {
 
 /*              Viewport less then or equal to 520px            */
 
-@media only screen and (max-width: 520px){
-    
-
+@media all and (max-width: 520px){
+    .nav{
+        display: flex;
+        justify-content:space-between;
+        background-color: red;
+        height: 3.6rem;
+        /* height: 10.3%; */
+        /* overflow: hidden; */
+        transition: height 1s ease-in-out;
+        border-bottom: var(--border) 1px solid;
+    }
 }
 
 /*        x      Viewport less then or equal to 520px       x     */

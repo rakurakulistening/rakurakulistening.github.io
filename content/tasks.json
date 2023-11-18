@@ -2,6 +2,7 @@
         [
             {
                 "number": "1",
+                "theme":"The Changing World",
                 "topic": "World of work",
                 "subtopic": "Casual work",
                 "name": "セーフウェイ",
@@ -36,6 +37,7 @@
             },
             {
                 "number": "2",
+                "theme":"The Changing World",
                 "topic": "World of work",
                 "subtopic": "Casual work",
                 "name": "今日のアルバイト",
@@ -73,6 +75,7 @@
             },
             {
                 "number": "3",
+                "theme":"The Changing World",
                 "topic": "World of work",
                 "subtopic": "Casual work",
                 "name": "マクドナルド",
@@ -101,6 +104,7 @@
             },
             {
                 "number": "4",
+                "theme":"The Changing World",
                 "topic": "World of work",
                 "subtopic": "Men and women in the workforce",
                 "name": "転勤",
@@ -132,6 +136,7 @@
             },
             {
                 "number": "5",
+                "theme":"The Changing World",
                 "topic": "World of work",
                 "subtopic": "Men and women in the workforce",
                 "name": "付き合い",
@@ -166,6 +171,7 @@
             },
             {
                 "number": "6",
+                "theme":"The Changing World",
                 "topic": "World of work",
                 "subtopic": "Men and women in the workforce",
                 "name": "労働時間の短縮化",
@@ -213,6 +219,7 @@
             },
             {
                 "number": "7",
+                "theme":"The Changing World",
                 "topic": "World of work",
                 "subtopic": "Men and women in the workforce",
                 "name": "仕事の変化",
@@ -235,6 +242,7 @@
             },
             {
                 "number": "8",
+                "theme":"The Changing World",
                 "topic": "World of work",
                 "subtopic": "Men and women in the workforce",
                 "name": "女性の社会進出",

@@ -52,7 +52,6 @@ $(document).ready(function () {
             console.log(window.location.hostname);
             localStorage.setItem('searchTerm', (event.target.value).toLowerCase())
             window.location= `${(window.location.href).replace('/themes', '').replace('/topic', '').replace('/task', '').replace('.html', '')}/results`;
-            
         }
         });
     //#endregion
@@ -154,7 +153,7 @@ $(document).ready(function () {
         responses.setAttribute("data-aos", "fade-in")
         responses.setAttribute("data-aos-delay", "50")
 
-
+        var textAreas = [];
 
         //generate the questions
         for (let i = 0; i <= data.questions.length - 1; i++) {
@@ -176,11 +175,49 @@ $(document).ready(function () {
             type.setAttribute("id", `answer${i+1}`);
             type.setAttribute("class", "answer");
 
+            textAreas.push(`answer${i+1}`);
         
             question.appendChild(q);
             question.appendChild(type);
 
             responses.appendChild(question);
+        }
+
+        for (let i = 0; i < textAreas.length; i++) {
+            let currentArea = document.getElementById(textAreas[i]);
+
+            console.log(textAreas[i]);
+
+            // Get the computed style of the textarea
+            let computedStyle = window.getComputedStyle(currentArea);
+
+            // Get the total vertical padding (top + bottom)
+            let totalPadding = parseFloat(computedStyle.paddingTop) + parseFloat(computedStyle.paddingBottom);
+
+            // document.getElementById(textAreas[i]).oninput = function() {
+            //     document.getElementById(textAreas[i]).style.height = ""; /* Reset the height */
+            //     // document.getElementById(textAreas[i]).style.height = document.getElementById(textAreas[i]).scrollHeight + "px";
+            //     document.getElementById(textAreas[i]).style.height = Math.min(document.getElementById(textAreas[i]).scrollHeight, heightLimit) + "px";
+            // }
+
+            currentArea.oninput = function() {
+                console.log(currentArea.scrollHeight);
+                console.log(parseInt(computedStyle.lineHeight));
+
+                currentArea.style.minHeight = '20px';
+
+                currentArea.style.height = 'auto'; /* Reset the height */
+
+                // currentArea.style.height = currentArea.scrollHeight - 57 + 'px'; /* Set the height to the scrollHeight */
+                currentArea.style.height = (currentArea.scrollHeight - totalPadding) + 'px';
+
+                if(!(currentArea.value)){
+                    currentArea.style.height = '20px'
+                }
+                // currentArea.style.paddingBottom = `${currentArea.scrollHeight + 1}px`
+                // currentArea.style.paddingBottom = '0px';
+
+            }
         }
 
         document.getElementById("check").onclick = function(){

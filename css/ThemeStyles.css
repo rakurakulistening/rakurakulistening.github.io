@@ -249,7 +249,7 @@ button.topic::before{
 /*              Viewport less then or equal to 750px            */
 
 /* @media only screen and (max-width: 750px){ */
-    @media only screen and (max-width: 810px){
+    @media only screen and (max-width: 809px){
     
     main .site-content{
         grid-template-columns: 100%;

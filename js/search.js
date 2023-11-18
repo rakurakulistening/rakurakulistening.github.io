@@ -91,6 +91,7 @@ $(document).ready(function () {
             name.textContent = task.name;
 
             button.dataset.name = `${task.number}. ${task.name}`; //add task name from json
+            button.dataset.theme = task.theme;
             button.dataset.topic = task.topic;
             button.dataset.subtopic = task.subtopic;
             
@@ -110,6 +111,7 @@ $(document).ready(function () {
 
         for (let i = 0; i < taskButtons.length; i++) {
             taskButtons[i].onclick = function() {
+                localStorage.setItem('theme', this.dataset.theme);
                 localStorage.setItem('topicName', this.dataset.topic);
                 localStorage.setItem('subtopic', this.dataset.subtopic);
                 localStorage.setItem('taskName', this.dataset.name);
@@ -118,7 +120,11 @@ $(document).ready(function () {
         }
 
         searchInput.addEventListener("input", e => {
-            document.getElementById("title").textContent = `results for "${searchInput.value}"`;
+            if(searchInput.value){
+                document.getElementById("title").textContent = `results for "${searchInput.value}"`;
+            } else {
+                document.getElementById("title").textContent = '';
+            }
             const value = e.target.value.toLowerCase();
             tasks.forEach(task => {
                 const isVisible = task.name.toLowerCase().includes(value);
